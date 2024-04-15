@@ -32,8 +32,8 @@ def establish_mysql_actitime_conn():
     """This will be later modularized. Once we know its working"""
     mq_conn = mc.MySQLConnection (
     host="34.193.31.187", #"34.193.31.187",
-    user="testuser",
-    password="mytesting123" ,
+    user="devuser",
+    password="pxduser@720" ,
     database="actitime"
     )
     print("Returning Conn for MySQL")
@@ -67,13 +67,15 @@ def main():
 
     #Step 1 - Truncate Snowflake target table
  
-    ret_1 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_Customer")
-    ret_2 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_Project")
-    ret_3 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_task")
-    ret_4 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_AT_USER")
-    ret_5 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_TT_RECORD")
-    ret_6 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_TT_REVISION")
-    ret_7 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW.MAIN.Actitime_USER_PROJECT")
+    ret_1 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_Customer")
+    ret_2 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_Project")
+    ret_3 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_task")
+    ret_4 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_AT_USER")
+    ret_5 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_TT_RECORD")
+    ret_6 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_TT_REVISION")
+    ret_7 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_USER_PROJECT")
+    ret_8 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_task_Land")
+    ret_9 = sf_conn.cursor().execute("Truncate table PXLTD_CEDW_DEV.MAIN.Actitime_AT_USER_land")
     print(f"the return of the truncate is : Actitime_task :{ret_1}, Actitime_Customer: {ret_2},Actitime_Project: {ret_3},  Actitime_Task: {ret_4}, Actitime_AT_USER: {ret_5},  ACTITIME_TT_RECORD: {ret_6}, ACTITIME_TT_REVISION: {ret_7} ")
     # write table data from MYSQL to SNOWFLAKE
     # Cycle through the tables list and load data
@@ -85,11 +87,35 @@ def main():
                 csv_writer = csv.writer(csv_file)
                 csv_writer.writerow([i[0] for i in mysql_crsr.description]) # write headers
                 csv_writer.writerows(mysql_crsr)
-        sf_crsr.execute("create or replace stage my_stage file_format = my_csv_format;")
-        sf_crsr.execute(f"PUT file://~/Library/CloudStorage/OneDrive-ProjectXLtd/My Documents/pythonprojects/git repos/cedw_migration/{tablename}.csv @~/staged AUTO_COMPRESS=TRUE OVERWRITE=TRUE")
+        #sf_crsr.execute("create or replace stage my_stage file_format = 'my_csv_format'")
+        sf_crsr.execute(f"PUT file://{tablename}.csv @~/staged AUTO_COMPRESS=TRUE OVERWRITE=TRUE")
         #sfq.execute("COPY INTO abc_table")
-        sf_crsr.execute(f"copy into PXLTD_CEDW.MAIN.ACTITIME_{tablename} from @~/staged file_format = (format_name = 'my_csv_format') on_error = continue")
-        
+        sf_crsr.execute("use database PXLTD_CEDW_DEV")
+        sf_crsr.execute("use SCHEMA MAIN")
+        sf_crsr.execute("use WAREHOUSE COMPUTE_WH")
+        if 'task' in tablename or 'at_user' in tablename:
+             sf_crsr.execute(f"copy into PXLTD_CEDW_DEV.MAIN.ACTITIME_{tablename}_LAND from @~/staged/{tablename}.csv.gz file_format='my_csv_format'")
+        else:
+             sf_crsr.execute(f"copy into PXLTD_CEDW_DEV.MAIN.ACTITIME_{tablename} from @~/staged/{tablename}.csv.gz file_format='my_csv_format'")
+    print("Inserting from LAND task table to main table")
+    insString="INSERT INTO PXLTD_CEDW_DEV.MAIN.ACTITIME_TASK (ID,CUSTOMER_ID,PROJECT_ID,CREATE_TIMESTAMP,COMPLETION_DATE,NAME,NAME_LOWER,DESCRIPTION,DEADLINE_DATE,BILLING_TYPE_ID,BUDGET) SELECT ID,CUSTOMER_ID,PROJECT_ID,CREATE_TIMESTAMP,COMPLETION_DATE,NAME,NAME_LOWER,DESCRIPTION,DEADLINE_DATE,BILLING_TYPE_ID,BUDGET FROM PXLTD_CEDW_DEV.MAIN.ACTITIME_TASK_LAND"
+    sf_conn.cursor().execute(insString)
+    print("Inserting from LAND AT_USER table to main table")
+    insString="INSERT INTO PXLTD_CEDW_DEV.MAIN.ACTITIME_AT_USER \
+    (id,username,username_lower,md5_password,first_name,middle_name,last_name,email,is_enabled,overtime_tracking,overtime_level, \
+    is_locked,hire_date,release_date,all_projects_assigned,user_group_id,is_enabled_ap,first_name_lower,last_name_lower,middle_name_lower,initial_schedule,initial_schedule_total,\
+    is_default_initial_schedule,requires_ltr_approval,\
+    is_pto,def_pto_rules,keep_all_tasks_from_previous_week,requires_tt_approval,manage_all_users_tt,\
+    manage_all_users_ltr,is_sick,def_sick_rules,is_activated,time_zone_group_id,receive_user_changes_notification\
+    )\
+    SELECT \
+    id,username,username_lower,md5_password,first_name,middle_name,last_name,email,is_enabled,overtime_tracking,overtime_level,\
+    is_locked,hire_date,release_date,all_projects_assigned,user_group_id,is_enabled_ap,first_name_lower,last_name_lower,middle_name_lower,initial_schedule,initial_schedule_total,\
+    is_default_initial_schedule,requires_ltr_approval,\
+    is_pto,def_pto_rules,keep_all_tasks_from_previous_week,requires_tt_approval,manage_all_users_tt,\
+    manage_all_users_ltr,is_sick,def_sick_rules,is_activated,time_zone_group_id,receive_user_changes_notification\
+    FROM PXLTD_CEDW_DEV.MAIN.ACTITIME_AT_USER_LAND"
+    sf_conn.cursor().execute(insString)
     print('Steps complete')
     sf_crsr.close()
     sf_conn.close()
