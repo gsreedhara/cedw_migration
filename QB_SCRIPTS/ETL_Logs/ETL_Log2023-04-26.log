@@ -1,0 +1,31 @@
+2023-04-26 14:23:03,418 ********************************************************************************
+2023-04-26 14:23:03,418 Start of process
+2023-04-26 14:23:03,419 Retrieved connection data
+2023-04-26 14:23:03,419 Retrieved email notification data
+2023-04-26 14:23:03,456 Opened DB Connection "ControlConnection"
+2023-04-26 14:23:03,457 Opened QB Target DB connection
+2023-04-26 16:10:00,470 ********************************************************************************
+2023-04-26 16:10:00,470 Start of process
+2023-04-26 16:10:00,471 Retrieved connection data
+2023-04-26 16:10:00,471 Retrieved email notification data
+2023-04-26 16:10:00,507 Opened DB Connection "ControlConnection"
+2023-04-26 16:10:00,507 Opened QB Target DB connection
+2023-04-26 16:15:35,451 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041)')
+2023-04-26 16:15:35,451 Error in QB Extract process - exceptions must derive from BaseException
+2023-04-26 16:15:35,529 Opened Mail Server
+2023-04-26 16:15:36,332 Sent Failure email to jtoro@pxltd.ca
+2023-04-26 16:15:36,353 Execution ended. Error code is 1
+2023-04-26 16:15:36,353 Closing DB Connection "QbSourceConnection"
+2023-04-26 16:15:36,353 Closing DB Connection "ControlConnection"
+2023-04-26 16:16:42,133 ********************************************************************************
+2023-04-26 16:16:42,133 Start of process
+2023-04-26 16:16:42,133 Retrieved connection data
+2023-04-26 16:16:42,133 Retrieved email notification data
+2023-04-26 16:16:42,159 Opened DB Connection "ControlConnection"
+2023-04-26 16:16:42,159 Opened QB Target DB connection
+2023-04-26 20:10:00,649 ********************************************************************************
+2023-04-26 20:10:00,649 Start of process
+2023-04-26 20:10:00,650 Retrieved connection data
+2023-04-26 20:10:00,650 Retrieved email notification data
+2023-04-26 20:10:00,730 Opened DB Connection "ControlConnection"
+2023-04-26 20:10:00,730 Opened QB Target DB connection

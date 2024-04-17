@@ -1,0 +1,13 @@
+2023-04-15 20:10:00,480 ********************************************************************************
+2023-04-15 20:10:00,481 Start of process
+2023-04-15 20:10:00,481 Retrieved connection data
+2023-04-15 20:10:00,481 Retrieved email notification data
+2023-04-15 20:10:00,519 Opened DB Connection "ControlConnection"
+2023-04-15 20:10:00,520 Opened QB Target DB connection
+2023-04-15 20:11:04,478 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040408, Could not start QuickBooks.\nFor more details please visit: qodbc.com/links/2529 (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040408, Could not start QuickBooks.\nFor more details please visit: qodbc.com/links/2529 (10041)')
+2023-04-15 20:11:04,478 Error in QB Extract process - exceptions must derive from BaseException
+2023-04-15 20:11:04,579 Opened Mail Server
+2023-04-15 20:11:05,473 Sent Failure email to jtoro@pxltd.ca
+2023-04-15 20:11:05,493 Execution ended. Error code is 1
+2023-04-15 20:11:05,494 Closing DB Connection "QbSourceConnection"
+2023-04-15 20:11:05,494 Closing DB Connection "ControlConnection"

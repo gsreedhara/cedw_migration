@@ -1,0 +1,84 @@
+2021-01-14 10:14:13,642 ********************************************************************************
+2021-01-14 10:14:13,642 Start of process
+2021-01-14 10:14:13,643 Retrieved connection data
+2021-01-14 10:14:36,518 Opened DB Connection "QbSourceConnection"
+2021-01-14 10:14:36,518 Opened QB Source DB connection
+2021-01-14 10:14:36,541 Opened DB Connection "QbTargetConnection"
+2021-01-14 10:14:36,541 Opened QB Target DB connection
+2021-01-14 10:14:36,544 Number of QB Source Tables Retrieved -> 151
+2021-01-14 10:14:36,609 Number of QB Target Tables Retrieved -> 320
+2021-01-14 10:14:36,612 
+************************************************************
+Tables found in the QuickBook Source and not in the Target -> []
+2021-01-14 10:14:36,612 ***QB COLUMNS *****************************************************************
+2021-01-14 10:14:38,011 
+Table 'Customer' column 'AdditionalContactRef1ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef1ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef2ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef2ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef3ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef3ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef4ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef4ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef5ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef5ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef6ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef6ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef7ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef7ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef8ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'Customer' column 'AdditionalContactRef8ContactValue' datatype VARCHAR 255 - NOT FOUND
+2021-01-14 10:14:38,228 
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef1ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef1ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef2ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef2ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef3ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef3ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef4ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef4ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef5ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef5ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef6ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef6ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef7ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef7ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef8ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerAddtionalNote' column 'AdditionalContactRef8ContactValue' datatype VARCHAR 255 - NOT FOUND
+2021-01-14 10:14:38,492 
+Table 'CustomerContacts' column 'AdditionalContactRef1ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef1ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef2ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef2ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef3ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef3ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef4ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef4ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef5ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef5ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef6ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef6ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef7ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef7ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef8ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerContacts' column 'AdditionalContactRef8ContactValue' datatype VARCHAR 255 - NOT FOUND
+2021-01-14 10:14:38,852 
+Table 'CustomerShipToAddress' column 'AdditionalContactRef1ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef1ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef2ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef2ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef3ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef3ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef4ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef4ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef5ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef5ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef6ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef6ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef7ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef7ContactValue' datatype VARCHAR 255 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef8ContactName' datatype VARCHAR 40 - NOT FOUND
+Table 'CustomerShipToAddress' column 'AdditionalContactRef8ContactValue' datatype VARCHAR 255 - NOT FOUND
+2021-01-14 10:14:43,378 Total Execution elapsed time -> 29.7294
+2021-01-14 10:14:43,379 Closing DB Connection "QbSourceConnection"
+2021-01-14 10:14:45,315 Closing DB Connection "QbTargetConnection"

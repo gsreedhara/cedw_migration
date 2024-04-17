@@ -1,0 +1,8 @@
+govhub_ms_sg_upload/testing.env
+govhub_ms_sg_upload/config/config.json
+govhub_ms_sg_upload/config/ConnectionData.json
+govhub_ms_sg_upload/src/config/config.json
+govhub_ms_sg_upload/src/config/ConnectionData.json
+QB_SCRIPTS/ConnectionData.json
+QB_SCRIPTS/ConnectionDataTest.json
+THANX_SCRIPTS/testing.env

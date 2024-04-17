@@ -1,0 +1,7 @@
+2023-04-06 16:18:36,574 ********************************************************************************
+2023-04-06 16:18:36,574 Start of process
+2023-04-06 16:18:36,574 Retrieved connection data
+2023-04-06 16:19:31,891 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041)')
+2023-04-06 16:19:31,892 Error in QB Compare process - exceptions must derive from BaseException
+2023-04-06 16:19:31,912 Execution ended. Error code is 1
+2023-04-06 16:19:31,913 Closing DB Connection "QbSourceConnection"

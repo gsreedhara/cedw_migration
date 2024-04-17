@@ -1,0 +1,200 @@
+2021-11-04 11:06:17,723 ********************************************************************************
+2021-11-04 11:06:17,724 Start of process
+2021-11-04 11:06:17,724 Retrieved connection data
+2021-11-04 11:06:41,207 Opened DB Connection "QbSourceConnection"
+2021-11-04 11:06:41,208 Opened QB Source DB connection
+2021-11-04 11:06:41,259 Opened DB Connection "QbTargetConnection"
+2021-11-04 11:06:41,259 Opened QB Target DB connection
+2021-11-04 11:06:41,262 Number of QB Source Tables Retrieved -> 154
+2021-11-04 11:06:41,295 Number of QB Target Tables Retrieved -> 320
+2021-11-04 11:06:41,299 
+************************************************************
+Tables found in the QuickBook Source and not in the Target -> ['ModifyInwardGroupLine', 'CustomerNoShippingAddr', 'ModifyOutwardGroupLine']
+2021-11-04 11:06:41,300 ***QB COLUMNS *****************************************************************
+2021-11-04 11:06:41,739 
+Table 'BillItemLine' column 'ItemGroupLineInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillItemLine' column 'ItemGroupLineInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'BillItemLine' column 'ItemGroupLineInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillItemLine' column 'ItemGroupLineInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:42,059 
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnSeqNo' datatype INTEGER - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnTxnID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnPaymentAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnTxnType' datatype VARCHAR 14 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnTxnDate' datatype DATE - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnRefNumber' datatype VARCHAR 20 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnBalanceRemaining' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnSetCreditCreditTxnID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnSetCreditAppliedAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnDiscountAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnDiscountAccountRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnDiscountAccountRefFullName' datatype VARCHAR 159 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnDiscountClassRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCheckLineLinkedTxn' column 'AppliedToTxnDiscountClassRefFullName' datatype VARCHAR 159 - NOT FOUND
+2021-11-04 11:06:42,269 
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnSeqNo' datatype INTEGER - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnTxnID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnPaymentAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnTxnType' datatype VARCHAR 14 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnTxnDate' datatype DATE - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnRefNumber' datatype VARCHAR 20 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnBalanceRemaining' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnSetCreditCreditTxnID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnSetCreditAppliedAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnDiscountAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnDiscountAccountRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnDiscountAccountRefFullName' datatype VARCHAR 159 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnDiscountClassRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'BillPaymentCreditCardLineLinkedTxn' column 'AppliedToTxnDiscountClassRefFullName' datatype VARCHAR 159 - NOT FOUND
+2021-11-04 11:06:42,585 
+Table 'CheckExpenseLine' column 'ExpenseLineSalesRepRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CheckExpenseLine' column 'ExpenseLineSalesRepRefFullName' datatype VARCHAR 5 - NOT FOUND
+2021-11-04 11:06:42,726 
+Table 'CheckItemLine' column 'ItemGroupLineInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CheckItemLine' column 'ItemGroupLineInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'CheckItemLine' column 'ItemGroupLineInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CheckItemLine' column 'ItemGroupLineInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'CheckItemLine' column 'ItemLineSalesRepRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CheckItemLine' column 'ItemLineSalesRepRefFullName' datatype VARCHAR 5 - NOT FOUND
+2021-11-04 11:06:42,994 
+Table 'CreditCardChargeItemLine' column 'ItemGroupLineInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditCardChargeItemLine' column 'ItemGroupLineInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'CreditCardChargeItemLine' column 'ItemGroupLineInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditCardChargeItemLine' column 'ItemGroupLineInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:43,126 
+Table 'CreditCardCreditItemLine' column 'ItemGroupLineInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditCardCreditItemLine' column 'ItemGroupLineInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'CreditCardCreditItemLine' column 'ItemGroupLineInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditCardCreditItemLine' column 'ItemGroupLineInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:43,362 
+Table 'CreditMemo' column 'Subtotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemo' column 'SalesTaxTotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemo' column 'TotalAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemo' column 'ExchangeRate' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemo' column 'SalesTaxCodeRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditMemo' column 'SalesTaxCodeRefFullName' datatype VARCHAR 3 - NOT FOUND
+Table 'CreditMemo' column 'Tax1Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemo' column 'Tax2Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:43,721 
+Table 'CreditMemoLine' column 'Subtotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'SalesTaxTotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'TotalAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'ExchangeRate' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'SalesTaxCodeRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditMemoLine' column 'SalesTaxCodeRefFullName' datatype VARCHAR 3 - NOT FOUND
+Table 'CreditMemoLine' column 'CreditMemoLineGroupInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditMemoLine' column 'CreditMemoLineGroupInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'CreditMemoLine' column 'CreditMemoLineGroupInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditMemoLine' column 'CreditMemoLineGroupInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'CreditMemoLine' column 'CreditMemoLineGroupTotalAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'CreditMemoLineAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'CreditMemoLineTaxAmount' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'Tax1Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLine' column 'Tax2Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:43,947 
+Table 'CreditMemoLinkedTxn' column 'Subtotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLinkedTxn' column 'SalesTaxTotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLinkedTxn' column 'TotalAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLinkedTxn' column 'ExchangeRate' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLinkedTxn' column 'SalesTaxCodeRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'CreditMemoLinkedTxn' column 'SalesTaxCodeRefFullName' datatype VARCHAR 3 - NOT FOUND
+Table 'CreditMemoLinkedTxn' column 'LinkedTxnAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLinkedTxn' column 'Tax1Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CreditMemoLinkedTxn' column 'Tax2Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:43,982 
+Table 'Currency' column 'ExchangeRate' datatype NUMERIC 34-17 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:44,169 
+Table 'Customer' column 'Balance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'Customer' column 'TotalBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'Customer' column 'OpenBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'Customer' column 'CreditLimit' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:44,358 
+Table 'CustomerAddtionalNote' column 'Balance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerAddtionalNote' column 'TotalBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerAddtionalNote' column 'OpenBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerAddtionalNote' column 'CreditLimit' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:44,568 
+Table 'CustomerContacts' column 'Balance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerContacts' column 'TotalBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerContacts' column 'OpenBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerContacts' column 'CreditLimit' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:44,768 
+Table 'CustomerShipToAddress' column 'Balance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerShipToAddress' column 'TotalBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerShipToAddress' column 'OpenBalance' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'CustomerShipToAddress' column 'CreditLimit' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:46,281 
+Table 'EstimateLine' column 'Subtotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'SalesTaxTotal' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'TotalAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'ExchangeRate' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'TotalAmountInHomeCurrency' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'EstimateLineGroupInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'EstimateLine' column 'EstimateLineGroupInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'EstimateLine' column 'EstimateLineGroupInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'EstimateLine' column 'EstimateLineGroupInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'EstimateLine' column 'EstimateLineGroupTotalAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'EstimateLineAmount' datatype NUMERIC 18-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'EstimateLineTaxAmount' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'Tax1Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+Table 'EstimateLine' column 'Tax2Total' datatype NUMERIC 17-15 - NUMERIC DATA SIZE MISMATCH
+2021-11-04 11:06:46,417 
+Table 'Form1099' column 'ID' datatype INTEGER - NOT FOUND
+Table 'Form1099' column 'FormType' datatype VARCHAR 159 - NOT FOUND
+Table 'Form1099' column 'FQPrimaryKey' datatype VARCHAR 256 - NOT FOUND
+2021-11-04 11:06:46,478 
+Table 'Form1099CategoryAccountMapping' column 'ID' datatype INTEGER - NOT FOUND
+Table 'Form1099CategoryAccountMapping' column 'FormType' datatype VARCHAR 159 - NOT FOUND
+Table 'Form1099CategoryAccountMapping' column 'FQPrimaryKey' datatype VARCHAR 256-73 183 - DATA SIZE MISMATCH
+2021-11-04 11:06:47,016 
+Table 'InvoiceLine' column 'InvoiceLineGroupInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'InvoiceLine' column 'InvoiceLineGroupInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'InvoiceLine' column 'InvoiceLineGroupInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'InvoiceLine' column 'InvoiceLineGroupInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:48,057 
+Table 'ItemReceiptItemLine' column 'ItemGroupLineInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'ItemReceiptItemLine' column 'ItemGroupLineInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'ItemReceiptItemLine' column 'ItemGroupLineInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'ItemReceiptItemLine' column 'ItemGroupLineInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:48,801 
+Table 'PurchaseOrderLine' column 'PurchaseOrderLineGroupInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'PurchaseOrderLine' column 'PurchaseOrderLineGroupInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'PurchaseOrderLine' column 'PurchaseOrderLineGroupInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'PurchaseOrderLine' column 'PurchaseOrderLineGroupInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:49,135 
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnTxnID' datatype VARCHAR 36 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnPaymentAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnTxnType' datatype VARCHAR 14 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnTxnDate' datatype DATE - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnRefNumber' datatype VARCHAR 20 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnBalanceRemaining' datatype NUMERIC 17 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnSetCreditCreditTxnID' datatype VARCHAR 36 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnSetCreditAppliedAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnDiscountAmount' datatype NUMERIC 17 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnDiscountAccountRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnDiscountAccountRefFullName' datatype VARCHAR 159 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnDiscountClassRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'ReceivePaymentLineLinkedTxn' column 'AppliedToTxnDiscountClassRefFullName' datatype VARCHAR 159 - NOT FOUND
+2021-11-04 11:06:50,177 
+Table 'SalesOrderLine' column 'SalesOrderLineGroupInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'SalesOrderLine' column 'SalesOrderLineGroupInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'SalesOrderLine' column 'SalesOrderLineGroupInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'SalesOrderLine' column 'SalesOrderLineGroupInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:50,712 
+Table 'SalesReceiptLine' column 'SalesReceiptLineGroupInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'SalesReceiptLine' column 'SalesReceiptLineGroupInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'SalesReceiptLine' column 'SalesReceiptLineGroupInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'SalesReceiptLine' column 'SalesReceiptLineGroupInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+2021-11-04 11:06:51,668 
+Table 'VendorCreditItemLine' column 'ItemGroupLineInventorySiteRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'VendorCreditItemLine' column 'ItemGroupLineInventorySiteRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'VendorCreditItemLine' column 'ItemGroupLineInventorySiteLocationRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'VendorCreditItemLine' column 'ItemGroupLineInventorySiteLocationRefFullName' datatype VARCHAR 31 - NOT FOUND
+Table 'VendorCreditItemLine' column 'ItemLineSalesRepRefListID' datatype VARCHAR 36 - NOT FOUND
+Table 'VendorCreditItemLine' column 'ItemLineSalesRepRefFullName' datatype VARCHAR 5 - NOT FOUND
+2021-11-04 11:06:51,785 Total Execution elapsed time -> 34.0547
+2021-11-04 11:06:51,786 Closing DB Connection "QbSourceConnection"
+2021-11-04 11:06:53,592 Closing DB Connection "QbTargetConnection"
