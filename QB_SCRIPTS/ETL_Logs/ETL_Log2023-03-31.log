@@ -1,0 +1,53 @@
+2023-03-31 08:10:00,651 ********************************************************************************
+2023-03-31 08:10:00,652 Start of process
+2023-03-31 08:10:00,652 Retrieved connection data
+2023-03-31 08:10:00,652 Retrieved email notification data
+2023-03-31 08:10:00,899 Opened DB Connection "ControlConnection"
+2023-03-31 08:10:00,899 Opened QB Target DB connection
+2023-03-31 08:10:38,886 Opened DB Connection "QbSourceConnection"
+2023-03-31 08:10:38,886 Opened QB Source DB connection
+2023-03-31 08:10:38,891 Opened DB Connection "QbTargetConnection"
+2023-03-31 08:10:38,891 Opened QB Target DB connection
+2023-03-31 08:10:38,894 Number of Tables to Process -> ()
+2023-03-31 08:10:38,961 Start Process Insert Event for "QB_CEDW-Account" - <Response [200]> - {'Response': '1 record inserted'}
+2023-03-31 08:10:38,961 Processing Table -> Account
+2023-03-31 08:10:38,971 Table Truncated -> QB_STAGING.dbo.[Account]
+2023-03-31 12:10:00,579 ********************************************************************************
+2023-03-31 12:10:00,580 Start of process
+2023-03-31 12:10:00,580 Retrieved connection data
+2023-03-31 12:10:00,580 Retrieved email notification data
+2023-03-31 12:10:00,625 Opened DB Connection "ControlConnection"
+2023-03-31 12:10:00,626 Opened QB Target DB connection
+2023-03-31 12:10:02,450 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070008, Unknown error.\n (10040) (SQLDriverConnect); [00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070008, Unknown error.\n (10040)')
+2023-03-31 12:10:02,450 Error in QB Extract process - exceptions must derive from BaseException
+2023-03-31 12:10:02,540 Opened Mail Server
+2023-03-31 12:10:03,502 Sent Failure email to jtoro@pxltd.ca
+2023-03-31 12:10:03,523 Execution ended. Error code is 1
+2023-03-31 12:10:03,523 Closing DB Connection "QbSourceConnection"
+2023-03-31 12:10:03,523 Closing DB Connection "ControlConnection"
+2023-03-31 16:10:00,657 ********************************************************************************
+2023-03-31 16:10:00,658 Start of process
+2023-03-31 16:10:00,658 Retrieved connection data
+2023-03-31 16:10:00,658 Retrieved email notification data
+2023-03-31 16:10:00,706 Opened DB Connection "ControlConnection"
+2023-03-31 16:10:00,706 Opened QB Target DB connection
+2023-03-31 16:10:02,884 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070008, Unknown error.\n (10040) (SQLDriverConnect); [00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070008, Unknown error.\n (10040)')
+2023-03-31 16:10:02,885 Error in QB Extract process - exceptions must derive from BaseException
+2023-03-31 16:10:02,967 Opened Mail Server
+2023-03-31 16:10:03,503 Sent Failure email to jtoro@pxltd.ca
+2023-03-31 16:10:03,523 Execution ended. Error code is 1
+2023-03-31 16:10:03,523 Closing DB Connection "QbSourceConnection"
+2023-03-31 16:10:03,523 Closing DB Connection "ControlConnection"
+2023-03-31 20:10:00,684 ********************************************************************************
+2023-03-31 20:10:00,684 Start of process
+2023-03-31 20:10:00,684 Retrieved connection data
+2023-03-31 20:10:00,685 Retrieved email notification data
+2023-03-31 20:10:00,728 Opened DB Connection "ControlConnection"
+2023-03-31 20:10:00,728 Opened QB Target DB connection
+2023-03-31 20:10:02,960 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070008, Unknown error.\n (10040) (SQLDriverConnect); [00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070008, Unknown error.\n (10040)')
+2023-03-31 20:10:02,960 Error in QB Extract process - exceptions must derive from BaseException
+2023-03-31 20:10:03,043 Opened Mail Server
+2023-03-31 20:10:03,794 Sent Failure email to jtoro@pxltd.ca
+2023-03-31 20:10:03,813 Execution ended. Error code is 1
+2023-03-31 20:10:03,813 Closing DB Connection "QbSourceConnection"
+2023-03-31 20:10:03,813 Closing DB Connection "ControlConnection"

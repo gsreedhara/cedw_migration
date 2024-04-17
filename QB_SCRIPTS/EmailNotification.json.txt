@@ -1,0 +1,4 @@
+{
+  "SuccessEmail" : {"email_address": ["swilson@pxltd.ca", "tpatel@pxltd.ca"]},
+  "FailureEmail" : {"email_address": ["jtoro@pxltd.ca"]}
+}

@@ -1,0 +1,171 @@
+2024-02-07 18:29:12,898 ********************************************************************************
+2024-02-07 18:29:12,898 Start of process
+2024-02-07 18:29:12,899 Retrieved connection data
+2024-02-07 18:29:22,958 Opened DB Connection "QbSourceConnection"
+2024-02-07 18:29:22,958 Opened QB Source DB connection
+2024-02-07 18:29:23,004 Opened DB Connection "QbTargetConnection"
+2024-02-07 18:29:23,004 Opened QB Target DB connection
+2024-02-07 18:29:23,022 Number of QB Source Tables Retrieved -> 154
+2024-02-07 18:29:23,148 Number of QB Target Tables Retrieved -> 334
+2024-02-07 18:29:23,152 
+************************************************************
+Tables found in the QuickBook Source and not in the Target -> []
+2024-02-07 18:29:23,152 ***QB COLUMNS *****************************************************************
+2024-02-07 18:29:23,329 Account 
+2024-02-07 18:29:23,347 AccountTaxLineInfo 
+2024-02-07 18:29:23,393 ARRefundCreditCard 
+2024-02-07 18:29:23,437 ARRefundCreditCardRefundAppliedTo 
+2024-02-07 18:29:23,461 BarCode 
+2024-02-07 18:29:23,508 Bill 
+2024-02-07 18:29:23,572 BillExpenseLine 
+2024-02-07 18:29:23,648 BillItemLine 
+2024-02-07 18:29:23,697 BillLinkedTxn 
+2024-02-07 18:29:23,718 BillingRate 
+2024-02-07 18:29:23,741 BillingRateLine 
+2024-02-07 18:29:23,776 BillPaymentCheck 
+2024-02-07 18:29:23,821 BillPaymentCheckLine 
+2024-02-07 18:29:23,868 BillPaymentCheckLineLinkedTxn 
+2024-02-07 18:29:23,891 BillPaymentCreditCard 
+2024-02-07 18:29:23,921 BillPaymentCreditCardLine 
+2024-02-07 18:29:23,958 BillPaymentCreditCardLineLinkedTxn 
+2024-02-07 18:29:23,982 BillToPay 
+2024-02-07 18:29:24,007 BuildAssembly 
+2024-02-07 18:29:24,040 BuildAssemblyComponentItemLine 
+2024-02-07 18:29:24,069 Charge 
+2024-02-07 18:29:24,101 ChargeLinkedTxn 
+2024-02-07 18:29:24,150 Check 
+2024-02-07 18:29:24,206 CheckApplyCheckToTxn 
+2024-02-07 18:29:24,266 CheckExpenseLine 
+2024-02-07 18:29:24,347 CheckItemLine 
+2024-02-07 18:29:24,367 Class 
+2024-02-07 18:29:24,387 ClearedStatus 
+2024-02-07 18:29:24,431 Company 
+2024-02-07 18:29:24,457 CompanyActivity 
+2024-02-07 18:29:24,491 CreditCardCharge 
+2024-02-07 18:29:24,537 CreditCardChargeExpenseLine 
+2024-02-07 18:29:24,595 CreditCardChargeItemLine 
+2024-02-07 18:29:24,622 CreditCardCredit 
+2024-02-07 18:29:24,657 CreditCardCreditExpenseLine 
+2024-02-07 18:29:24,707 CreditCardCreditItemLine 
+2024-02-07 18:29:24,827 CreditMemo 
+2024-02-07 18:29:24,988 CreditMemoLine 
+2024-02-07 18:29:25,108 CreditMemoLinkedTxn 
+2024-02-07 18:29:25,131 Currency 
+2024-02-07 18:29:25,260 Customer 
+2024-02-07 18:29:25,398 CustomerAddtionalNote 
+2024-02-07 18:29:25,545 CustomerContacts 
+2024-02-07 18:29:25,687 CustomerShipToAddress 
+2024-02-07 18:29:25,776 CustomerNoShippingAddr 
+2024-02-07 18:29:25,797 CustomerMsg 
+2024-02-07 18:29:25,818 CustomerType 
+2024-02-07 18:29:25,838 CustomField 
+2024-02-07 18:29:25,858 DateDrivenTerms 
+2024-02-07 18:29:25,882 Deposit 
+2024-02-07 18:29:25,914 DepositLine 
+2024-02-07 18:29:25,980 Employee 
+2024-02-07 18:29:26,046 EmployeeAddtionalNote 
+2024-02-07 18:29:26,113 EmployeeEarning 
+2024-02-07 18:29:26,406 Entity 
+2024-02-07 18:29:26,561 EntityAdditionalNote 
+2024-02-07 18:29:26,668 EntityContacts 
+2024-02-07 18:29:26,769 EntityShipToAddress 
+2024-02-07 18:29:26,863 Estimate 
+2024-02-07 18:29:26,994 EstimateLine 
+2024-02-07 18:29:27,090 EstimateLinkedTxn 
+2024-02-07 18:29:27,109 Form1099 
+2024-02-07 18:29:27,131 Form1099CategoryAccountMapping 
+2024-02-07 18:29:27,153 Host 
+2024-02-07 18:29:27,179 HostMetaData 
+2024-02-07 18:29:27,203 HostSupportedVersions 
+2024-02-07 18:29:27,226 InventoryAdjustment 
+2024-02-07 18:29:27,267 InventoryAdjustmentLine 
+2024-02-07 18:29:27,297 InventorySite 
+2024-02-07 18:29:27,442 Invoice 
+2024-02-07 18:29:27,627 InvoiceLine 
+2024-02-07 18:29:27,765 InvoiceLinkedTxn 
+2024-02-07 18:29:27,800 ModifyInwardGroupLine 
+2024-02-07 18:29:27,840 ModifyOutwardGroupLine 
+2024-02-07 18:29:28,207 Item 
+2024-02-07 18:29:28,224 ItemAssembliesCanBuild 
+2024-02-07 18:29:28,250 ItemDiscount 
+2024-02-07 18:29:28,276 ItemFixedAsset 
+2024-02-07 18:29:28,299 ItemGroup 
+2024-02-07 18:29:28,327 ItemGroupLine 
+2024-02-07 18:29:28,363 ItemInventory 
+2024-02-07 18:29:28,398 ItemInventoryAssembly 
+2024-02-07 18:29:28,436 ItemInventoryAssemblyLine 
+2024-02-07 18:29:28,474 ItemNonInventory 
+2024-02-07 18:29:28,508 ItemOtherCharge 
+2024-02-07 18:29:28,530 ItemPayment 
+2024-02-07 18:29:28,558 ItemReceipt 
+2024-02-07 18:29:28,596 ItemReceiptExpenseLine 
+2024-02-07 18:29:28,650 ItemReceiptItemLine 
+2024-02-07 18:29:28,681 ItemReceiptLinkedTxn 
+2024-02-07 18:29:28,709 ItemSalesTax 
+2024-02-07 18:29:28,728 ItemSalesTaxGroup 
+2024-02-07 18:29:28,748 ItemSalesTaxGroupLine 
+2024-02-07 18:29:28,780 ItemService 
+2024-02-07 18:29:28,799 ItemSubtotal 
+2024-02-07 18:29:28,819 JobType 
+2024-02-07 18:29:28,842 JournalEntry 
+2024-02-07 18:29:28,874 JournalEntryCreditLine 
+2024-02-07 18:29:28,904 JournalEntryDebitLine 
+2024-02-07 18:29:28,935 JournalEntryLine 
+2024-02-07 18:29:28,959 ListDeleted 
+2024-02-07 18:29:28,988 OtherName 
+2024-02-07 18:29:29,007 PaymentMethod 
+2024-02-07 18:29:29,027 PayrollItemNonWage 
+2024-02-07 18:29:29,048 PayrollItemWage 
+2024-02-07 18:29:29,097 Preferences 
+2024-02-07 18:29:29,123 PriceLevel 
+2024-02-07 18:29:29,145 PriceLevelPerItem 
+2024-02-07 18:29:29,241 PurchaseOrder 
+2024-02-07 18:29:29,378 PurchaseOrderLine 
+2024-02-07 18:29:29,476 PurchaseOrderLinkedTxn 
+2024-02-07 18:29:29,518 ReceivePayment 
+2024-02-07 18:29:29,571 ReceivePaymentLine 
+2024-02-07 18:29:29,623 ReceivePaymentLineLinkedTxn 
+2024-02-07 18:29:29,643 ReceivePaymentToDeposit 
+2024-02-07 18:29:29,940 Sales 
+2024-02-07 18:29:30,301 SalesLine 
+2024-02-07 18:29:30,419 SalesOrder 
+2024-02-07 18:29:30,571 SalesOrderLine 
+2024-02-07 18:29:30,681 SalesOrderLinkedTxn 
+2024-02-07 18:29:30,814 SalesReceipt 
+2024-02-07 18:29:31,006 SalesReceiptLine 
+2024-02-07 18:29:31,025 SalesRep 
+2024-02-07 18:29:31,045 SalesTaxCode 
+2024-02-07 18:29:31,072 SalesTaxPaymentCheck 
+2024-02-07 18:29:31,100 SalesTaxPaymentCheckLine 
+2024-02-07 18:29:31,120 ShipMethod 
+2024-02-07 18:29:31,137 SpecialAccount 
+2024-02-07 18:29:31,155 SpecialItem 
+2024-02-07 18:29:31,175 StandardTerms 
+2024-02-07 18:29:31,201 TaxCode 
+2024-02-07 18:29:31,219 Template 
+2024-02-07 18:29:31,256 Terms 
+2024-02-07 18:29:31,278 TimeTracking 
+2024-02-07 18:29:31,298 ToDo 
+2024-02-07 18:29:31,330 Transaction 
+2024-02-07 18:29:31,351 Transfer 
+2024-02-07 18:29:31,372 TransferInventory 
+2024-02-07 18:29:31,398 TransferInventoryLine 
+2024-02-07 18:29:31,417 TxnDeleted 
+2024-02-07 18:29:31,436 UnitOfMeasureSet 
+2024-02-07 18:29:31,459 UnitOfMeasureSetRelatedUnit 
+2024-02-07 18:29:31,478 UnitOfMeasureSetDefaultUnit 
+2024-02-07 18:29:31,498 Vehicle 
+2024-02-07 18:29:31,520 VehicleMileage 
+2024-02-07 18:29:31,643 Vendor 
+NOT FOUND - JobTitle VARCHAR(41)
+2024-02-07 18:29:31,749 VendorContacts 
+NOT FOUND - JobTitle VARCHAR(41)
+2024-02-07 18:29:31,783 VendorCredit 
+2024-02-07 18:29:31,826 VendorCreditExpenseLine 
+2024-02-07 18:29:31,887 VendorCreditItemLine 
+2024-02-07 18:29:31,923 VendorCreditLinkedTxn 
+2024-02-07 18:29:31,945 VendorType 
+2024-02-07 18:29:31,965 WorkersCompCode 
+2024-02-07 18:29:31,986 WorkersCompCodeRateHistory 
+2024-02-07 18:29:31,992 Total Execution elapsed time -> 19.0892
+2024-02-07 18:29:31,992 Closing DB Connection "QbSourceConnection"

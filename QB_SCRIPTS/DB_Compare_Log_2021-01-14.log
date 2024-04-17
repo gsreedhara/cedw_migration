@@ -1,0 +1,17 @@
+2021-01-14 11:48:11,336 ********************************************************************************
+2021-01-14 11:48:11,336 Start of process
+2021-01-14 11:48:11,337 Retrieved connection data
+2021-01-14 11:48:32,293 Opened DB Connection "QbSourceConnection"
+2021-01-14 11:48:32,293 Opened QB Source DB connection
+2021-01-14 11:48:32,314 Opened DB Connection "QbTargetConnection"
+2021-01-14 11:48:32,314 Opened QB Target DB connection
+2021-01-14 11:48:32,316 Number of QB Source Tables Retrieved -> 151
+2021-01-14 11:48:32,361 Number of QB Target Tables Retrieved -> 320
+2021-01-14 11:48:32,363 
+************************************************************
+Tables found in the QuickBook Source and not in the Target -> []
+2021-01-14 11:48:32,363 ***QB COLUMNS *****************************************************************
+2021-01-14 11:48:38,410 %%%% No Column Issues Found %%%%
+2021-01-14 11:48:38,430 Total Execution elapsed time -> 27.0752
+2021-01-14 11:48:38,431 Closing DB Connection "QbSourceConnection"
+2021-01-14 11:48:40,067 Closing DB Connection "QbTargetConnection"

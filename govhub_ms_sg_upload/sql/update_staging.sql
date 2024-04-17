@@ -1,0 +1,74 @@
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Resource_Xml
+SET Ms_Project_Header_Id = Ms_Project_Header_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Header_Xml
+WHERE Ms_Project_Resource_Xml.Batch_Run_Id = Ms_Project_Header_Xml.Batch_Run_Id
+AND Ms_Project_Resource_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Task_Xml
+SET Ms_Project_Header_Id = Ms_Project_Header_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Header_Xml
+WHERE Ms_Project_Task_Xml.Batch_Run_Id = Ms_Project_Header_Xml.Batch_Run_Id
+AND Ms_Project_Task_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Assignment_Xml
+SET Ms_Project_Header_Id = Ms_Project_Header_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Header_Xml
+WHERE Ms_Project_Assignment_Xml.Batch_Run_Id = Ms_Project_Header_Xml.Batch_Run_Id
+AND Ms_Project_Assignment_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Xml
+SET Ms_Project_Header_Id = Ms_Project_Header_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Header_Xml
+WHERE Ms_Project_Calendar_Xml.Batch_Run_Id = Ms_Project_Header_Xml.Batch_Run_Id
+AND Ms_Project_Calendar_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Assignment_Time_Phased_Data_Xml
+SET Ms_Project_Assignment_Id = Ms_Project_Assignment_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Assignment_Xml
+WHERE Ms_Project_Assignment_Time_Phased_Data_Xml.Batch_Run_Id = Ms_Project_Assignment_Xml.Batch_Run_Id
+AND Ms_Project_Assignment_Time_Phased_Data_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Task_Time_Phased_Data_Xml
+SET Ms_Project_Task_Id = Ms_Project_Task_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Task_Xml
+WHERE Ms_Project_Task_Time_Phased_Data_Xml.Batch_Run_Id = Ms_Project_Task_Xml.Batch_Run_Id
+AND Ms_Project_Task_Time_Phased_Data_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Predecessor_Link_Xml
+SET Ms_Project_Task_Id = Ms_Project_Task_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Task_Xml
+WHERE Ms_Project_Predecessor_Link_Xml.Batch_Run_Id = Ms_Project_Task_Xml.Batch_Run_Id
+AND Ms_Project_Predecessor_Link_Xml.Ms_Project_Task_Id = Ms_Project_Task_Xml.Project_Task_Uid
+AND Ms_Project_Predecessor_Link_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Weekday_Xml
+SET Ms_Project_Calendar_Id = Ms_Project_Calendar_Xml.Unique_Key
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Xml
+WHERE Ms_Project_Calendar_Weekday_Xml.Batch_Run_Id = Ms_Project_Calendar_Xml.Batch_Run_Id
+AND Ms_Project_Calendar_Xml.Calendar_Uid = Ms_Project_Calendar_Weekday_Xml.Ms_Project_Calendar_Id
+AND Ms_Project_Calendar_Weekday_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Weekday_Times_Xml
+SET Ms_Project_Calendar_Id = Ms_Project_Calendar_Xml.Unique_Key, 
+Ms_Project_Header_Id = Ms_Project_Calendar_Xml.Ms_Project_Header_Id
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Xml
+WHERE Ms_Project_Calendar_Weekday_Times_Xml.Batch_Run_Id = Ms_Project_Calendar_Xml.Batch_Run_Id
+AND Ms_Project_Calendar_Xml.Calendar_Uid = Ms_Project_Calendar_Weekday_Times_Xml.Ms_Project_Calendar_Id
+AND Ms_Project_Calendar_Weekday_Times_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Exception_Xml
+SET Ms_Project_Calendar_Id = Ms_Project_Calendar_Xml.Unique_Key, 
+Ms_Project_Header_Id = Ms_Project_Calendar_Xml.Ms_Project_Header_Id
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Xml
+WHERE Ms_Project_Calendar_Exception_Xml.Batch_Run_Id = Ms_Project_Calendar_Xml.Batch_Run_Id
+AND Ms_Project_Calendar_Xml.Calendar_Uid = Ms_Project_Calendar_Exception_Xml.Ms_Project_Calendar_Id
+AND Ms_Project_Calendar_Exception_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
+UPDATE PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Exception_Times_Xml
+SET Ms_Project_Calendar_Id = Ms_Project_Calendar_Xml.Unique_Key, 
+Ms_Project_Header_Id = Ms_Project_Calendar_Xml.Ms_Project_Header_Id
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Xml
+WHERE Ms_Project_Calendar_Exception_Times_Xml.Batch_Run_Id = Ms_Project_Calendar_Xml.Batch_Run_Id
+AND Ms_Project_Calendar_Xml.Calendar_Uid = Ms_Project_Calendar_Exception_Times_Xml.Ms_Project_Calendar_Id
+AND Ms_Project_Calendar_Exception_Times_Xml.Batch_Run_Id = '{Batch_Run_Id}';
+
