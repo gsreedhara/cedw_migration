@@ -36,38 +36,50 @@ import sys
 import pyodbc
 import json
 import pprint
-from slackclient import SlackClient
+from slack_sdk import WebClient
 from datetime import datetime, timedelta
+import snowflake.connector
+import ssl
+import os
 
 # -- * *********************************************************************************
 #PARAMETERS
-server_name = sys.argv[1] 
-db_name = sys.argv[2]
-table_name = sys.argv[3]
+#server_name = sys.argv[1] 
+#db_name = sys.argv[2]
+#table_name = sys.argv[3]
+#SLACK_TOKEN = sys.argv[4]
+#SLACK_CHANNEL_ID = sys.argv[5]
 
-SLACK_TOKEN = sys.argv[4]
-SLACK_CHANNEL_ID = sys.argv[5]
-
-#server_name ="localhost"
-#db_name = "PXLTD_THANX"
-#table_name = "RCGNTN_MSG_SLACK"
-#SLACK_TOKEN = "xoxp-152818971696-530149612055-531694369057-7f8b0256251cb890b1ef5b46eadb2923"
-#SLACK_CHANNEL_ID = "CF9SSF8F4"
-#days = int(30)
+server_name = os.environ['SERVER_NAME']
+db_name = os.environ['DATABASE']
+table_name = os.environ['TABLE_NAME']
+SLACK_TOKEN = os.environ['SLACK_TOKEN']
+SLACK_CHANNEL_ID = os.environ['CHANNEL_ID']
+days = int(30)
 
 #days to consider when retrieving modified messages from Slack:
-days = int(sys.argv[6])
+#days = int(sys.argv[6])
 
 
 # -- * *********************************************************************************
 #CONNECTION WITH SQL SERVER DATABASE AND SLACK CHANNEL
-connection = pyodbc.connect("Driver= {SQL Server Native Client 11.0};"
-                            "Server=%s;"
-                            "Database=%s;"
-                            "Trusted_Connection=yes;" % (server_name,db_name))
+connection = snowflake.connector.connect(
+                    user=os.environ['USER'],
+                    password=os.environ['PASSWORD'],
+                    account=os.environ['ACCOUNT'],
+                    warehouse=os.environ['WAREHOUSE'],
+                    role=os.environ['ROLE'],
+                    database=os.environ['DATABASE'])
+
 cursor = connection.cursor()
 
-sc = SlackClient(SLACK_TOKEN)
+ssl_context = ssl.create_default_context()
+ssl_context.check_hostname = False
+ssl_context.verify_mode = ssl.CERT_NONE
+    
+#Create a dictionary called users_information with email as keys and usernames as values
+global sc
+sc = WebClient(token=SLACK_TOKEN, ssl=ssl_context)
 
 # -- * *********************************************************************************
 #RETRIEVING USERS' INFORMATION FROM SLACK
@@ -75,23 +87,20 @@ sc = SlackClient(SLACK_TOKEN)
 #All users and their emails, ids, and usernames
 #DO NOT PUT THIS STEP INSIDE THE FUNCTION! ERROR: KeyError "members"
 
-user_list = sc.api_call("users.list", channel = SLACK_CHANNEL_ID)
+user_list = sc.api_call(api_method="users.list", params={'channel': SLACK_CHANNEL_ID})
+
 users_nameEmail = {}
 users_idEmail = {}
 users_idName = {}
 users_nameID = {}
 
 if "members" in user_list:
-	for each_user in user_list["members"]:
-	    if "email" in list(each_user["profile"].keys()):
-	        #pprint.pprint(each_user["name"])
-	        #pprint.pprint(each_user["id"])
-	        #pprint.pprint(each_user["profile"]["email"])
-	        #pprint.pprint("---------------------------------------")
-	        users_nameEmail[each_user["name"]] = each_user["profile"]["email"]
-	        users_idEmail[each_user["id"]] = each_user["profile"]["email"]
-	        users_idName[each_user["id"]] = each_user["name"]
-	        users_nameID[each_user["name"]] = each_user["id"]
+    for each_user in user_list["members"]:
+        if "email" in list(each_user["profile"].keys()):
+            users_nameEmail[each_user["name"]] = each_user["profile"]["email"]
+            users_idEmail[each_user["id"]] = each_user["profile"]["email"]
+            users_idName[each_user["id"]] = each_user["name"]
+            users_nameID[each_user["name"]] = each_user["id"]
 
 
 # -- * *********************************************************************************
@@ -121,11 +130,11 @@ def validateSlackID(str = None):
 		result = True
 	return result
 
+
 #Extracting the TO users from the message text and returning it as a dictionary
 def returnToUsers(text = None):
-	to_user_init_index = 0
-	to_user_fina_index = 0
 	textClean = text
+	values = {}
 	to_user_ids_aux = ""
 	to_user_ids = ""
 	to_user_names = ""
@@ -134,20 +143,20 @@ def returnToUsers(text = None):
 	count = text.count("<")
 
 	while count > 0:
-	 	to_user_init_index = textClean.find("<")
-	 	to_user_fina_index = textClean.find(">")
-	 	#pprint.pprint(textClean[to_user_init_index+2 :to_user_fina_index])
-	 	
-	 	to_user_ids_aux = str(textClean[to_user_init_index+2 :to_user_fina_index] or "")
-	 	#if validateSlackID(to_user_ids_aux):
-	 	to_user_ids = to_user_ids +"|"+ to_user_ids_aux
+		to_user_init_index = textClean.find("<")
+		to_user_fina_index = textClean.find(">")
+		#pprint.pprint(textClean[to_user_init_index+2 :to_user_fina_index])
+		
+		to_user_ids_aux = str(textClean[to_user_init_index+2 :to_user_fina_index] or "")
+		#if validateSlackID(to_user_ids_aux):
+		to_user_ids = to_user_ids +"|"+ to_user_ids_aux
 
-	 	to_user_names = to_user_names +"|"+ str(returnUserName(textClean[to_user_init_index+2 :to_user_fina_index]) or "")
-	 	to_user_emails = to_user_emails +"|"+ str(returnUserEmail(name = None, id = textClean[to_user_init_index+2 :to_user_fina_index]) or "")
-	 	textClean = textClean[to_user_fina_index+1 : None]
-	 	count -= 1
+		to_user_names = to_user_names +"|"+ str(returnUserName(textClean[to_user_init_index+2 :to_user_fina_index]) or "")
+		to_user_emails = to_user_emails +"|"+ str(returnUserEmail(name = None, id = textClean[to_user_init_index+2 :to_user_fina_index]) or "")
+		textClean = textClean[to_user_fina_index+1 : None]
+		count -= 1
 
-	values = {"ids":to_user_ids[1:None],"names":to_user_names[1:None],"emails":to_user_emails[1:None],"textClean":textClean.strip()}
+		values = {"ids":to_user_ids[1:None],"names":to_user_names[1:None],"emails":to_user_emails[1:None],"textClean":textClean.strip()}
 	return values
 	#pprint.pprint(to_user_ids[1:None])
 	#pprint.pprint(to_user_names[1:None])
@@ -158,7 +167,7 @@ def returnToUsers(text = None):
 #Returning the last Slack timestamp imported
 def returnLastTS():
 	lastTS = 0
-	cursor.execute("SELECT MAX(SRC_TS) AS SRC_TS FROM "+table_name) 
+	cursor.execute("SELECT MAX(SRC_TS) AS SRC_TS FROM MAIN."+table_name) 
 	result_set = cursor.fetchone()
 	for row in result_set:
 		if row != None:
@@ -204,7 +213,9 @@ def importPreviousMessages(days):
 #Staging NEW messages and threads from Slack
 lastTimestamp = returnLastTS()
 
-channel_history = sc.api_call("conversations.history", channel = SLACK_CHANNEL_ID, count = 1000, inclusive = False, oldest = float(lastTimestamp)+.000001)
+channel_history = sc.conversations_history(channel=SLACK_CHANNEL_ID)
+
+#channel_history = sc.api_call(api_method="conversations.history", channel_id=SLACK_CHANNEL_ID, count = 1000, inclusive = True, oldest = lastTimestamp)
 if "messages" in channel_history:
 	for each_msg in channel_history["messages"]:
 
@@ -364,10 +375,10 @@ if "messages" in channel_history:
 
 		#pprint.pprint(each_msg)
 
-		SQLCommand = ("INSERT INTO "+table_name+" (SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN\
+		SQLCommand = ("INSERT INTO MAIN."+table_name+" (SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN\
 		,FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN\
 		,ROOT_SCTN, FRM_USR_EMAIL, TO_USR_EMAIL, FRM_USRNM, TO_USRNM, TO_USR_SRC_ID, ICNS, BOT_ID,EDITED) \
-		VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")    
+		VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")    
 
 		Values = [SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN\
 		,FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN\

@@ -71,7 +71,7 @@ def create_connection():
                     account=os.environ['ACCOUNT'],
                     warehouse=os.environ['WAREHOUSE'],
                     role=os.environ['ROLE'],
-                    database=os.environ['DATABASE'],)
+                    database=os.environ['DATABASE'])
     return db
     
 def run_queries(connection):
