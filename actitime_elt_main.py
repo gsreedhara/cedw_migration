@@ -44,8 +44,8 @@ def establish_sflake_cedw_con():
     """This will be modularized later"""
     sf_conn = sc.connect(
     user='gsreedhara',
-    password='!Sb04Me0!0',
-    account='nlxoxef-vp32965',
+    password='XXXXXXX',
+    account='XXXXX-XXXXXX',
     role='DBADMIN',
     session_parameters={
         'QUERY_TAG': 'Actitime_ETL',
