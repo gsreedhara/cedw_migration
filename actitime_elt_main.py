@@ -27,14 +27,18 @@
 import snowflake.connector as sc
 import mysql.connector as mc
 import csv
+import yaml
+
+with open('creds.yml', 'r') as f:
+    data = yaml.safe_load(f)
 
 def establish_mysql_actitime_conn():
     """This will be later modularized. Once we know its working"""
     mq_conn = mc.MySQLConnection (
-    host="34.193.31.187", #"34.193.31.187",
-    user="devuser",
-    password="pxduser@720" ,
-    database="actitime"
+    host = data.get('AT_HOST'), 
+    user = data.get('AT_USER'),
+    password = data.get('AT_PWD') ,
+    database = data.get('AT_DB')
     )
     print("Returning Conn for MySQL")
     return mq_conn
@@ -43,16 +47,15 @@ def establish_mysql_actitime_conn():
 def establish_sflake_cedw_con():
     """This will be modularized later"""
     sf_conn = sc.connect(
-    user='gsreedhara',
-    password='XXXXXXX',
-    account='XXXXX-XXXXXX',
-    role='DBADMIN',
+    user = data.get('SF_USER'),
+    password = data.get('SF_password'),
+    account = data.get('SF_account'),
+    role = data.get('SF_role'),
     session_parameters={
         'QUERY_TAG': 'Actitime_ETL',
         }
     )
-    print("Returning Conn for SFlake")
-    return sf_conn
+
 
 def main():
     """This will be modularized later"""
