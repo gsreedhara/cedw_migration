@@ -1,0 +1,182 @@
+2022-12-22 11:22:31,691 ********************************************************************************
+2022-12-22 11:22:31,691 Start of process
+2022-12-22 11:22:31,691 Retrieved connection data
+2022-12-22 11:22:38,764 Opened DB Connection "QbSourceConnection"
+2022-12-22 11:22:38,765 Opened QB Source DB connection
+2022-12-22 11:22:38,804 Opened DB Connection "QbTargetConnection"
+2022-12-22 11:22:38,804 Opened QB Target DB connection
+2022-12-22 11:22:38,818 Number of QB Source Tables Retrieved -> 154
+2022-12-22 11:22:38,899 Number of QB Target Tables Retrieved -> 323
+2022-12-22 11:22:38,926 
+************************************************************
+Tables found in the QuickBook Source and not in the Target -> []
+2022-12-22 11:22:38,927 ***QB COLUMNS *****************************************************************
+2022-12-22 11:22:39,062 Account 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:39,080 AccountTaxLineInfo 
+2022-12-22 11:22:39,120 ARRefundCreditCard 
+2022-12-22 11:22:39,165 ARRefundCreditCardRefundAppliedTo 
+2022-12-22 11:22:39,182 BarCode 
+2022-12-22 11:22:39,226 Bill 
+2022-12-22 11:22:39,283 BillExpenseLine 
+2022-12-22 11:22:39,355 BillItemLine 
+2022-12-22 11:22:39,403 BillLinkedTxn 
+2022-12-22 11:22:39,421 BillingRate 
+2022-12-22 11:22:39,439 BillingRateLine 
+2022-12-22 11:22:39,474 BillPaymentCheck 
+2022-12-22 11:22:39,518 BillPaymentCheckLine 
+2022-12-22 11:22:39,561 BillPaymentCheckLineLinkedTxn 
+2022-12-22 11:22:39,584 BillPaymentCreditCard 
+2022-12-22 11:22:39,613 BillPaymentCreditCardLine 
+2022-12-22 11:22:39,643 BillPaymentCreditCardLineLinkedTxn 
+2022-12-22 11:22:39,665 BillToPay 
+2022-12-22 11:22:39,688 BuildAssembly 
+2022-12-22 11:22:39,719 BuildAssemblyComponentItemLine 
+2022-12-22 11:22:39,774 Charge 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:39,808 ChargeLinkedTxn 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:39,855 Check 
+2022-12-22 11:22:39,906 CheckApplyCheckToTxn 
+2022-12-22 11:22:39,965 CheckExpenseLine 
+2022-12-22 11:22:40,039 CheckItemLine 
+2022-12-22 11:22:40,061 Class 
+2022-12-22 11:22:40,076 ClearedStatus 
+2022-12-22 11:22:40,119 Company 
+2022-12-22 11:22:40,136 CompanyActivity 
+2022-12-22 11:22:40,168 CreditCardCharge 
+2022-12-22 11:22:40,210 CreditCardChargeExpenseLine 
+2022-12-22 11:22:40,273 CreditCardChargeItemLine 
+2022-12-22 11:22:40,299 CreditCardCredit 
+2022-12-22 11:22:40,332 CreditCardCreditExpenseLine 
+2022-12-22 11:22:40,376 CreditCardCreditItemLine 
+2022-12-22 11:22:40,489 CreditMemo 
+2022-12-22 11:22:40,653 CreditMemoLine 
+2022-12-22 11:22:40,785 CreditMemoLinkedTxn 
+2022-12-22 11:22:40,808 Currency 
+2022-12-22 11:22:40,938 Customer 
+2022-12-22 11:22:41,060 CustomerAddtionalNote 
+2022-12-22 11:22:41,195 CustomerContacts 
+2022-12-22 11:22:41,327 CustomerShipToAddress 
+2022-12-22 11:22:41,410 CustomerNoShippingAddr 
+2022-12-22 11:22:41,429 CustomerMsg 
+2022-12-22 11:22:41,447 CustomerType 
+2022-12-22 11:22:41,465 CustomField 
+2022-12-22 11:22:41,483 DateDrivenTerms 
+2022-12-22 11:22:41,507 Deposit 
+2022-12-22 11:22:41,536 DepositLine 
+2022-12-22 11:22:41,597 Employee 
+2022-12-22 11:22:41,658 EmployeeAddtionalNote 
+2022-12-22 11:22:41,722 EmployeeEarning 
+2022-12-22 11:22:41,996 Entity 
+2022-12-22 11:22:42,158 EntityAdditionalNote 
+2022-12-22 11:22:42,277 EntityContacts 
+2022-12-22 11:22:42,381 EntityShipToAddress 
+2022-12-22 11:22:42,470 Estimate 
+2022-12-22 11:22:42,607 EstimateLine 
+2022-12-22 11:22:42,706 EstimateLinkedTxn 
+2022-12-22 11:22:42,726 Form1099 
+2022-12-22 11:22:42,746 Form1099CategoryAccountMapping 
+2022-12-22 11:22:42,772 Host 
+2022-12-22 11:22:42,800 HostMetaData 
+2022-12-22 11:22:42,825 HostSupportedVersions 
+2022-12-22 11:22:42,854 InventoryAdjustment 
+2022-12-22 11:22:42,904 InventoryAdjustmentLine 
+2022-12-22 11:22:42,929 InventorySite 
+2022-12-22 11:22:43,084 Invoice 
+2022-12-22 11:22:43,284 InvoiceLine 
+2022-12-22 11:22:43,424 InvoiceLinkedTxn 
+2022-12-22 11:22:43,472 ModifyInwardGroupLine 
+2022-12-22 11:22:43,513 ModifyOutwardGroupLine 
+2022-12-22 11:22:43,922 Item 
+2022-12-22 11:22:43,939 ItemAssembliesCanBuild 
+2022-12-22 11:22:43,965 ItemDiscount 
+2022-12-22 11:22:43,991 ItemFixedAsset 
+2022-12-22 11:22:44,017 ItemGroup 
+2022-12-22 11:22:44,040 ItemGroupLine 
+2022-12-22 11:22:44,073 ItemInventory 
+2022-12-22 11:22:44,109 ItemInventoryAssembly 
+2022-12-22 11:22:44,147 ItemInventoryAssemblyLine 
+2022-12-22 11:22:44,180 ItemNonInventory 
+2022-12-22 11:22:44,212 ItemOtherCharge 
+2022-12-22 11:22:44,232 ItemPayment 
+2022-12-22 11:22:44,266 ItemReceipt 
+2022-12-22 11:22:44,299 ItemReceiptExpenseLine 
+2022-12-22 11:22:44,352 ItemReceiptItemLine 
+2022-12-22 11:22:44,382 ItemReceiptLinkedTxn 
+2022-12-22 11:22:44,405 ItemSalesTax 
+2022-12-22 11:22:44,426 ItemSalesTaxGroup 
+2022-12-22 11:22:44,448 ItemSalesTaxGroupLine 
+2022-12-22 11:22:44,481 ItemService 
+2022-12-22 11:22:44,500 ItemSubtotal 
+2022-12-22 11:22:44,527 JobType 
+2022-12-22 11:22:44,556 JournalEntry 
+2022-12-22 11:22:44,587 JournalEntryCreditLine 
+2022-12-22 11:22:44,616 JournalEntryDebitLine 
+2022-12-22 11:22:44,646 JournalEntryLine 
+2022-12-22 11:22:44,666 ListDeleted 
+2022-12-22 11:22:44,695 OtherName 
+2022-12-22 11:22:44,713 PaymentMethod 
+2022-12-22 11:22:44,733 PayrollItemNonWage 
+2022-12-22 11:22:44,754 PayrollItemWage 
+2022-12-22 11:22:44,803 Preferences 
+2022-12-22 11:22:44,821 PriceLevel 
+2022-12-22 11:22:44,844 PriceLevelPerItem 
+2022-12-22 11:22:44,939 PurchaseOrder 
+2022-12-22 11:22:45,072 PurchaseOrderLine 
+2022-12-22 11:22:45,167 PurchaseOrderLinkedTxn 
+2022-12-22 11:22:45,209 ReceivePayment 
+2022-12-22 11:22:45,265 ReceivePaymentLine 
+2022-12-22 11:22:45,320 ReceivePaymentLineLinkedTxn 
+2022-12-22 11:22:45,341 ReceivePaymentToDeposit 
+2022-12-22 11:22:45,629 Sales 
+2022-12-22 11:22:45,996 SalesLine 
+NOT FOUND - CustomFieldSalesLineOther1 VARCHAR(29)
+NOT FOUND - CustomFieldSalesLineOther2 VARCHAR(29)
+2022-12-22 11:22:46,105 SalesOrder 
+2022-12-22 11:22:46,251 SalesOrderLine 
+2022-12-22 11:22:46,362 SalesOrderLinkedTxn 
+2022-12-22 11:22:46,488 SalesReceipt 
+2022-12-22 11:22:46,663 SalesReceiptLine 
+2022-12-22 11:22:46,681 SalesRep 
+2022-12-22 11:22:46,708 SalesTaxCode 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:46,735 SalesTaxPaymentCheck 
+2022-12-22 11:22:46,763 SalesTaxPaymentCheckLine 
+2022-12-22 11:22:46,780 ShipMethod 
+2022-12-22 11:22:46,797 SpecialAccount 
+2022-12-22 11:22:46,814 SpecialItem 
+2022-12-22 11:22:46,832 StandardTerms 
+2022-12-22 11:22:46,855 TaxCode 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:46,872 Template 
+2022-12-22 11:22:46,910 Terms 
+2022-12-22 11:22:46,933 TimeTracking 
+2022-12-22 11:22:46,951 ToDo 
+2022-12-22 11:22:46,977 Transaction 
+2022-12-22 11:22:46,997 Transfer 
+2022-12-22 11:22:47,021 TransferInventory 
+2022-12-22 11:22:47,045 TransferInventoryLine 
+2022-12-22 11:22:47,062 TxnDeleted 
+2022-12-22 11:22:47,080 UnitOfMeasureSet 
+2022-12-22 11:22:47,099 UnitOfMeasureSetRelatedUnit 
+2022-12-22 11:22:47,117 UnitOfMeasureSetDefaultUnit 
+2022-12-22 11:22:47,162 Vehicle 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:47,184 VehicleMileage 
+2022-12-22 11:22:47,269 Vendor 
+NOT FOUND - JobTitle VARCHAR(41)
+2022-12-22 11:22:47,374 VendorContacts 
+NOT FOUND - JobTitle VARCHAR(41)
+2022-12-22 11:22:47,406 VendorCredit 
+2022-12-22 11:22:47,447 VendorCreditExpenseLine 
+2022-12-22 11:22:47,506 VendorCreditItemLine 
+2022-12-22 11:22:47,539 VendorCreditLinkedTxn 
+2022-12-22 11:22:47,557 VendorType 
+2022-12-22 11:22:47,580 WorkersCompCode 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:47,604 WorkersCompCodeRateHistory 
+NOT FOUND - Description VARCHAR(4095)
+2022-12-22 11:22:47,609 Total Execution elapsed time -> 15.9140
+2022-12-22 11:22:47,609 Closing DB Connection "QbSourceConnection"
+2022-12-22 11:22:47,648 Closing DB Connection "QbTargetConnection"

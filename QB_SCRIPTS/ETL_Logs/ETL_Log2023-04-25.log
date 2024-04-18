@@ -1,0 +1,13 @@
+2023-04-25 16:10:00,686 ********************************************************************************
+2023-04-25 16:10:00,687 Start of process
+2023-04-25 16:10:00,701 Retrieved connection data
+2023-04-25 16:10:00,702 Retrieved email notification data
+2023-04-25 16:10:00,773 Opened DB Connection "ControlConnection"
+2023-04-25 16:10:00,773 Opened QB Target DB connection
+2023-04-25 16:10:03,962 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070583, Unknown error.\n (10040) (SQLDriverConnect); [00000] [QODBC] QuickBooks Open Connection Failed. Create QuickBooks COM Instance Error = 80070583, Unknown error.\n (10040)')
+2023-04-25 16:10:03,962 Error in QB Extract process - exceptions must derive from BaseException
+2023-04-25 16:10:04,038 Opened Mail Server
+2023-04-25 16:10:04,580 Sent Failure email to jtoro@pxltd.ca
+2023-04-25 16:10:04,598 Execution ended. Error code is 1
+2023-04-25 16:10:04,598 Closing DB Connection "QbSourceConnection"
+2023-04-25 16:10:04,598 Closing DB Connection "ControlConnection"

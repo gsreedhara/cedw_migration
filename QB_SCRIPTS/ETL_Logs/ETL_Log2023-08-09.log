@@ -1,0 +1,52 @@
+2023-08-09 08:10:00,572 ********************************************************************************
+2023-08-09 08:10:00,573 Start of process
+2023-08-09 08:10:00,574 Retrieved connection data
+2023-08-09 08:10:00,576 Retrieved email notification data
+2023-08-09 08:10:00,719 Opened DB Connection "ControlConnection"
+2023-08-09 08:10:00,719 Opened QB Target DB connection
+2023-08-09 08:15:40,819 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041)')
+2023-08-09 08:15:40,820 Error in QB Extract process - exceptions must derive from BaseException
+2023-08-09 08:15:40,888 Opened Mail Server
+2023-08-09 08:15:41,385 Sent Failure email to jtoro@pxltd.ca
+2023-08-09 08:15:41,403 Execution ended. Error code is 1
+2023-08-09 08:15:41,403 Closing DB Connection "QbSourceConnection"
+2023-08-09 08:15:41,403 Closing DB Connection "ControlConnection"
+2023-08-09 12:10:00,626 ********************************************************************************
+2023-08-09 12:10:00,627 Start of process
+2023-08-09 12:10:00,627 Retrieved connection data
+2023-08-09 12:10:00,627 Retrieved email notification data
+2023-08-09 12:10:00,686 Opened DB Connection "ControlConnection"
+2023-08-09 12:10:00,686 Opened QB Target DB connection
+2023-08-09 12:15:22,855 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041)')
+2023-08-09 12:15:22,856 Error in QB Extract process - exceptions must derive from BaseException
+2023-08-09 12:15:22,929 Opened Mail Server
+2023-08-09 12:15:23,886 Sent Failure email to jtoro@pxltd.ca
+2023-08-09 12:15:23,905 Execution ended. Error code is 1
+2023-08-09 12:15:23,906 Closing DB Connection "QbSourceConnection"
+2023-08-09 12:15:23,906 Closing DB Connection "ControlConnection"
+2023-08-09 16:10:00,558 ********************************************************************************
+2023-08-09 16:10:00,559 Start of process
+2023-08-09 16:10:00,559 Retrieved connection data
+2023-08-09 16:10:00,559 Retrieved email notification data
+2023-08-09 16:10:00,611 Opened DB Connection "ControlConnection"
+2023-08-09 16:10:00,611 Opened QB Target DB connection
+2023-08-09 16:15:27,266 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041)')
+2023-08-09 16:15:27,266 Error in QB Extract process - exceptions must derive from BaseException
+2023-08-09 16:15:27,354 Opened Mail Server
+2023-08-09 16:15:28,060 Sent Failure email to jtoro@pxltd.ca
+2023-08-09 16:15:28,079 Execution ended. Error code is 1
+2023-08-09 16:15:28,080 Closing DB Connection "QbSourceConnection"
+2023-08-09 16:15:28,080 Closing DB Connection "ControlConnection"
+2023-08-09 20:10:00,709 ********************************************************************************
+2023-08-09 20:10:00,709 Start of process
+2023-08-09 20:10:00,710 Retrieved connection data
+2023-08-09 20:10:00,710 Retrieved email notification data
+2023-08-09 20:10:00,763 Opened DB Connection "ControlConnection"
+2023-08-09 20:10:00,763 Opened QB Target DB connection
+2023-08-09 20:15:14,381 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040414, A modal dialog box is showing in the QuickBooks user interface. Your application cannot access QuickBooks until the user dismisses the dialog box.\nFor more details please visit: qodbc.com/links/1095 (10041)')
+2023-08-09 20:15:14,381 Error in QB Extract process - exceptions must derive from BaseException
+2023-08-09 20:15:14,469 Opened Mail Server
+2023-08-09 20:15:15,255 Sent Failure email to jtoro@pxltd.ca
+2023-08-09 20:15:15,276 Execution ended. Error code is 1
+2023-08-09 20:15:15,276 Closing DB Connection "QbSourceConnection"
+2023-08-09 20:15:15,276 Closing DB Connection "ControlConnection"

@@ -1,2 +1,4 @@
 snowflake-connector-python
 mysql-connector-python
+slack-sdk
+pandas

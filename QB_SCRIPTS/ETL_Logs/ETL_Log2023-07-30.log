@@ -1,0 +1,52 @@
+2023-07-30 08:10:00,569 ********************************************************************************
+2023-07-30 08:10:00,569 Start of process
+2023-07-30 08:10:00,573 Retrieved connection data
+2023-07-30 08:10:00,573 Retrieved email notification data
+2023-07-30 08:10:00,619 Opened DB Connection "ControlConnection"
+2023-07-30 08:10:00,619 Opened QB Target DB connection
+2023-07-30 08:11:00,813 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041)')
+2023-07-30 08:11:00,814 Error in QB Extract process - exceptions must derive from BaseException
+2023-07-30 08:11:00,894 Opened Mail Server
+2023-07-30 08:11:01,645 Sent Failure email to jtoro@pxltd.ca
+2023-07-30 08:11:01,664 Execution ended. Error code is 1
+2023-07-30 08:11:01,664 Closing DB Connection "QbSourceConnection"
+2023-07-30 08:11:01,664 Closing DB Connection "ControlConnection"
+2023-07-30 12:10:00,748 ********************************************************************************
+2023-07-30 12:10:00,748 Start of process
+2023-07-30 12:10:00,748 Retrieved connection data
+2023-07-30 12:10:00,749 Retrieved email notification data
+2023-07-30 12:10:00,816 Opened DB Connection "ControlConnection"
+2023-07-30 12:10:00,816 Opened QB Target DB connection
+2023-07-30 12:10:56,961 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041)')
+2023-07-30 12:10:56,961 Error in QB Extract process - exceptions must derive from BaseException
+2023-07-30 12:10:57,030 Opened Mail Server
+2023-07-30 12:10:57,611 Sent Failure email to jtoro@pxltd.ca
+2023-07-30 12:10:57,629 Execution ended. Error code is 1
+2023-07-30 12:10:57,630 Closing DB Connection "QbSourceConnection"
+2023-07-30 12:10:57,630 Closing DB Connection "ControlConnection"
+2023-07-30 16:10:00,660 ********************************************************************************
+2023-07-30 16:10:00,660 Start of process
+2023-07-30 16:10:00,661 Retrieved connection data
+2023-07-30 16:10:00,661 Retrieved email notification data
+2023-07-30 16:10:00,796 Opened DB Connection "ControlConnection"
+2023-07-30 16:10:00,797 Opened QB Target DB connection
+2023-07-30 16:10:57,009 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041)')
+2023-07-30 16:10:57,009 Error in QB Extract process - exceptions must derive from BaseException
+2023-07-30 16:10:57,084 Opened Mail Server
+2023-07-30 16:10:57,616 Sent Failure email to jtoro@pxltd.ca
+2023-07-30 16:10:57,654 Execution ended. Error code is 1
+2023-07-30 16:10:57,654 Closing DB Connection "QbSourceConnection"
+2023-07-30 16:10:57,654 Closing DB Connection "ControlConnection"
+2023-07-30 20:10:00,535 ********************************************************************************
+2023-07-30 20:10:00,535 Start of process
+2023-07-30 20:10:00,536 Retrieved connection data
+2023-07-30 20:10:00,536 Retrieved email notification data
+2023-07-30 20:10:00,578 Opened DB Connection "ControlConnection"
+2023-07-30 20:10:00,578 Opened QB Target DB connection
+2023-07-30 20:10:56,573 QuickBooks DB Connection Failure ('00000', '[00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041) (SQLDriverConnect); [00000] [QODBC] QuickBooks Begin Session Failed. Error = 80040437, The user you are trying to log in with is already logged in from another machine.\n (10041)')
+2023-07-30 20:10:56,574 Error in QB Extract process - exceptions must derive from BaseException
+2023-07-30 20:10:56,655 Opened Mail Server
+2023-07-30 20:10:57,514 Sent Failure email to jtoro@pxltd.ca
+2023-07-30 20:10:57,536 Execution ended. Error code is 1
+2023-07-30 20:10:57,536 Closing DB Connection "QbSourceConnection"
+2023-07-30 20:10:57,536 Closing DB Connection "ControlConnection"

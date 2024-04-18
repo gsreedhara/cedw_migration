@@ -1,0 +1,1107 @@
+2024-04-04 08:10:00,518 ********************************************************************************
+2024-04-04 08:10:00,518 Start of process
+2024-04-04 08:10:00,518 Retrieved connection data
+2024-04-04 08:10:00,519 Retrieved email notification data
+2024-04-04 08:10:00,560 Opened DB Connection "ControlConnection"
+2024-04-04 08:10:00,560 Opened QB Target DB connection
+2024-04-04 08:10:34,451 Opened DB Connection "QbSourceConnection"
+2024-04-04 08:10:34,451 Opened QB Source DB connection
+2024-04-04 08:10:34,456 Opened DB Connection "QbTargetConnection"
+2024-04-04 08:10:34,457 Opened QB Target DB connection
+2024-04-04 08:10:34,474 Number of Tables to Process -> ()
+2024-04-04 08:10:34,541 Start Process Insert Event for "QB_CEDW-Account" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:10:34,542 Processing Table -> Account
+2024-04-04 08:10:34,550 Table Truncated -> QB_STAGING.dbo.[Account]
+2024-04-04 08:10:40,547 Number of rows Selected -> 155
+2024-04-04 08:10:40,590 Multiple Insert Executed for -> Account
+2024-04-04 08:10:41,152 End Process update Event status for "QB_CEDW-Account" - <Response [200]>
+2024-04-04 08:10:41,161 ETL Execution elapsed time -> 6.6876
+2024-04-04 08:10:41,213 Start Process Insert Event for "QB_CEDW-AccountTaxLineInfo" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:10:41,213 Processing Table -> AccountTaxLineInfo
+2024-04-04 08:10:41,216 Table Truncated -> QB_STAGING.dbo.[AccountTaxLineInfo]
+2024-04-04 08:10:44,520 Number of rows Selected -> 702
+2024-04-04 08:10:44,618 Multiple Insert Executed for -> AccountTaxLineInfo
+2024-04-04 08:10:45,017 End Process update Event status for "QB_CEDW-AccountTaxLineInfo" - <Response [200]>
+2024-04-04 08:10:45,030 ETL Execution elapsed time -> 3.8672
+2024-04-04 08:10:45,097 Start Process Insert Event for "QB_CEDW-ARRefundCreditCard" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:10:45,097 Processing Table -> ARRefundCreditCard
+2024-04-04 08:10:45,099 Table Truncated -> QB_STAGING.dbo.[ARRefundCreditCard]
+2024-04-04 08:10:51,478 End Process update Event status for "QB_CEDW-ARRefundCreditCard" - <Response [200]>
+2024-04-04 08:10:51,490 ETL Execution elapsed time -> 6.4601
+2024-04-04 08:10:51,549 Start Process Insert Event for "QB_CEDW-ARRefundCreditCardRefundAppliedTo" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:10:51,549 Processing Table -> ARRefundCreditCardRefundAppliedTo
+2024-04-04 08:10:51,555 Table Truncated -> QB_STAGING.dbo.[ARRefundCreditCardRefundAppliedTo]
+2024-04-04 08:10:57,765 End Process update Event status for "QB_CEDW-ARRefundCreditCardRefundAppliedTo" - <Response [200]>
+2024-04-04 08:10:57,777 ETL Execution elapsed time -> 6.2872
+2024-04-04 08:10:57,831 Start Process Insert Event for "QB_CEDW-BarCode" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:10:57,831 Processing Table -> BarCode
+2024-04-04 08:10:57,837 Table Truncated -> QB_STAGING.dbo.[BarCode]
+2024-04-04 08:11:04,172 End Process update Event status for "QB_CEDW-BarCode" - <Response [200]>
+2024-04-04 08:11:04,180 ETL Execution elapsed time -> 6.4025
+2024-04-04 08:11:04,232 Start Process Insert Event for "QB_CEDW-Bill" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:04,232 Processing Table -> Bill
+2024-04-04 08:11:04,235 Table Truncated -> QB_STAGING.dbo.[Bill]
+2024-04-04 08:11:12,862 Number of rows Selected -> 3000
+2024-04-04 08:11:13,125 Multiple Insert Executed for -> Bill
+2024-04-04 08:11:13,230 Number of rows Selected -> 317
+2024-04-04 08:11:13,261 Multiple Insert Executed for -> Bill
+2024-04-04 08:11:13,729 End Process update Event status for "QB_CEDW-Bill" - <Response [200]>
+2024-04-04 08:11:13,737 ETL Execution elapsed time -> 9.5568
+2024-04-04 08:11:13,786 Start Process Insert Event for "QB_CEDW-BillExpenseLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:13,786 Processing Table -> BillExpenseLine
+2024-04-04 08:11:13,797 Table Truncated -> QB_STAGING.dbo.[BillExpenseLine]
+2024-04-04 08:11:22,950 Number of rows Selected -> 3000
+2024-04-04 08:11:23,553 Multiple Insert Executed for -> BillExpenseLine
+2024-04-04 08:11:24,208 Number of rows Selected -> 1560
+2024-04-04 08:11:24,597 Multiple Insert Executed for -> BillExpenseLine
+2024-04-04 08:11:25,110 End Process update Event status for "QB_CEDW-BillExpenseLine" - <Response [200]>
+2024-04-04 08:11:25,124 ETL Execution elapsed time -> 11.3860
+2024-04-04 08:11:25,181 Start Process Insert Event for "QB_CEDW-BillItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:25,181 Processing Table -> BillItemLine
+2024-04-04 08:11:25,183 Table Truncated -> QB_STAGING.dbo.[BillItemLine]
+2024-04-04 08:11:33,440 End Process update Event status for "QB_CEDW-BillItemLine" - <Response [200]>
+2024-04-04 08:11:33,451 ETL Execution elapsed time -> 8.3273
+2024-04-04 08:11:33,564 Start Process Insert Event for "QB_CEDW-BillLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:33,564 Processing Table -> BillLinkedTxn
+2024-04-04 08:11:33,567 Table Truncated -> QB_STAGING.dbo.[BillLinkedTxn]
+2024-04-04 08:11:42,530 Number of rows Selected -> 3000
+2024-04-04 08:11:42,989 Multiple Insert Executed for -> BillLinkedTxn
+2024-04-04 08:11:43,105 Number of rows Selected -> 330
+2024-04-04 08:11:43,212 Multiple Insert Executed for -> BillLinkedTxn
+2024-04-04 08:11:43,823 End Process update Event status for "QB_CEDW-BillLinkedTxn" - <Response [200]>
+2024-04-04 08:11:43,832 ETL Execution elapsed time -> 10.3800
+2024-04-04 08:11:43,943 Start Process Insert Event for "QB_CEDW-BillingRate" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:43,943 Processing Table -> BillingRate
+2024-04-04 08:11:43,945 Table Truncated -> QB_STAGING.dbo.[BillingRate]
+2024-04-04 08:11:50,248 End Process update Event status for "QB_CEDW-BillingRate" - <Response [200]>
+2024-04-04 08:11:50,257 ETL Execution elapsed time -> 6.4249
+2024-04-04 08:11:50,306 Start Process Insert Event for "QB_CEDW-BillingRateLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:50,306 Processing Table -> BillingRateLine
+2024-04-04 08:11:50,310 Table Truncated -> QB_STAGING.dbo.[BillingRateLine]
+2024-04-04 08:11:56,585 End Process update Event status for "QB_CEDW-BillingRateLine" - <Response [200]>
+2024-04-04 08:11:56,592 ETL Execution elapsed time -> 6.3351
+2024-04-04 08:11:56,647 Start Process Insert Event for "QB_CEDW-BillPaymentCheck" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:11:56,648 Processing Table -> BillPaymentCheck
+2024-04-04 08:11:56,650 Table Truncated -> QB_STAGING.dbo.[BillPaymentCheck]
+2024-04-04 08:12:07,048 Number of rows Selected -> 3000
+2024-04-04 08:12:07,762 Multiple Insert Executed for -> BillPaymentCheck
+2024-04-04 08:12:07,794 Number of rows Selected -> 63
+2024-04-04 08:12:07,806 Multiple Insert Executed for -> BillPaymentCheck
+2024-04-04 08:12:08,402 End Process update Event status for "QB_CEDW-BillPaymentCheck" - <Response [200]>
+2024-04-04 08:12:08,418 ETL Execution elapsed time -> 11.8255
+2024-04-04 08:12:08,476 Start Process Insert Event for "QB_CEDW-BillPaymentCheckLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:08,476 Processing Table -> BillPaymentCheckLine
+2024-04-04 08:12:08,479 Table Truncated -> QB_STAGING.dbo.[BillPaymentCheckLine]
+2024-04-04 08:12:18,635 Number of rows Selected -> 3000
+2024-04-04 08:12:19,150 Multiple Insert Executed for -> BillPaymentCheckLine
+2024-04-04 08:12:19,286 Number of rows Selected -> 380
+2024-04-04 08:12:19,343 Multiple Insert Executed for -> BillPaymentCheckLine
+2024-04-04 08:12:19,746 End Process update Event status for "QB_CEDW-BillPaymentCheckLine" - <Response [200]>
+2024-04-04 08:12:19,763 ETL Execution elapsed time -> 11.3439
+2024-04-04 08:12:19,850 Start Process Insert Event for "QB_CEDW-BillPaymentCheckLineLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:19,850 Processing Table -> BillPaymentCheckLineLinkedTxn
+2024-04-04 08:12:19,853 Table Truncated -> QB_STAGING.dbo.[BillPaymentCheckLineLinkedTxn]
+2024-04-04 08:12:28,339 Number of rows Selected -> 3000
+2024-04-04 08:12:29,003 Multiple Insert Executed for -> BillPaymentCheckLineLinkedTxn
+2024-04-04 08:12:29,127 Number of rows Selected -> 380
+2024-04-04 08:12:29,192 Multiple Insert Executed for -> BillPaymentCheckLineLinkedTxn
+2024-04-04 08:12:29,649 End Process update Event status for "QB_CEDW-BillPaymentCheckLineLinkedTxn" - <Response [200]>
+2024-04-04 08:12:29,661 ETL Execution elapsed time -> 9.8986
+2024-04-04 08:12:29,745 Start Process Insert Event for "QB_CEDW-BillPaymentCreditCard" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:29,746 Processing Table -> BillPaymentCreditCard
+2024-04-04 08:12:29,747 Table Truncated -> QB_STAGING.dbo.[BillPaymentCreditCard]
+2024-04-04 08:12:36,451 Number of rows Selected -> 19
+2024-04-04 08:12:36,487 Multiple Insert Executed for -> BillPaymentCreditCard
+2024-04-04 08:12:37,096 End Process update Event status for "QB_CEDW-BillPaymentCreditCard" - <Response [200]>
+2024-04-04 08:12:37,108 ETL Execution elapsed time -> 7.4464
+2024-04-04 08:12:37,163 Start Process Insert Event for "QB_CEDW-BillPaymentCreditCardLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:37,163 Processing Table -> BillPaymentCreditCardLine
+2024-04-04 08:12:37,164 Table Truncated -> QB_STAGING.dbo.[BillPaymentCreditCardLine]
+2024-04-04 08:12:43,845 Number of rows Selected -> 19
+2024-04-04 08:12:43,849 Multiple Insert Executed for -> BillPaymentCreditCardLine
+2024-04-04 08:12:44,336 End Process update Event status for "QB_CEDW-BillPaymentCreditCardLine" - <Response [200]>
+2024-04-04 08:12:44,344 ETL Execution elapsed time -> 7.2365
+2024-04-04 08:12:44,399 Start Process Insert Event for "QB_CEDW-BillPaymentCreditCardLineLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:44,399 Processing Table -> BillPaymentCreditCardLineLinkedTxn
+2024-04-04 08:12:44,405 Table Truncated -> QB_STAGING.dbo.[BillPaymentCreditCardLineLinkedTxn]
+2024-04-04 08:12:51,929 Number of rows Selected -> 19
+2024-04-04 08:12:51,937 Multiple Insert Executed for -> BillPaymentCreditCardLineLinkedTxn
+2024-04-04 08:12:52,246 End Process update Event status for "QB_CEDW-BillPaymentCreditCardLineLinkedTxn" - <Response [200]>
+2024-04-04 08:12:52,254 ETL Execution elapsed time -> 7.9083
+2024-04-04 08:12:52,298 Start Process Insert Event for "QB_CEDW-BillToPay" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:52,298 Processing Table -> BillToPay
+2024-04-04 08:12:52,299 Table Truncated -> QB_STAGING.dbo.[BillToPay]
+2024-04-04 08:12:55,779 Number of rows Selected -> 962
+2024-04-04 08:12:55,860 Multiple Insert Executed for -> BillToPay
+2024-04-04 08:12:56,330 End Process update Event status for "QB_CEDW-BillToPay" - <Response [200]>
+2024-04-04 08:12:56,339 ETL Execution elapsed time -> 4.0840
+2024-04-04 08:12:56,382 Start Process Insert Event for "QB_CEDW-BuildAssembly" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:12:56,382 Processing Table -> BuildAssembly
+2024-04-04 08:12:56,386 Table Truncated -> QB_STAGING.dbo.[BuildAssembly]
+2024-04-04 08:13:03,901 End Process update Event status for "QB_CEDW-BuildAssembly" - <Response [200]>
+2024-04-04 08:13:03,910 ETL Execution elapsed time -> 7.5714
+2024-04-04 08:13:03,966 Start Process Insert Event for "QB_CEDW-BuildAssemblyComponentItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:03,967 Processing Table -> BuildAssemblyComponentItemLine
+2024-04-04 08:13:03,975 Table Truncated -> QB_STAGING.dbo.[BuildAssemblyComponentItemLine]
+2024-04-04 08:13:10,933 End Process update Event status for "QB_CEDW-BuildAssemblyComponentItemLine" - <Response [200]>
+2024-04-04 08:13:10,945 ETL Execution elapsed time -> 7.0353
+2024-04-04 08:13:11,010 Start Process Insert Event for "QB_CEDW-Charge" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:11,010 Processing Table -> Charge
+2024-04-04 08:13:11,014 Table Truncated -> QB_STAGING.dbo.[Charge]
+2024-04-04 08:13:17,438 End Process update Event status for "QB_CEDW-Charge" - <Response [200]>
+2024-04-04 08:13:17,446 ETL Execution elapsed time -> 6.5001
+2024-04-04 08:13:17,491 Start Process Insert Event for "QB_CEDW-ChargeLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:17,491 Processing Table -> ChargeLinkedTxn
+2024-04-04 08:13:17,498 Table Truncated -> QB_STAGING.dbo.[ChargeLinkedTxn]
+2024-04-04 08:13:23,664 End Process update Event status for "QB_CEDW-ChargeLinkedTxn" - <Response [200]>
+2024-04-04 08:13:23,676 ETL Execution elapsed time -> 6.2296
+2024-04-04 08:13:23,724 Start Process Insert Event for "QB_CEDW-Check" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:23,724 Processing Table -> Check
+2024-04-04 08:13:23,727 Table Truncated -> QB_STAGING.dbo.[Check]
+2024-04-04 08:13:30,682 Number of rows Selected -> 482
+2024-04-04 08:13:30,742 Multiple Insert Executed for -> Check
+2024-04-04 08:13:31,204 End Process update Event status for "QB_CEDW-Check" - <Response [200]>
+2024-04-04 08:13:31,212 ETL Execution elapsed time -> 7.5362
+2024-04-04 08:13:31,256 Start Process Insert Event for "QB_CEDW-CheckApplyCheckToTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:31,257 Processing Table -> CheckApplyCheckToTxn
+2024-04-04 08:13:31,258 Table Truncated -> QB_STAGING.dbo.[CheckApplyCheckToTxn]
+2024-04-04 08:13:38,434 End Process update Event status for "QB_CEDW-CheckApplyCheckToTxn" - <Response [200]>
+2024-04-04 08:13:38,443 ETL Execution elapsed time -> 7.2306
+2024-04-04 08:13:38,499 Start Process Insert Event for "QB_CEDW-CheckExpenseLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:38,499 Processing Table -> CheckExpenseLine
+2024-04-04 08:13:38,501 Table Truncated -> QB_STAGING.dbo.[CheckExpenseLine]
+2024-04-04 08:13:45,510 Number of rows Selected -> 485
+2024-04-04 08:13:45,630 Multiple Insert Executed for -> CheckExpenseLine
+2024-04-04 08:13:46,121 End Process update Event status for "QB_CEDW-CheckExpenseLine" - <Response [200]>
+2024-04-04 08:13:46,132 ETL Execution elapsed time -> 7.6886
+2024-04-04 08:13:46,182 Start Process Insert Event for "QB_CEDW-CheckItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:46,182 Processing Table -> CheckItemLine
+2024-04-04 08:13:46,195 Table Truncated -> QB_STAGING.dbo.[CheckItemLine]
+2024-04-04 08:13:53,476 End Process update Event status for "QB_CEDW-CheckItemLine" - <Response [200]>
+2024-04-04 08:13:53,484 ETL Execution elapsed time -> 7.3526
+2024-04-04 08:13:53,528 Start Process Insert Event for "QB_CEDW-Class" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:13:53,528 Processing Table -> Class
+2024-04-04 08:13:53,530 Table Truncated -> QB_STAGING.dbo.[Class]
+2024-04-04 08:13:59,552 Number of rows Selected -> 49
+2024-04-04 08:13:59,556 Multiple Insert Executed for -> Class
+2024-04-04 08:13:59,934 End Process update Event status for "QB_CEDW-Class" - <Response [200]>
+2024-04-04 08:13:59,947 ETL Execution elapsed time -> 6.4630
+2024-04-04 08:14:00,024 Start Process Insert Event for "QB_CEDW-ClearedStatus" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:00,024 Processing Table -> ClearedStatus
+2024-04-04 08:14:00,057 Table Truncated -> QB_STAGING.dbo.[ClearedStatus]
+2024-04-04 08:14:03,956 End Process update Event status for "QB_CEDW-ClearedStatus" - <Response [200]>
+2024-04-04 08:14:03,964 ETL Execution elapsed time -> 4.0167
+2024-04-04 08:14:04,010 Start Process Insert Event for "QB_CEDW-Company" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:04,010 Processing Table -> Company
+2024-04-04 08:14:04,019 Table Truncated -> QB_STAGING.dbo.[Company]
+2024-04-04 08:14:07,335 Number of rows Selected -> 1
+2024-04-04 08:14:07,341 Multiple Insert Executed for -> Company
+2024-04-04 08:14:07,862 End Process update Event status for "QB_CEDW-Company" - <Response [200]>
+2024-04-04 08:14:07,875 ETL Execution elapsed time -> 3.9102
+2024-04-04 08:14:07,957 Start Process Insert Event for "QB_CEDW-CompanyActivity" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:07,957 Processing Table -> CompanyActivity
+2024-04-04 08:14:07,959 Table Truncated -> QB_STAGING.dbo.[CompanyActivity]
+2024-04-04 08:14:11,013 Number of rows Selected -> 1
+2024-04-04 08:14:11,015 Multiple Insert Executed for -> CompanyActivity
+2024-04-04 08:14:11,368 End Process update Event status for "QB_CEDW-CompanyActivity" - <Response [200]>
+2024-04-04 08:14:11,376 ETL Execution elapsed time -> 3.5010
+2024-04-04 08:14:11,425 Start Process Insert Event for "QB_CEDW-CreditCardCharge" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:11,425 Processing Table -> CreditCardCharge
+2024-04-04 08:14:11,429 Table Truncated -> QB_STAGING.dbo.[CreditCardCharge]
+2024-04-04 08:14:20,312 Number of rows Selected -> 3000
+2024-04-04 08:14:20,650 Multiple Insert Executed for -> CreditCardCharge
+2024-04-04 08:14:21,195 Number of rows Selected -> 3000
+2024-04-04 08:14:21,407 Multiple Insert Executed for -> CreditCardCharge
+2024-04-04 08:14:21,964 Number of rows Selected -> 3000
+2024-04-04 08:14:22,183 Multiple Insert Executed for -> CreditCardCharge
+2024-04-04 08:14:22,196 Number of rows Selected -> 48
+2024-04-04 08:14:22,203 Multiple Insert Executed for -> CreditCardCharge
+2024-04-04 08:14:22,663 End Process update Event status for "QB_CEDW-CreditCardCharge" - <Response [200]>
+2024-04-04 08:14:22,679 ETL Execution elapsed time -> 11.3030
+2024-04-04 08:14:22,794 Start Process Insert Event for "QB_CEDW-CreditCardChargeExpenseLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:22,794 Processing Table -> CreditCardChargeExpenseLine
+2024-04-04 08:14:22,801 Table Truncated -> QB_STAGING.dbo.[CreditCardChargeExpenseLine]
+2024-04-04 08:14:31,540 Number of rows Selected -> 3000
+2024-04-04 08:14:31,887 Multiple Insert Executed for -> CreditCardChargeExpenseLine
+2024-04-04 08:14:32,846 Number of rows Selected -> 3000
+2024-04-04 08:14:33,244 Multiple Insert Executed for -> CreditCardChargeExpenseLine
+2024-04-04 08:14:34,121 Number of rows Selected -> 3000
+2024-04-04 08:14:34,439 Multiple Insert Executed for -> CreditCardChargeExpenseLine
+2024-04-04 08:14:34,463 Number of rows Selected -> 63
+2024-04-04 08:14:34,473 Multiple Insert Executed for -> CreditCardChargeExpenseLine
+2024-04-04 08:14:34,972 End Process update Event status for "QB_CEDW-CreditCardChargeExpenseLine" - <Response [200]>
+2024-04-04 08:14:34,985 ETL Execution elapsed time -> 12.3059
+2024-04-04 08:14:35,041 Start Process Insert Event for "QB_CEDW-CreditCardChargeItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:35,041 Processing Table -> CreditCardChargeItemLine
+2024-04-04 08:14:35,050 Table Truncated -> QB_STAGING.dbo.[CreditCardChargeItemLine]
+2024-04-04 08:14:42,068 End Process update Event status for "QB_CEDW-CreditCardChargeItemLine" - <Response [200]>
+2024-04-04 08:14:42,078 ETL Execution elapsed time -> 7.0929
+2024-04-04 08:14:42,159 Start Process Insert Event for "QB_CEDW-CreditCardCredit" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:42,159 Processing Table -> CreditCardCredit
+2024-04-04 08:14:42,163 Table Truncated -> QB_STAGING.dbo.[CreditCardCredit]
+2024-04-04 08:14:48,710 Number of rows Selected -> 81
+2024-04-04 08:14:48,719 Multiple Insert Executed for -> CreditCardCredit
+2024-04-04 08:14:49,045 End Process update Event status for "QB_CEDW-CreditCardCredit" - <Response [200]>
+2024-04-04 08:14:49,056 ETL Execution elapsed time -> 6.9777
+2024-04-04 08:14:49,112 Start Process Insert Event for "QB_CEDW-CreditCardCreditExpenseLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:49,113 Processing Table -> CreditCardCreditExpenseLine
+2024-04-04 08:14:49,115 Table Truncated -> QB_STAGING.dbo.[CreditCardCreditExpenseLine]
+2024-04-04 08:14:55,600 Number of rows Selected -> 81
+2024-04-04 08:14:55,609 Multiple Insert Executed for -> CreditCardCreditExpenseLine
+2024-04-04 08:14:56,003 End Process update Event status for "QB_CEDW-CreditCardCreditExpenseLine" - <Response [200]>
+2024-04-04 08:14:56,015 ETL Execution elapsed time -> 6.9572
+2024-04-04 08:14:56,093 Start Process Insert Event for "QB_CEDW-CreditCardCreditItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:14:56,093 Processing Table -> CreditCardCreditItemLine
+2024-04-04 08:14:56,105 Table Truncated -> QB_STAGING.dbo.[CreditCardCreditItemLine]
+2024-04-04 08:15:04,308 End Process update Event status for "QB_CEDW-CreditCardCreditItemLine" - <Response [200]>
+2024-04-04 08:15:04,320 ETL Execution elapsed time -> 8.3058
+2024-04-04 08:15:04,414 Start Process Insert Event for "QB_CEDW-CreditMemo" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:15:04,414 Processing Table -> CreditMemo
+2024-04-04 08:15:04,435 Table Truncated -> QB_STAGING.dbo.[CreditMemo]
+2024-04-04 08:15:14,112 Number of rows Selected -> 1921
+2024-04-04 08:15:14,490 Multiple Insert Executed for -> CreditMemo
+2024-04-04 08:15:14,970 End Process update Event status for "QB_CEDW-CreditMemo" - <Response [200]>
+2024-04-04 08:15:14,982 ETL Execution elapsed time -> 10.6613
+2024-04-04 08:15:15,067 Start Process Insert Event for "QB_CEDW-CreditMemoLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:15:15,067 Processing Table -> CreditMemoLine
+2024-04-04 08:15:15,073 Table Truncated -> QB_STAGING.dbo.[CreditMemoLine]
+2024-04-04 08:15:25,890 Number of rows Selected -> 3000
+2024-04-04 08:15:26,756 Multiple Insert Executed for -> CreditMemoLine
+2024-04-04 08:15:26,824 Number of rows Selected -> 63
+2024-04-04 08:15:26,841 Multiple Insert Executed for -> CreditMemoLine
+2024-04-04 08:15:27,114 End Process update Event status for "QB_CEDW-CreditMemoLine" - <Response [200]>
+2024-04-04 08:15:27,126 ETL Execution elapsed time -> 12.1447
+2024-04-04 08:15:27,202 Start Process Insert Event for "QB_CEDW-CreditMemoLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:15:27,203 Processing Table -> CreditMemoLinkedTxn
+2024-04-04 08:15:27,208 Table Truncated -> QB_STAGING.dbo.[CreditMemoLinkedTxn]
+2024-04-04 08:15:35,713 Number of rows Selected -> 1921
+2024-04-04 08:15:36,058 Multiple Insert Executed for -> CreditMemoLinkedTxn
+2024-04-04 08:15:36,498 End Process update Event status for "QB_CEDW-CreditMemoLinkedTxn" - <Response [200]>
+2024-04-04 08:15:36,510 ETL Execution elapsed time -> 9.3839
+2024-04-04 08:15:36,592 Start Process Insert Event for "QB_CEDW-Currency" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:15:36,592 Processing Table -> Currency
+2024-04-04 08:15:36,597 Table Truncated -> QB_STAGING.dbo.[Currency]
+2024-04-04 08:15:42,269 Number of rows Selected -> 158
+2024-04-04 08:15:42,280 Multiple Insert Executed for -> Currency
+2024-04-04 08:15:42,643 End Process update Event status for "QB_CEDW-Currency" - <Response [200]>
+2024-04-04 08:15:42,668 ETL Execution elapsed time -> 6.1574
+2024-04-04 08:15:42,853 Start Process Insert Event for "QB_CEDW-Customer" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:15:42,853 Processing Table -> Customer
+2024-04-04 08:15:42,866 Table Truncated -> QB_STAGING.dbo.[Customer]
+2024-04-04 08:15:58,390 Number of rows Selected -> 500
+2024-04-04 08:15:58,506 Multiple Insert Executed for -> Customer
+2024-04-04 08:15:58,811 End Process update Event status for "QB_CEDW-Customer" - <Response [200]>
+2024-04-04 08:15:58,820 ETL Execution elapsed time -> 16.1526
+2024-04-04 08:15:58,874 Start Process Insert Event for "QB_CEDW-CustomerAddtionalNote" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:15:58,875 Processing Table -> CustomerAddtionalNote
+2024-04-04 08:15:58,884 Table Truncated -> QB_STAGING.dbo.[CustomerAddtionalNote]
+2024-04-04 08:16:04,092 End Process update Event status for "QB_CEDW-CustomerAddtionalNote" - <Response [200]>
+2024-04-04 08:16:04,102 ETL Execution elapsed time -> 5.2804
+2024-04-04 08:16:04,172 Start Process Insert Event for "QB_CEDW-CustomerContacts" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:16:04,172 Processing Table -> CustomerContacts
+2024-04-04 08:16:04,182 Table Truncated -> QB_STAGING.dbo.[CustomerContacts]
+2024-04-04 08:16:09,449 End Process update Event status for "QB_CEDW-CustomerContacts" - <Response [200]>
+2024-04-04 08:16:09,456 ETL Execution elapsed time -> 5.3546
+2024-04-04 08:16:09,500 Start Process Insert Event for "QB_CEDW-CustomerShipToAddress" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:16:09,500 Processing Table -> CustomerShipToAddress
+2024-04-04 08:16:09,504 Table Truncated -> QB_STAGING.dbo.[CustomerShipToAddress]
+2024-04-04 08:17:10,590 Number of rows Selected -> 1271
+2024-04-04 08:17:10,800 Multiple Insert Executed for -> CustomerShipToAddress
+2024-04-04 08:17:10,857 End Process update Event status for "QB_CEDW-CustomerShipToAddress" - <Response [200]>
+2024-04-04 08:17:10,865 ETL Execution elapsed time -> 61.4074
+2024-04-04 08:17:10,908 Start Process Insert Event for "QB_CEDW-CustomerMsg" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:10,908 Processing Table -> CustomerMsg
+2024-04-04 08:17:10,910 Table Truncated -> QB_STAGING.dbo.[CustomerMsg]
+2024-04-04 08:17:15,955 Number of rows Selected -> 6
+2024-04-04 08:17:15,958 Multiple Insert Executed for -> CustomerMsg
+2024-04-04 08:17:16,015 End Process update Event status for "QB_CEDW-CustomerMsg" - <Response [200]>
+2024-04-04 08:17:16,022 ETL Execution elapsed time -> 5.1573
+2024-04-04 08:17:16,064 Start Process Insert Event for "QB_CEDW-CustomerType" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:16,064 Processing Table -> CustomerType
+2024-04-04 08:17:16,066 Table Truncated -> QB_STAGING.dbo.[CustomerType]
+2024-04-04 08:17:21,086 Number of rows Selected -> 5
+2024-04-04 08:17:21,088 Multiple Insert Executed for -> CustomerType
+2024-04-04 08:17:21,144 End Process update Event status for "QB_CEDW-CustomerType" - <Response [200]>
+2024-04-04 08:17:21,152 ETL Execution elapsed time -> 5.1290
+2024-04-04 08:17:21,198 Start Process Insert Event for "QB_CEDW-CustomField" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:21,198 Processing Table -> CustomField
+2024-04-04 08:17:21,200 Table Truncated -> QB_STAGING.dbo.[CustomField]
+2024-04-04 08:17:23,895 End Process update Event status for "QB_CEDW-CustomField" - <Response [200]>
+2024-04-04 08:17:23,903 ETL Execution elapsed time -> 2.7510
+2024-04-04 08:17:23,948 Start Process Insert Event for "QB_CEDW-DateDrivenTerms" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:23,948 Processing Table -> DateDrivenTerms
+2024-04-04 08:17:23,949 Table Truncated -> QB_STAGING.dbo.[DateDrivenTerms]
+2024-04-04 08:17:29,050 End Process update Event status for "QB_CEDW-DateDrivenTerms" - <Response [200]>
+2024-04-04 08:17:29,057 ETL Execution elapsed time -> 5.1544
+2024-04-04 08:17:29,096 Start Process Insert Event for "QB_CEDW-Deposit" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:29,096 Processing Table -> Deposit
+2024-04-04 08:17:29,098 Table Truncated -> QB_STAGING.dbo.[Deposit]
+2024-04-04 08:17:34,446 Number of rows Selected -> 8
+2024-04-04 08:17:34,450 Multiple Insert Executed for -> Deposit
+2024-04-04 08:17:34,512 End Process update Event status for "QB_CEDW-Deposit" - <Response [200]>
+2024-04-04 08:17:34,519 ETL Execution elapsed time -> 5.4610
+2024-04-04 08:17:34,566 Start Process Insert Event for "QB_CEDW-DepositLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:34,566 Processing Table -> DepositLine
+2024-04-04 08:17:34,568 Table Truncated -> QB_STAGING.dbo.[DepositLine]
+2024-04-04 08:17:39,949 Number of rows Selected -> 8
+2024-04-04 08:17:39,953 Multiple Insert Executed for -> DepositLine
+2024-04-04 08:17:40,005 End Process update Event status for "QB_CEDW-DepositLine" - <Response [200]>
+2024-04-04 08:17:40,013 ETL Execution elapsed time -> 5.4933
+2024-04-04 08:17:40,056 Start Process Insert Event for "QB_CEDW-Employee" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:40,056 Processing Table -> Employee
+2024-04-04 08:17:40,060 Table Truncated -> QB_STAGING.dbo.[Employee]
+2024-04-04 08:17:46,033 Number of rows Selected -> 218
+2024-04-04 08:17:46,063 Multiple Insert Executed for -> Employee
+2024-04-04 08:17:46,117 End Process update Event status for "QB_CEDW-Employee" - <Response [200]>
+2024-04-04 08:17:46,124 ETL Execution elapsed time -> 6.1114
+2024-04-04 08:17:46,164 Start Process Insert Event for "QB_CEDW-EmployeeAddtionalNote" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:46,165 Processing Table -> EmployeeAddtionalNote
+2024-04-04 08:17:46,167 Table Truncated -> QB_STAGING.dbo.[EmployeeAddtionalNote]
+2024-04-04 08:17:52,148 Number of rows Selected -> 361
+2024-04-04 08:17:52,193 Multiple Insert Executed for -> EmployeeAddtionalNote
+2024-04-04 08:17:52,246 End Process update Event status for "QB_CEDW-EmployeeAddtionalNote" - <Response [200]>
+2024-04-04 08:17:52,254 ETL Execution elapsed time -> 6.1300
+2024-04-04 08:17:52,294 Start Process Insert Event for "QB_CEDW-EmployeeEarning" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:52,294 Processing Table -> EmployeeEarning
+2024-04-04 08:17:52,297 Table Truncated -> QB_STAGING.dbo.[EmployeeEarning]
+2024-04-04 08:17:58,934 Number of rows Selected -> 221
+2024-04-04 08:17:58,998 End Process update Event status for "QB_CEDW-EmployeeEarning" - <Response [200]>
+2024-04-04 08:17:59,005 ETL Execution elapsed time -> 6.7511
+2024-04-04 08:17:59,044 Start Process Insert Event for "QB_CEDW-Entity" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:17:59,044 Processing Table -> Entity
+2024-04-04 08:17:59,048 Table Truncated -> QB_STAGING.dbo.[Entity]
+2024-04-04 08:18:04,344 Number of rows Selected -> 1957
+2024-04-04 08:18:04,681 Multiple Insert Executed for -> Entity
+2024-04-04 08:18:04,736 End Process update Event status for "QB_CEDW-Entity" - <Response [200]>
+2024-04-04 08:18:04,744 ETL Execution elapsed time -> 5.7384
+2024-04-04 08:18:04,782 Start Process Insert Event for "QB_CEDW-EntityAdditionalNote" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:04,782 Processing Table -> EntityAdditionalNote
+2024-04-04 08:18:04,785 Table Truncated -> QB_STAGING.dbo.[EntityAdditionalNote]
+2024-04-04 08:18:09,088 Number of rows Selected -> 371
+2024-04-04 08:18:09,143 Multiple Insert Executed for -> EntityAdditionalNote
+2024-04-04 08:18:09,195 End Process update Event status for "QB_CEDW-EntityAdditionalNote" - <Response [200]>
+2024-04-04 08:18:09,203 ETL Execution elapsed time -> 4.4591
+2024-04-04 08:18:09,241 Start Process Insert Event for "QB_CEDW-EntityContacts" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:09,241 Processing Table -> EntityContacts
+2024-04-04 08:18:09,243 Table Truncated -> QB_STAGING.dbo.[EntityContacts]
+2024-04-04 08:18:13,304 End Process update Event status for "QB_CEDW-EntityContacts" - <Response [200]>
+2024-04-04 08:18:13,312 ETL Execution elapsed time -> 4.1094
+2024-04-04 08:18:13,352 Start Process Insert Event for "QB_CEDW-EntityShipToAddress" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:13,352 Processing Table -> EntityShipToAddress
+2024-04-04 08:18:13,355 Table Truncated -> QB_STAGING.dbo.[EntityShipToAddress]
+2024-04-04 08:18:18,312 Number of rows Selected -> 1271
+2024-04-04 08:18:18,515 Multiple Insert Executed for -> EntityShipToAddress
+2024-04-04 08:18:18,578 End Process update Event status for "QB_CEDW-EntityShipToAddress" - <Response [200]>
+2024-04-04 08:18:18,586 ETL Execution elapsed time -> 5.2735
+2024-04-04 08:18:18,633 Start Process Insert Event for "QB_CEDW-Estimate" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:18,633 Processing Table -> Estimate
+2024-04-04 08:18:18,635 Table Truncated -> QB_STAGING.dbo.[Estimate]
+2024-04-04 08:18:23,980 End Process update Event status for "QB_CEDW-Estimate" - <Response [200]>
+2024-04-04 08:18:23,988 ETL Execution elapsed time -> 5.4024
+2024-04-04 08:18:24,030 Start Process Insert Event for "QB_CEDW-EstimateLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:24,030 Processing Table -> EstimateLine
+2024-04-04 08:18:24,032 Table Truncated -> QB_STAGING.dbo.[EstimateLine]
+2024-04-04 08:18:29,486 End Process update Event status for "QB_CEDW-EstimateLine" - <Response [200]>
+2024-04-04 08:18:29,494 ETL Execution elapsed time -> 5.5059
+2024-04-04 08:18:29,538 Start Process Insert Event for "QB_CEDW-EstimateLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:29,538 Processing Table -> EstimateLinkedTxn
+2024-04-04 08:18:29,540 Table Truncated -> QB_STAGING.dbo.[EstimateLinkedTxn]
+2024-04-04 08:18:34,869 End Process update Event status for "QB_CEDW-EstimateLinkedTxn" - <Response [200]>
+2024-04-04 08:18:34,877 ETL Execution elapsed time -> 5.3829
+2024-04-04 08:18:34,917 Start Process Insert Event for "QB_CEDW-Form1099" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:34,917 Processing Table -> Form1099
+2024-04-04 08:18:34,919 Table Truncated -> QB_STAGING.dbo.[Form1099]
+2024-04-04 08:18:35,295 Number of rows Selected -> 1
+2024-04-04 08:18:35,298 Multiple Insert Executed for -> Form1099
+2024-04-04 08:18:35,351 End Process update Event status for "QB_CEDW-Form1099" - <Response [200]>
+2024-04-04 08:18:35,359 ETL Execution elapsed time -> 0.4824
+2024-04-04 08:18:35,401 Start Process Insert Event for "QB_CEDW-Form1099CategoryAccountMapping" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:35,401 Processing Table -> Form1099CategoryAccountMapping
+2024-04-04 08:18:35,403 Table Truncated -> QB_STAGING.dbo.[Form1099CategoryAccountMapping]
+2024-04-04 08:18:35,822 End Process update Event status for "QB_CEDW-Form1099CategoryAccountMapping" - <Response [200]>
+2024-04-04 08:18:35,829 ETL Execution elapsed time -> 0.4697
+2024-04-04 08:18:35,867 Start Process Insert Event for "QB_CEDW-Host" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:35,867 Processing Table -> Host
+2024-04-04 08:18:35,869 Table Truncated -> QB_STAGING.dbo.[Host]
+2024-04-04 08:18:39,080 Number of rows Selected -> 1
+2024-04-04 08:18:39,082 Multiple Insert Executed for -> Host
+2024-04-04 08:18:39,150 End Process update Event status for "QB_CEDW-Host" - <Response [200]>
+2024-04-04 08:18:39,159 ETL Execution elapsed time -> 3.3292
+2024-04-04 08:18:39,205 Start Process Insert Event for "QB_CEDW-HostMetaData" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:39,205 Processing Table -> HostMetaData
+2024-04-04 08:18:39,208 Table Truncated -> QB_STAGING.dbo.[HostMetaData]
+2024-04-04 08:18:42,386 Number of rows Selected -> 1
+2024-04-04 08:18:42,388 Multiple Insert Executed for -> HostMetaData
+2024-04-04 08:18:42,442 End Process update Event status for "QB_CEDW-HostMetaData" - <Response [200]>
+2024-04-04 08:18:42,450 ETL Execution elapsed time -> 3.2911
+2024-04-04 08:18:42,496 Start Process Insert Event for "QB_CEDW-HostSupportedVersions" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:42,496 Processing Table -> HostSupportedVersions
+2024-04-04 08:18:42,499 Table Truncated -> QB_STAGING.dbo.[HostSupportedVersions]
+2024-04-04 08:18:45,714 Number of rows Selected -> 19
+2024-04-04 08:18:45,717 Multiple Insert Executed for -> HostSupportedVersions
+2024-04-04 08:18:45,770 End Process update Event status for "QB_CEDW-HostSupportedVersions" - <Response [200]>
+2024-04-04 08:18:45,776 ETL Execution elapsed time -> 3.3253
+2024-04-04 08:18:45,815 Start Process Insert Event for "QB_CEDW-InventoryAdjustment" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:45,815 Processing Table -> InventoryAdjustment
+2024-04-04 08:18:45,816 Table Truncated -> QB_STAGING.dbo.[InventoryAdjustment]
+2024-04-04 08:18:50,971 End Process update Event status for "QB_CEDW-InventoryAdjustment" - <Response [200]>
+2024-04-04 08:18:50,979 ETL Execution elapsed time -> 5.2023
+2024-04-04 08:18:51,021 Start Process Insert Event for "QB_CEDW-InventoryAdjustmentLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:51,021 Processing Table -> InventoryAdjustmentLine
+2024-04-04 08:18:51,023 Table Truncated -> QB_STAGING.dbo.[InventoryAdjustmentLine]
+2024-04-04 08:18:56,162 End Process update Event status for "QB_CEDW-InventoryAdjustmentLine" - <Response [200]>
+2024-04-04 08:18:56,170 ETL Execution elapsed time -> 5.1905
+2024-04-04 08:18:56,213 Start Process Insert Event for "QB_CEDW-InventorySite" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:18:56,213 Processing Table -> InventorySite
+2024-04-04 08:18:56,215 Table Truncated -> QB_STAGING.dbo.[InventorySite]
+2024-04-04 08:19:02,022 End Process update Event status for "QB_CEDW-InventorySite" - <Response [200]>
+2024-04-04 08:19:02,031 ETL Execution elapsed time -> 5.8595
+2024-04-04 08:19:02,079 Start Process Insert Event for "QB_CEDW-Invoice" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:02,079 Processing Table -> Invoice
+2024-04-04 08:19:02,082 Table Truncated -> QB_STAGING.dbo.[Invoice]
+2024-04-04 08:19:10,437 Number of rows Selected -> 2735
+2024-04-04 08:19:11,051 Multiple Insert Executed for -> Invoice
+2024-04-04 08:19:11,107 End Process update Event status for "QB_CEDW-Invoice" - <Response [200]>
+2024-04-04 08:19:11,115 ETL Execution elapsed time -> 9.0832
+2024-04-04 08:19:11,157 Start Process Insert Event for "QB_CEDW-InvoiceLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:11,158 Processing Table -> InvoiceLine
+2024-04-04 08:19:11,162 Table Truncated -> QB_STAGING.dbo.[InvoiceLine]
+2024-04-04 08:19:22,326 Number of rows Selected -> 3000
+2024-04-04 08:19:23,147 Multiple Insert Executed for -> InvoiceLine
+2024-04-04 08:19:25,606 Number of rows Selected -> 3000
+2024-04-04 08:19:26,392 Multiple Insert Executed for -> InvoiceLine
+2024-04-04 08:19:28,979 Number of rows Selected -> 3000
+2024-04-04 08:19:29,712 Multiple Insert Executed for -> InvoiceLine
+2024-04-04 08:19:29,860 Number of rows Selected -> 155
+2024-04-04 08:19:29,907 Multiple Insert Executed for -> InvoiceLine
+2024-04-04 08:19:29,959 End Process update Event status for "QB_CEDW-InvoiceLine" - <Response [200]>
+2024-04-04 08:19:29,966 ETL Execution elapsed time -> 18.8509
+2024-04-04 08:19:30,006 Start Process Insert Event for "QB_CEDW-InvoiceLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:30,006 Processing Table -> InvoiceLinkedTxn
+2024-04-04 08:19:30,009 Table Truncated -> QB_STAGING.dbo.[InvoiceLinkedTxn]
+2024-04-04 08:19:38,656 Number of rows Selected -> 3000
+2024-04-04 08:19:39,297 Multiple Insert Executed for -> InvoiceLinkedTxn
+2024-04-04 08:19:40,218 Number of rows Selected -> 1594
+2024-04-04 08:19:40,558 Multiple Insert Executed for -> InvoiceLinkedTxn
+2024-04-04 08:19:40,615 End Process update Event status for "QB_CEDW-InvoiceLinkedTxn" - <Response [200]>
+2024-04-04 08:19:40,624 ETL Execution elapsed time -> 10.6584
+2024-04-04 08:19:40,669 Start Process Insert Event for "QB_CEDW-Item" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:40,669 Processing Table -> Item
+2024-04-04 08:19:40,671 Table Truncated -> QB_STAGING.dbo.[Item]
+2024-04-04 08:19:44,034 Number of rows Selected -> 61
+2024-04-04 08:19:44,045 Multiple Insert Executed for -> Item
+2024-04-04 08:19:44,102 End Process update Event status for "QB_CEDW-Item" - <Response [200]>
+2024-04-04 08:19:44,110 ETL Execution elapsed time -> 3.4854
+2024-04-04 08:19:44,151 Start Process Insert Event for "QB_CEDW-ItemDiscount" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:44,151 Processing Table -> ItemDiscount
+2024-04-04 08:19:44,153 Table Truncated -> QB_STAGING.dbo.[ItemDiscount]
+2024-04-04 08:19:49,325 End Process update Event status for "QB_CEDW-ItemDiscount" - <Response [200]>
+2024-04-04 08:19:49,332 ETL Execution elapsed time -> 5.2227
+2024-04-04 08:19:49,372 Start Process Insert Event for "QB_CEDW-ItemFixedAsset" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:49,372 Processing Table -> ItemFixedAsset
+2024-04-04 08:19:49,374 Table Truncated -> QB_STAGING.dbo.[ItemFixedAsset]
+2024-04-04 08:19:54,481 End Process update Event status for "QB_CEDW-ItemFixedAsset" - <Response [200]>
+2024-04-04 08:19:54,488 ETL Execution elapsed time -> 5.1544
+2024-04-04 08:19:54,526 Start Process Insert Event for "QB_CEDW-ItemGroup" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:54,526 Processing Table -> ItemGroup
+2024-04-04 08:19:54,527 Table Truncated -> QB_STAGING.dbo.[ItemGroup]
+2024-04-04 08:19:59,633 End Process update Event status for "QB_CEDW-ItemGroup" - <Response [200]>
+2024-04-04 08:19:59,641 ETL Execution elapsed time -> 5.1534
+2024-04-04 08:19:59,682 Start Process Insert Event for "QB_CEDW-ItemGroupLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:19:59,682 Processing Table -> ItemGroupLine
+2024-04-04 08:19:59,683 Table Truncated -> QB_STAGING.dbo.[ItemGroupLine]
+2024-04-04 08:20:05,045 End Process update Event status for "QB_CEDW-ItemGroupLine" - <Response [200]>
+2024-04-04 08:20:05,052 ETL Execution elapsed time -> 5.4112
+2024-04-04 08:20:05,094 Start Process Insert Event for "QB_CEDW-ItemInventory" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:05,094 Processing Table -> ItemInventory
+2024-04-04 08:20:05,096 Table Truncated -> QB_STAGING.dbo.[ItemInventory]
+2024-04-04 08:20:10,234 End Process update Event status for "QB_CEDW-ItemInventory" - <Response [200]>
+2024-04-04 08:20:10,242 ETL Execution elapsed time -> 5.1886
+2024-04-04 08:20:10,283 Start Process Insert Event for "QB_CEDW-ItemInventoryAssembly" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:10,283 Processing Table -> ItemInventoryAssembly
+2024-04-04 08:20:10,285 Table Truncated -> QB_STAGING.dbo.[ItemInventoryAssembly]
+2024-04-04 08:20:15,402 End Process update Event status for "QB_CEDW-ItemInventoryAssembly" - <Response [200]>
+2024-04-04 08:20:15,409 ETL Execution elapsed time -> 5.1671
+2024-04-04 08:20:15,448 Start Process Insert Event for "QB_CEDW-ItemInventoryAssemblyLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:15,448 Processing Table -> ItemInventoryAssemblyLine
+2024-04-04 08:20:15,449 Table Truncated -> QB_STAGING.dbo.[ItemInventoryAssemblyLine]
+2024-04-04 08:20:20,634 End Process update Event status for "QB_CEDW-ItemInventoryAssemblyLine" - <Response [200]>
+2024-04-04 08:20:20,641 ETL Execution elapsed time -> 5.2325
+2024-04-04 08:20:20,684 Start Process Insert Event for "QB_CEDW-ItemNonInventory" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:20,684 Processing Table -> ItemNonInventory
+2024-04-04 08:20:20,687 Table Truncated -> QB_STAGING.dbo.[ItemNonInventory]
+2024-04-04 08:20:25,785 Number of rows Selected -> 37
+2024-04-04 08:20:25,792 Multiple Insert Executed for -> ItemNonInventory
+2024-04-04 08:20:25,844 End Process update Event status for "QB_CEDW-ItemNonInventory" - <Response [200]>
+2024-04-04 08:20:25,851 ETL Execution elapsed time -> 5.2100
+2024-04-04 08:20:25,894 Start Process Insert Event for "QB_CEDW-ItemOtherCharge" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:25,894 Processing Table -> ItemOtherCharge
+2024-04-04 08:20:25,896 Table Truncated -> QB_STAGING.dbo.[ItemOtherCharge]
+2024-04-04 08:20:31,029 Number of rows Selected -> 3
+2024-04-04 08:20:31,032 Multiple Insert Executed for -> ItemOtherCharge
+2024-04-04 08:20:31,086 End Process update Event status for "QB_CEDW-ItemOtherCharge" - <Response [200]>
+2024-04-04 08:20:31,093 ETL Execution elapsed time -> 5.2413
+2024-04-04 08:20:31,134 Start Process Insert Event for "QB_CEDW-ItemPayment" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:31,134 Processing Table -> ItemPayment
+2024-04-04 08:20:31,136 Table Truncated -> QB_STAGING.dbo.[ItemPayment]
+2024-04-04 08:20:36,249 End Process update Event status for "QB_CEDW-ItemPayment" - <Response [200]>
+2024-04-04 08:20:36,257 ETL Execution elapsed time -> 5.1632
+2024-04-04 08:20:36,300 Start Process Insert Event for "QB_CEDW-ItemReceipt" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:36,300 Processing Table -> ItemReceipt
+2024-04-04 08:20:36,302 Table Truncated -> QB_STAGING.dbo.[ItemReceipt]
+2024-04-04 08:20:41,541 End Process update Event status for "QB_CEDW-ItemReceipt" - <Response [200]>
+2024-04-04 08:20:41,548 ETL Execution elapsed time -> 5.2911
+2024-04-04 08:20:41,586 Start Process Insert Event for "QB_CEDW-ItemReceiptExpenseLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:41,586 Processing Table -> ItemReceiptExpenseLine
+2024-04-04 08:20:41,588 Table Truncated -> QB_STAGING.dbo.[ItemReceiptExpenseLine]
+2024-04-04 08:20:46,793 End Process update Event status for "QB_CEDW-ItemReceiptExpenseLine" - <Response [200]>
+2024-04-04 08:20:46,800 ETL Execution elapsed time -> 5.2511
+2024-04-04 08:20:46,839 Start Process Insert Event for "QB_CEDW-ItemReceiptItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:46,839 Processing Table -> ItemReceiptItemLine
+2024-04-04 08:20:46,841 Table Truncated -> QB_STAGING.dbo.[ItemReceiptItemLine]
+2024-04-04 08:20:52,102 End Process update Event status for "QB_CEDW-ItemReceiptItemLine" - <Response [200]>
+2024-04-04 08:20:52,110 ETL Execution elapsed time -> 5.3097
+2024-04-04 08:20:52,151 Start Process Insert Event for "QB_CEDW-ItemReceiptLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:52,151 Processing Table -> ItemReceiptLinkedTxn
+2024-04-04 08:20:52,152 Table Truncated -> QB_STAGING.dbo.[ItemReceiptLinkedTxn]
+2024-04-04 08:20:57,298 End Process update Event status for "QB_CEDW-ItemReceiptLinkedTxn" - <Response [200]>
+2024-04-04 08:20:57,306 ETL Execution elapsed time -> 5.1964
+2024-04-04 08:20:57,346 Start Process Insert Event for "QB_CEDW-ItemSalesTax" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:20:57,346 Processing Table -> ItemSalesTax
+2024-04-04 08:20:57,348 Table Truncated -> QB_STAGING.dbo.[ItemSalesTax]
+2024-04-04 08:21:02,794 Number of rows Selected -> 13
+2024-04-04 08:21:02,797 Multiple Insert Executed for -> ItemSalesTax
+2024-04-04 08:21:02,850 End Process update Event status for "QB_CEDW-ItemSalesTax" - <Response [200]>
+2024-04-04 08:21:02,858 ETL Execution elapsed time -> 5.5519
+2024-04-04 08:21:02,900 Start Process Insert Event for "QB_CEDW-ItemSalesTaxGroup" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:02,900 Processing Table -> ItemSalesTaxGroup
+2024-04-04 08:21:02,902 Table Truncated -> QB_STAGING.dbo.[ItemSalesTaxGroup]
+2024-04-04 08:21:08,273 Number of rows Selected -> 2
+2024-04-04 08:21:08,275 Multiple Insert Executed for -> ItemSalesTaxGroup
+2024-04-04 08:21:08,330 End Process update Event status for "QB_CEDW-ItemSalesTaxGroup" - <Response [200]>
+2024-04-04 08:21:08,338 ETL Execution elapsed time -> 5.4796
+2024-04-04 08:21:08,381 Start Process Insert Event for "QB_CEDW-ItemSalesTaxGroupLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:08,381 Processing Table -> ItemSalesTaxGroupLine
+2024-04-04 08:21:08,382 Table Truncated -> QB_STAGING.dbo.[ItemSalesTaxGroupLine]
+2024-04-04 08:21:13,809 Number of rows Selected -> 4
+2024-04-04 08:21:13,812 Multiple Insert Executed for -> ItemSalesTaxGroupLine
+2024-04-04 08:21:13,865 End Process update Event status for "QB_CEDW-ItemSalesTaxGroupLine" - <Response [200]>
+2024-04-04 08:21:13,873 ETL Execution elapsed time -> 5.5343
+2024-04-04 08:21:13,913 Start Process Insert Event for "QB_CEDW-ItemService" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:13,913 Processing Table -> ItemService
+2024-04-04 08:21:13,915 Table Truncated -> QB_STAGING.dbo.[ItemService]
+2024-04-04 08:21:18,954 Number of rows Selected -> 6
+2024-04-04 08:21:18,957 Multiple Insert Executed for -> ItemService
+2024-04-04 08:21:19,012 End Process update Event status for "QB_CEDW-ItemService" - <Response [200]>
+2024-04-04 08:21:19,018 ETL Execution elapsed time -> 5.1456
+2024-04-04 08:21:19,058 Start Process Insert Event for "QB_CEDW-ItemSubtotal" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:19,058 Processing Table -> ItemSubtotal
+2024-04-04 08:21:19,059 Table Truncated -> QB_STAGING.dbo.[ItemSubtotal]
+2024-04-04 08:21:24,203 End Process update Event status for "QB_CEDW-ItemSubtotal" - <Response [200]>
+2024-04-04 08:21:24,210 ETL Execution elapsed time -> 5.1915
+2024-04-04 08:21:24,250 Start Process Insert Event for "QB_CEDW-JobType" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:24,250 Processing Table -> JobType
+2024-04-04 08:21:24,252 Table Truncated -> QB_STAGING.dbo.[JobType]
+2024-04-04 08:21:29,330 Number of rows Selected -> 2
+2024-04-04 08:21:29,332 Multiple Insert Executed for -> JobType
+2024-04-04 08:21:29,390 End Process update Event status for "QB_CEDW-JobType" - <Response [200]>
+2024-04-04 08:21:29,397 ETL Execution elapsed time -> 5.1866
+2024-04-04 08:21:29,440 Start Process Insert Event for "QB_CEDW-JournalEntry" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:29,441 Processing Table -> JournalEntry
+2024-04-04 08:21:29,443 Table Truncated -> QB_STAGING.dbo.[JournalEntry]
+2024-04-04 08:21:35,865 Number of rows Selected -> 2782
+2024-04-04 08:21:35,954 Multiple Insert Executed for -> JournalEntry
+2024-04-04 08:21:36,018 End Process update Event status for "QB_CEDW-JournalEntry" - <Response [200]>
+2024-04-04 08:21:36,026 ETL Execution elapsed time -> 6.6271
+2024-04-04 08:21:36,069 Start Process Insert Event for "QB_CEDW-JournalEntryCreditLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:36,069 Processing Table -> JournalEntryCreditLine
+2024-04-04 08:21:36,070 Table Truncated -> QB_STAGING.dbo.[JournalEntryCreditLine]
+2024-04-04 08:21:42,909 Number of rows Selected -> 3000
+2024-04-04 08:21:43,124 Multiple Insert Executed for -> JournalEntryCreditLine
+2024-04-04 08:21:43,161 Number of rows Selected -> 149
+2024-04-04 08:21:43,173 Multiple Insert Executed for -> JournalEntryCreditLine
+2024-04-04 08:21:43,227 End Process update Event status for "QB_CEDW-JournalEntryCreditLine" - <Response [200]>
+2024-04-04 08:21:43,235 ETL Execution elapsed time -> 7.2091
+2024-04-04 08:21:43,275 Start Process Insert Event for "QB_CEDW-JournalEntryDebitLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:43,275 Processing Table -> JournalEntryDebitLine
+2024-04-04 08:21:43,277 Table Truncated -> QB_STAGING.dbo.[JournalEntryDebitLine]
+2024-04-04 08:21:49,977 Number of rows Selected -> 3000
+2024-04-04 08:21:50,170 Multiple Insert Executed for -> JournalEntryDebitLine
+2024-04-04 08:21:50,268 Number of rows Selected -> 472
+2024-04-04 08:21:50,306 Multiple Insert Executed for -> JournalEntryDebitLine
+2024-04-04 08:21:50,360 End Process update Event status for "QB_CEDW-JournalEntryDebitLine" - <Response [200]>
+2024-04-04 08:21:50,369 ETL Execution elapsed time -> 7.1339
+2024-04-04 08:21:50,410 Start Process Insert Event for "QB_CEDW-JournalEntryLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:50,410 Processing Table -> JournalEntryLine
+2024-04-04 08:21:50,412 Table Truncated -> QB_STAGING.dbo.[JournalEntryLine]
+2024-04-04 08:21:57,446 Number of rows Selected -> 3000
+2024-04-04 08:21:57,623 Multiple Insert Executed for -> JournalEntryLine
+2024-04-04 08:21:58,217 Number of rows Selected -> 3000
+2024-04-04 08:21:58,394 Multiple Insert Executed for -> JournalEntryLine
+2024-04-04 08:21:58,518 Number of rows Selected -> 621
+2024-04-04 08:21:58,562 Multiple Insert Executed for -> JournalEntryLine
+2024-04-04 08:21:58,616 End Process update Event status for "QB_CEDW-JournalEntryLine" - <Response [200]>
+2024-04-04 08:21:58,624 ETL Execution elapsed time -> 8.2550
+2024-04-04 08:21:58,666 Start Process Insert Event for "QB_CEDW-ListDeleted" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:21:58,666 Processing Table -> ListDeleted
+2024-04-04 08:21:58,668 Table Truncated -> QB_STAGING.dbo.[ListDeleted]
+2024-04-04 08:22:01,980 Number of rows Selected -> 1
+2024-04-04 08:22:01,982 Multiple Insert Executed for -> ListDeleted
+2024-04-04 08:22:02,142 End Process update Event status for "QB_CEDW-ListDeleted" - <Response [200]>
+2024-04-04 08:22:02,157 ETL Execution elapsed time -> 3.5333
+2024-04-04 08:22:02,207 Start Process Insert Event for "QB_CEDW-OtherName" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:02,207 Processing Table -> OtherName
+2024-04-04 08:22:02,210 Table Truncated -> QB_STAGING.dbo.[OtherName]
+2024-04-04 08:22:07,425 Number of rows Selected -> 2
+2024-04-04 08:22:07,428 Multiple Insert Executed for -> OtherName
+2024-04-04 08:22:07,490 End Process update Event status for "QB_CEDW-OtherName" - <Response [200]>
+2024-04-04 08:22:07,498 ETL Execution elapsed time -> 5.3409
+2024-04-04 08:22:07,543 Start Process Insert Event for "QB_CEDW-PaymentMethod" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:07,543 Processing Table -> PaymentMethod
+2024-04-04 08:22:07,545 Table Truncated -> QB_STAGING.dbo.[PaymentMethod]
+2024-04-04 08:22:12,630 Number of rows Selected -> 8
+2024-04-04 08:22:12,632 Multiple Insert Executed for -> PaymentMethod
+2024-04-04 08:22:12,693 End Process update Event status for "QB_CEDW-PaymentMethod" - <Response [200]>
+2024-04-04 08:22:12,702 ETL Execution elapsed time -> 5.2042
+2024-04-04 08:22:12,744 Start Process Insert Event for "QB_CEDW-PayrollItemNonWage" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:12,744 Processing Table -> PayrollItemNonWage
+2024-04-04 08:22:12,746 Table Truncated -> QB_STAGING.dbo.[PayrollItemNonWage]
+2024-04-04 08:22:17,747 Number of rows Selected -> 3
+2024-04-04 08:22:17,750 Multiple Insert Executed for -> PayrollItemNonWage
+2024-04-04 08:22:17,804 End Process update Event status for "QB_CEDW-PayrollItemNonWage" - <Response [200]>
+2024-04-04 08:22:17,810 ETL Execution elapsed time -> 5.1085
+2024-04-04 08:22:17,850 Start Process Insert Event for "QB_CEDW-PayrollItemWage" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:17,850 Processing Table -> PayrollItemWage
+2024-04-04 08:22:17,852 Table Truncated -> QB_STAGING.dbo.[PayrollItemWage]
+2024-04-04 08:22:22,899 Number of rows Selected -> 27
+2024-04-04 08:22:22,902 Multiple Insert Executed for -> PayrollItemWage
+2024-04-04 08:22:22,959 End Process update Event status for "QB_CEDW-PayrollItemWage" - <Response [200]>
+2024-04-04 08:22:22,967 ETL Execution elapsed time -> 5.1563
+2024-04-04 08:22:23,009 Start Process Insert Event for "QB_CEDW-Preferences" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:23,009 Processing Table -> Preferences
+2024-04-04 08:22:23,012 Table Truncated -> QB_STAGING.dbo.[Preferences]
+2024-04-04 08:22:25,735 Number of rows Selected -> 1
+2024-04-04 08:22:25,739 Multiple Insert Executed for -> Preferences
+2024-04-04 08:22:25,791 End Process update Event status for "QB_CEDW-Preferences" - <Response [200]>
+2024-04-04 08:22:25,798 ETL Execution elapsed time -> 2.8311
+2024-04-04 08:22:25,836 Start Process Insert Event for "QB_CEDW-PriceLevel" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:25,836 Processing Table -> PriceLevel
+2024-04-04 08:22:25,837 Table Truncated -> QB_STAGING.dbo.[PriceLevel]
+2024-04-04 08:22:30,899 End Process update Event status for "QB_CEDW-PriceLevel" - <Response [200]>
+2024-04-04 08:22:30,906 ETL Execution elapsed time -> 5.1085
+2024-04-04 08:22:30,949 Start Process Insert Event for "QB_CEDW-PriceLevelPerItem" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:30,949 Processing Table -> PriceLevelPerItem
+2024-04-04 08:22:30,951 Table Truncated -> QB_STAGING.dbo.[PriceLevelPerItem]
+2024-04-04 08:22:36,018 End Process update Event status for "QB_CEDW-PriceLevelPerItem" - <Response [200]>
+2024-04-04 08:22:36,025 ETL Execution elapsed time -> 5.1183
+2024-04-04 08:22:36,063 Start Process Insert Event for "QB_CEDW-PurchaseOrder" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:22:36,063 Processing Table -> PurchaseOrder
+2024-04-04 08:22:36,065 Table Truncated -> QB_STAGING.dbo.[PurchaseOrder]
+2024-04-04 08:22:59,972 End Process update Event status for "QB_CEDW-PurchaseOrder" - <Response [200]>
+2024-04-04 08:22:59,981 ETL Execution elapsed time -> 23.9565
+2024-04-04 08:23:00,031 Start Process Insert Event for "QB_CEDW-PurchaseOrderLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:00,031 Processing Table -> PurchaseOrderLine
+2024-04-04 08:23:00,033 Table Truncated -> QB_STAGING.dbo.[PurchaseOrderLine]
+2024-04-04 08:23:00,634 End Process update Event status for "QB_CEDW-PurchaseOrderLine" - <Response [200]>
+2024-04-04 08:23:00,644 ETL Execution elapsed time -> 0.6631
+2024-04-04 08:23:00,710 Start Process Insert Event for "QB_CEDW-PurchaseOrderLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:00,710 Processing Table -> PurchaseOrderLinkedTxn
+2024-04-04 08:23:00,712 Table Truncated -> QB_STAGING.dbo.[PurchaseOrderLinkedTxn]
+2024-04-04 08:23:22,837 End Process update Event status for "QB_CEDW-PurchaseOrderLinkedTxn" - <Response [200]>
+2024-04-04 08:23:22,845 ETL Execution elapsed time -> 22.2005
+2024-04-04 08:23:22,885 Start Process Insert Event for "QB_CEDW-ReceivePayment" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:22,885 Processing Table -> ReceivePayment
+2024-04-04 08:23:22,888 Table Truncated -> QB_STAGING.dbo.[ReceivePayment]
+2024-04-04 08:23:29,291 Number of rows Selected -> 910
+2024-04-04 08:23:29,376 Multiple Insert Executed for -> ReceivePayment
+2024-04-04 08:23:29,430 End Process update Event status for "QB_CEDW-ReceivePayment" - <Response [200]>
+2024-04-04 08:23:29,438 ETL Execution elapsed time -> 6.5929
+2024-04-04 08:23:29,480 Start Process Insert Event for "QB_CEDW-ReceivePaymentLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:29,481 Processing Table -> ReceivePaymentLine
+2024-04-04 08:23:29,483 Table Truncated -> QB_STAGING.dbo.[ReceivePaymentLine]
+2024-04-04 08:23:36,841 Number of rows Selected -> 2646
+2024-04-04 08:23:37,167 Multiple Insert Executed for -> ReceivePaymentLine
+2024-04-04 08:23:37,242 End Process update Event status for "QB_CEDW-ReceivePaymentLine" - <Response [200]>
+2024-04-04 08:23:37,249 ETL Execution elapsed time -> 7.8117
+2024-04-04 08:23:37,292 Start Process Insert Event for "QB_CEDW-ReceivePaymentLineLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:37,292 Processing Table -> ReceivePaymentLineLinkedTxn
+2024-04-04 08:23:37,295 Table Truncated -> QB_STAGING.dbo.[ReceivePaymentLineLinkedTxn]
+2024-04-04 08:23:44,579 Number of rows Selected -> 2646
+2024-04-04 08:23:44,852 Multiple Insert Executed for -> ReceivePaymentLineLinkedTxn
+2024-04-04 08:23:44,907 End Process update Event status for "QB_CEDW-ReceivePaymentLineLinkedTxn" - <Response [200]>
+2024-04-04 08:23:44,915 ETL Execution elapsed time -> 7.6642
+2024-04-04 08:23:44,953 Start Process Insert Event for "QB_CEDW-ReceivePaymentToDeposit" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:44,954 Processing Table -> ReceivePaymentToDeposit
+2024-04-04 08:23:44,955 Table Truncated -> QB_STAGING.dbo.[ReceivePaymentToDeposit]
+2024-04-04 08:23:50,825 Number of rows Selected -> 259
+2024-04-04 08:23:50,834 Multiple Insert Executed for -> ReceivePaymentToDeposit
+2024-04-04 08:23:50,887 End Process update Event status for "QB_CEDW-ReceivePaymentToDeposit" - <Response [200]>
+2024-04-04 08:23:50,894 ETL Execution elapsed time -> 5.9796
+2024-04-04 08:23:50,934 Start Process Insert Event for "QB_CEDW-Sales" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:50,935 Processing Table -> Sales
+2024-04-04 08:23:50,938 Table Truncated -> QB_STAGING.dbo.[Sales]
+2024-04-04 08:23:59,321 Number of rows Selected -> 1804
+2024-04-04 08:23:59,645 Multiple Insert Executed for -> Sales
+2024-04-04 08:23:59,698 End Process update Event status for "QB_CEDW-Sales" - <Response [200]>
+2024-04-04 08:23:59,706 ETL Execution elapsed time -> 8.8117
+2024-04-04 08:23:59,747 Start Process Insert Event for "QB_CEDW-SalesLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:23:59,747 Processing Table -> SalesLine
+2024-04-04 08:23:59,750 Table Truncated -> QB_STAGING.dbo.[SalesLine]
+2024-04-04 08:24:10,523 Number of rows Selected -> 3000
+2024-04-04 08:24:11,320 Multiple Insert Executed for -> SalesLine
+2024-04-04 08:24:12,562 Number of rows Selected -> 1630
+2024-04-04 08:24:12,913 Multiple Insert Executed for -> SalesLine
+2024-04-04 08:24:12,966 End Process update Event status for "QB_CEDW-SalesLine" - <Response [200]>
+2024-04-04 08:24:12,974 ETL Execution elapsed time -> 13.2678
+2024-04-04 08:24:13,012 Start Process Insert Event for "QB_CEDW-SalesOrder" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:13,012 Processing Table -> SalesOrder
+2024-04-04 08:24:13,014 Table Truncated -> QB_STAGING.dbo.[SalesOrder]
+2024-04-04 08:24:18,433 End Process update Event status for "QB_CEDW-SalesOrder" - <Response [200]>
+2024-04-04 08:24:18,440 ETL Execution elapsed time -> 5.4669
+2024-04-04 08:24:18,480 Start Process Insert Event for "QB_CEDW-SalesOrderLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:18,480 Processing Table -> SalesOrderLine
+2024-04-04 08:24:18,482 Table Truncated -> QB_STAGING.dbo.[SalesOrderLine]
+2024-04-04 08:24:23,956 End Process update Event status for "QB_CEDW-SalesOrderLine" - <Response [200]>
+2024-04-04 08:24:23,964 ETL Execution elapsed time -> 5.5235
+2024-04-04 08:24:24,012 Start Process Insert Event for "QB_CEDW-SalesOrderLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:24,012 Processing Table -> SalesOrderLinkedTxn
+2024-04-04 08:24:24,014 Table Truncated -> QB_STAGING.dbo.[SalesOrderLinkedTxn]
+2024-04-04 08:24:29,474 End Process update Event status for "QB_CEDW-SalesOrderLinkedTxn" - <Response [200]>
+2024-04-04 08:24:29,482 ETL Execution elapsed time -> 5.5177
+2024-04-04 08:24:29,522 Start Process Insert Event for "QB_CEDW-SalesReceipt" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:29,522 Processing Table -> SalesReceipt
+2024-04-04 08:24:29,524 Table Truncated -> QB_STAGING.dbo.[SalesReceipt]
+2024-04-04 08:24:34,953 End Process update Event status for "QB_CEDW-SalesReceipt" - <Response [200]>
+2024-04-04 08:24:34,961 ETL Execution elapsed time -> 5.4796
+2024-04-04 08:24:35,001 Start Process Insert Event for "QB_CEDW-SalesReceiptLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:35,001 Processing Table -> SalesReceiptLine
+2024-04-04 08:24:35,003 Table Truncated -> QB_STAGING.dbo.[SalesReceiptLine]
+2024-04-04 08:24:40,480 End Process update Event status for "QB_CEDW-SalesReceiptLine" - <Response [200]>
+2024-04-04 08:24:40,488 ETL Execution elapsed time -> 5.5256
+2024-04-04 08:24:40,531 Start Process Insert Event for "QB_CEDW-SalesRep" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:40,531 Processing Table -> SalesRep
+2024-04-04 08:24:40,533 Table Truncated -> QB_STAGING.dbo.[SalesRep]
+2024-04-04 08:24:45,604 Number of rows Selected -> 9
+2024-04-04 08:24:45,607 Multiple Insert Executed for -> SalesRep
+2024-04-04 08:24:45,661 End Process update Event status for "QB_CEDW-SalesRep" - <Response [200]>
+2024-04-04 08:24:45,669 ETL Execution elapsed time -> 5.1807
+2024-04-04 08:24:45,708 Start Process Insert Event for "QB_CEDW-SalesTaxCode" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:45,708 Processing Table -> SalesTaxCode
+2024-04-04 08:24:45,710 Table Truncated -> QB_STAGING.dbo.[SalesTaxCode]
+2024-04-04 08:24:50,775 Number of rows Selected -> 6
+2024-04-04 08:24:50,777 Multiple Insert Executed for -> SalesTaxCode
+2024-04-04 08:24:50,833 End Process update Event status for "QB_CEDW-SalesTaxCode" - <Response [200]>
+2024-04-04 08:24:50,841 ETL Execution elapsed time -> 5.1720
+2024-04-04 08:24:50,885 Start Process Insert Event for "QB_CEDW-SalesTaxPaymentCheck" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:50,885 Processing Table -> SalesTaxPaymentCheck
+2024-04-04 08:24:50,886 Table Truncated -> QB_STAGING.dbo.[SalesTaxPaymentCheck]
+2024-04-04 08:24:56,031 End Process update Event status for "QB_CEDW-SalesTaxPaymentCheck" - <Response [200]>
+2024-04-04 08:24:56,040 ETL Execution elapsed time -> 5.1993
+2024-04-04 08:24:56,079 Start Process Insert Event for "QB_CEDW-SalesTaxPaymentCheckLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:24:56,079 Processing Table -> SalesTaxPaymentCheckLine
+2024-04-04 08:24:56,081 Table Truncated -> QB_STAGING.dbo.[SalesTaxPaymentCheckLine]
+2024-04-04 08:25:01,642 End Process update Event status for "QB_CEDW-SalesTaxPaymentCheckLine" - <Response [200]>
+2024-04-04 08:25:01,654 ETL Execution elapsed time -> 5.6144
+2024-04-04 08:25:01,755 Start Process Insert Event for "QB_CEDW-ShipMethod" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:01,756 Processing Table -> ShipMethod
+2024-04-04 08:25:01,760 Table Truncated -> QB_STAGING.dbo.[ShipMethod]
+2024-04-04 08:25:06,993 Number of rows Selected -> 5
+2024-04-04 08:25:06,995 Multiple Insert Executed for -> ShipMethod
+2024-04-04 08:25:07,051 End Process update Event status for "QB_CEDW-ShipMethod" - <Response [200]>
+2024-04-04 08:25:07,060 ETL Execution elapsed time -> 5.4044
+2024-04-04 08:25:07,101 Start Process Insert Event for "QB_CEDW-SpecialAccount" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:07,101 Processing Table -> SpecialAccount
+2024-04-04 08:25:07,103 Table Truncated -> QB_STAGING.dbo.[SpecialAccount]
+2024-04-04 08:25:10,022 End Process update Event status for "QB_CEDW-SpecialAccount" - <Response [200]>
+2024-04-04 08:25:10,029 ETL Execution elapsed time -> 2.9698
+2024-04-04 08:25:10,070 Start Process Insert Event for "QB_CEDW-SpecialItem" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:10,070 Processing Table -> SpecialItem
+2024-04-04 08:25:10,072 Table Truncated -> QB_STAGING.dbo.[SpecialItem]
+2024-04-04 08:25:12,835 End Process update Event status for "QB_CEDW-SpecialItem" - <Response [200]>
+2024-04-04 08:25:12,842 ETL Execution elapsed time -> 2.8125
+2024-04-04 08:25:12,882 Start Process Insert Event for "QB_CEDW-StandardTerms" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:12,882 Processing Table -> StandardTerms
+2024-04-04 08:25:12,885 Table Truncated -> QB_STAGING.dbo.[StandardTerms]
+2024-04-04 08:25:17,938 Number of rows Selected -> 11
+2024-04-04 08:25:17,941 Multiple Insert Executed for -> StandardTerms
+2024-04-04 08:25:17,996 End Process update Event status for "QB_CEDW-StandardTerms" - <Response [200]>
+2024-04-04 08:25:18,004 ETL Execution elapsed time -> 5.1622
+2024-04-04 08:25:18,046 Start Process Insert Event for "QB_CEDW-TaxCode" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:18,046 Processing Table -> TaxCode
+2024-04-04 08:25:18,048 Table Truncated -> QB_STAGING.dbo.[TaxCode]
+2024-04-04 08:25:20,680 Number of rows Selected -> 6
+2024-04-04 08:25:20,683 Multiple Insert Executed for -> TaxCode
+2024-04-04 08:25:20,738 End Process update Event status for "QB_CEDW-TaxCode" - <Response [200]>
+2024-04-04 08:25:20,744 ETL Execution elapsed time -> 2.7403
+2024-04-04 08:25:20,785 Start Process Insert Event for "QB_CEDW-Template" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:20,786 Processing Table -> Template
+2024-04-04 08:25:20,787 Table Truncated -> QB_STAGING.dbo.[Template]
+2024-04-04 08:25:23,487 Number of rows Selected -> 28
+2024-04-04 08:25:23,490 Multiple Insert Executed for -> Template
+2024-04-04 08:25:23,540 End Process update Event status for "QB_CEDW-Template" - <Response [200]>
+2024-04-04 08:25:23,547 ETL Execution elapsed time -> 2.8028
+2024-04-04 08:25:23,587 Start Process Insert Event for "QB_CEDW-Terms" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:23,587 Processing Table -> Terms
+2024-04-04 08:25:23,589 Table Truncated -> QB_STAGING.dbo.[Terms]
+2024-04-04 08:25:26,274 Number of rows Selected -> 11
+2024-04-04 08:25:26,277 Multiple Insert Executed for -> Terms
+2024-04-04 08:25:26,331 End Process update Event status for "QB_CEDW-Terms" - <Response [200]>
+2024-04-04 08:25:26,340 ETL Execution elapsed time -> 2.7920
+2024-04-04 08:25:26,383 Start Process Insert Event for "QB_CEDW-TimeTracking" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:26,383 Processing Table -> TimeTracking
+2024-04-04 08:25:26,384 Table Truncated -> QB_STAGING.dbo.[TimeTracking]
+2024-04-04 08:25:31,449 End Process update Event status for "QB_CEDW-TimeTracking" - <Response [200]>
+2024-04-04 08:25:31,457 ETL Execution elapsed time -> 5.1163
+2024-04-04 08:25:31,497 Start Process Insert Event for "QB_CEDW-ToDo" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:31,498 Processing Table -> ToDo
+2024-04-04 08:25:31,498 Table Truncated -> QB_STAGING.dbo.[ToDo]
+2024-04-04 08:25:36,520 Number of rows Selected -> 15
+2024-04-04 08:25:36,523 Multiple Insert Executed for -> ToDo
+2024-04-04 08:25:36,580 End Process update Event status for "QB_CEDW-ToDo" - <Response [200]>
+2024-04-04 08:25:36,588 ETL Execution elapsed time -> 5.1319
+2024-04-04 08:25:36,628 Start Process Insert Event for "QB_CEDW-Transaction" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:25:36,628 Processing Table -> Transaction
+2024-04-04 08:25:36,631 Table Truncated -> QB_STAGING.dbo.[Transaction]
+2024-04-04 08:26:05,965 Number of rows Selected -> 3000
+2024-04-04 08:26:06,147 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:06,670 Number of rows Selected -> 3000
+2024-04-04 08:26:06,848 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:07,358 Number of rows Selected -> 3000
+2024-04-04 08:26:07,574 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:08,093 Number of rows Selected -> 3000
+2024-04-04 08:26:08,274 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:08,811 Number of rows Selected -> 3000
+2024-04-04 08:26:09,034 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:09,563 Number of rows Selected -> 3000
+2024-04-04 08:26:09,761 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:10,271 Number of rows Selected -> 3000
+2024-04-04 08:26:10,458 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:10,975 Number of rows Selected -> 3000
+2024-04-04 08:26:11,160 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:11,676 Number of rows Selected -> 3000
+2024-04-04 08:26:11,879 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:12,410 Number of rows Selected -> 3000
+2024-04-04 08:26:12,598 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:13,114 Number of rows Selected -> 3000
+2024-04-04 08:26:13,334 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:13,855 Number of rows Selected -> 3000
+2024-04-04 08:26:14,047 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:14,579 Number of rows Selected -> 3000
+2024-04-04 08:26:14,778 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:15,293 Number of rows Selected -> 3000
+2024-04-04 08:26:15,483 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:15,998 Number of rows Selected -> 3000
+2024-04-04 08:26:16,208 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:16,724 Number of rows Selected -> 3000
+2024-04-04 08:26:16,923 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:17,443 Number of rows Selected -> 3000
+2024-04-04 08:26:17,651 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:18,167 Number of rows Selected -> 3000
+2024-04-04 08:26:18,374 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:18,894 Number of rows Selected -> 3000
+2024-04-04 08:26:19,154 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:19,695 Number of rows Selected -> 3000
+2024-04-04 08:26:19,926 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:20,445 Number of rows Selected -> 3000
+2024-04-04 08:26:20,660 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:21,179 Number of rows Selected -> 3000
+2024-04-04 08:26:21,396 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:21,913 Number of rows Selected -> 3000
+2024-04-04 08:26:22,130 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:22,661 Number of rows Selected -> 3000
+2024-04-04 08:26:22,868 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:23,386 Number of rows Selected -> 3000
+2024-04-04 08:26:23,589 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:24,115 Number of rows Selected -> 3000
+2024-04-04 08:26:24,299 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:24,941 Number of rows Selected -> 3000
+2024-04-04 08:26:25,277 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:25,944 Number of rows Selected -> 3000
+2024-04-04 08:26:26,287 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:26,900 Number of rows Selected -> 3000
+2024-04-04 08:26:27,489 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:28,210 Number of rows Selected -> 3000
+2024-04-04 08:26:28,489 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:29,192 Number of rows Selected -> 3000
+2024-04-04 08:26:29,526 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:30,312 Number of rows Selected -> 3000
+2024-04-04 08:26:30,614 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:31,135 Number of rows Selected -> 3000
+2024-04-04 08:26:31,334 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:31,848 Number of rows Selected -> 3000
+2024-04-04 08:26:32,073 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:32,607 Number of rows Selected -> 3000
+2024-04-04 08:26:32,809 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:33,325 Number of rows Selected -> 3000
+2024-04-04 08:26:33,551 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:34,061 Number of rows Selected -> 3000
+2024-04-04 08:26:34,283 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:34,801 Number of rows Selected -> 3000
+2024-04-04 08:26:35,012 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:35,548 Number of rows Selected -> 3000
+2024-04-04 08:26:35,762 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:36,273 Number of rows Selected -> 3000
+2024-04-04 08:26:36,488 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:37,013 Number of rows Selected -> 3000
+2024-04-04 08:26:37,223 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:37,748 Number of rows Selected -> 3000
+2024-04-04 08:26:37,952 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:38,472 Number of rows Selected -> 3000
+2024-04-04 08:26:38,670 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:39,188 Number of rows Selected -> 3000
+2024-04-04 08:26:39,396 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:39,929 Number of rows Selected -> 3000
+2024-04-04 08:26:40,127 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:40,652 Number of rows Selected -> 3000
+2024-04-04 08:26:40,880 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:41,397 Number of rows Selected -> 3000
+2024-04-04 08:26:41,623 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:42,148 Number of rows Selected -> 3000
+2024-04-04 08:26:42,373 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:42,903 Number of rows Selected -> 3000
+2024-04-04 08:26:43,105 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:43,627 Number of rows Selected -> 3000
+2024-04-04 08:26:43,831 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:44,358 Number of rows Selected -> 3000
+2024-04-04 08:26:44,565 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:45,080 Number of rows Selected -> 3000
+2024-04-04 08:26:45,286 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:45,797 Number of rows Selected -> 3000
+2024-04-04 08:26:46,014 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:46,526 Number of rows Selected -> 3000
+2024-04-04 08:26:46,781 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:47,307 Number of rows Selected -> 3000
+2024-04-04 08:26:47,498 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:48,016 Number of rows Selected -> 3000
+2024-04-04 08:26:48,224 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:48,739 Number of rows Selected -> 3000
+2024-04-04 08:26:48,953 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:49,470 Number of rows Selected -> 3000
+2024-04-04 08:26:49,684 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:50,226 Number of rows Selected -> 3000
+2024-04-04 08:26:50,449 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:50,966 Number of rows Selected -> 3000
+2024-04-04 08:26:51,179 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:51,713 Number of rows Selected -> 3000
+2024-04-04 08:26:51,915 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:52,442 Number of rows Selected -> 3000
+2024-04-04 08:26:52,642 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:52,698 Number of rows Selected -> 267
+2024-04-04 08:26:52,727 Multiple Insert Executed for -> Transaction
+2024-04-04 08:26:52,782 End Process update Event status for "QB_CEDW-Transaction" - <Response [200]>
+2024-04-04 08:26:52,790 ETL Execution elapsed time -> 76.2009
+2024-04-04 08:26:52,827 Start Process Insert Event for "QB_CEDW-Transfer" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:26:52,827 Processing Table -> Transfer
+2024-04-04 08:26:52,829 Table Truncated -> QB_STAGING.dbo.[Transfer]
+2024-04-04 08:26:56,028 End Process update Event status for "QB_CEDW-Transfer" - <Response [200]>
+2024-04-04 08:26:56,035 ETL Execution elapsed time -> 3.2452
+2024-04-04 08:26:56,076 Start Process Insert Event for "QB_CEDW-TransferInventory" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:26:56,076 Processing Table -> TransferInventory
+2024-04-04 08:26:56,078 Table Truncated -> QB_STAGING.dbo.[TransferInventory]
+2024-04-04 08:27:03,645 End Process update Event status for "QB_CEDW-TransferInventory" - <Response [200]>
+2024-04-04 08:27:03,665 ETL Execution elapsed time -> 7.6291
+2024-04-04 08:27:04,704 Start Process Insert Event for "QB_CEDW-TransferInventoryLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:04,704 Processing Table -> TransferInventoryLine
+2024-04-04 08:27:04,730 Table Truncated -> QB_STAGING.dbo.[TransferInventoryLine]
+2024-04-04 08:27:11,704 End Process update Event status for "QB_CEDW-TransferInventoryLine" - <Response [200]>
+2024-04-04 08:27:11,712 ETL Execution elapsed time -> 8.0470
+2024-04-04 08:27:11,799 Start Process Insert Event for "QB_CEDW-TxnDeleted" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:11,799 Processing Table -> TxnDeleted
+2024-04-04 08:27:11,810 Table Truncated -> QB_STAGING.dbo.[TxnDeleted]
+2024-04-04 08:27:15,313 Number of rows Selected -> 43
+2024-04-04 08:27:15,340 Multiple Insert Executed for -> TxnDeleted
+2024-04-04 08:27:15,464 End Process update Event status for "QB_CEDW-TxnDeleted" - <Response [200]>
+2024-04-04 08:27:15,473 ETL Execution elapsed time -> 3.7608
+2024-04-04 08:27:15,547 Start Process Insert Event for "QB_CEDW-UnitOfMeasureSet" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:15,547 Processing Table -> UnitOfMeasureSet
+2024-04-04 08:27:15,559 Table Truncated -> QB_STAGING.dbo.[UnitOfMeasureSet]
+2024-04-04 08:27:18,919 End Process update Event status for "QB_CEDW-UnitOfMeasureSet" - <Response [200]>
+2024-04-04 08:27:18,928 ETL Execution elapsed time -> 3.4552
+2024-04-04 08:27:18,970 Start Process Insert Event for "QB_CEDW-UnitOfMeasureSetRelatedUnit" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:18,970 Processing Table -> UnitOfMeasureSetRelatedUnit
+2024-04-04 08:27:18,980 Table Truncated -> QB_STAGING.dbo.[UnitOfMeasureSetRelatedUnit]
+2024-04-04 08:27:22,026 End Process update Event status for "QB_CEDW-UnitOfMeasureSetRelatedUnit" - <Response [200]>
+2024-04-04 08:27:22,036 ETL Execution elapsed time -> 3.1075
+2024-04-04 08:27:22,082 Start Process Insert Event for "QB_CEDW-UnitOfMeasureSetDefaultUnit" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:22,082 Processing Table -> UnitOfMeasureSetDefaultUnit
+2024-04-04 08:27:22,088 Table Truncated -> QB_STAGING.dbo.[UnitOfMeasureSetDefaultUnit]
+2024-04-04 08:27:25,149 End Process update Event status for "QB_CEDW-UnitOfMeasureSetDefaultUnit" - <Response [200]>
+2024-04-04 08:27:25,157 ETL Execution elapsed time -> 3.1202
+2024-04-04 08:27:25,200 Start Process Insert Event for "QB_CEDW-Vehicle" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:25,200 Processing Table -> Vehicle
+2024-04-04 08:27:25,213 Table Truncated -> QB_STAGING.dbo.[Vehicle]
+2024-04-04 08:27:30,948 End Process update Event status for "QB_CEDW-Vehicle" - <Response [200]>
+2024-04-04 08:27:30,959 ETL Execution elapsed time -> 5.8009
+2024-04-04 08:27:31,004 Start Process Insert Event for "QB_CEDW-VehicleMileage" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:31,004 Processing Table -> VehicleMileage
+2024-04-04 08:27:31,013 Table Truncated -> QB_STAGING.dbo.[VehicleMileage]
+2024-04-04 08:27:31,470 End Process update Event status for "QB_CEDW-VehicleMileage" - <Response [200]>
+2024-04-04 08:27:31,477 ETL Execution elapsed time -> 0.5186
+2024-04-04 08:27:31,518 Start Process Insert Event for "QB_CEDW-Vendor" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:31,518 Processing Table -> Vendor
+2024-04-04 08:27:31,525 Table Truncated -> QB_STAGING.dbo.[Vendor]
+2024-04-04 08:27:49,825 Number of rows Selected -> 1237
+2024-04-04 08:27:51,126 Multiple Insert Executed for -> Vendor
+2024-04-04 08:27:51,189 End Process update Event status for "QB_CEDW-Vendor" - <Response [200]>
+2024-04-04 08:27:51,197 ETL Execution elapsed time -> 19.7192
+2024-04-04 08:27:51,243 Start Process Insert Event for "QB_CEDW-VendorContacts" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:27:51,243 Processing Table -> VendorContacts
+2024-04-04 08:27:51,253 Table Truncated -> QB_STAGING.dbo.[VendorContacts]
+2024-04-04 08:28:05,098 End Process update Event status for "QB_CEDW-VendorContacts" - <Response [200]>
+2024-04-04 08:28:05,106 ETL Execution elapsed time -> 13.9094
+2024-04-04 08:28:05,189 Start Process Insert Event for "QB_CEDW-VendorCredit" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:05,189 Processing Table -> VendorCredit
+2024-04-04 08:28:05,200 Table Truncated -> QB_STAGING.dbo.[VendorCredit]
+2024-04-04 08:28:12,013 Number of rows Selected -> 34
+2024-04-04 08:28:12,062 Multiple Insert Executed for -> VendorCredit
+2024-04-04 08:28:12,130 End Process update Event status for "QB_CEDW-VendorCredit" - <Response [200]>
+2024-04-04 08:28:12,139 ETL Execution elapsed time -> 7.0324
+2024-04-04 08:28:12,180 Start Process Insert Event for "QB_CEDW-VendorCreditExpenseLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:12,180 Processing Table -> VendorCreditExpenseLine
+2024-04-04 08:28:12,192 Table Truncated -> QB_STAGING.dbo.[VendorCreditExpenseLine]
+2024-04-04 08:28:18,740 Number of rows Selected -> 41
+2024-04-04 08:28:18,806 Multiple Insert Executed for -> VendorCreditExpenseLine
+2024-04-04 08:28:18,884 End Process update Event status for "QB_CEDW-VendorCreditExpenseLine" - <Response [200]>
+2024-04-04 08:28:18,893 ETL Execution elapsed time -> 6.7540
+2024-04-04 08:28:18,936 Start Process Insert Event for "QB_CEDW-VendorCreditItemLine" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:18,936 Processing Table -> VendorCreditItemLine
+2024-04-04 08:28:18,949 Table Truncated -> QB_STAGING.dbo.[VendorCreditItemLine]
+2024-04-04 08:28:25,760 End Process update Event status for "QB_CEDW-VendorCreditItemLine" - <Response [200]>
+2024-04-04 08:28:25,768 ETL Execution elapsed time -> 6.8751
+2024-04-04 08:28:25,811 Start Process Insert Event for "QB_CEDW-VendorCreditLinkedTxn" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:25,811 Processing Table -> VendorCreditLinkedTxn
+2024-04-04 08:28:25,815 Table Truncated -> QB_STAGING.dbo.[VendorCreditLinkedTxn]
+2024-04-04 08:28:32,394 Number of rows Selected -> 38
+2024-04-04 08:28:32,436 Multiple Insert Executed for -> VendorCreditLinkedTxn
+2024-04-04 08:28:32,523 End Process update Event status for "QB_CEDW-VendorCreditLinkedTxn" - <Response [200]>
+2024-04-04 08:28:32,531 ETL Execution elapsed time -> 6.7638
+2024-04-04 08:28:32,574 Start Process Insert Event for "QB_CEDW-VendorType" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:32,574 Processing Table -> VendorType
+2024-04-04 08:28:32,587 Table Truncated -> QB_STAGING.dbo.[VendorType]
+2024-04-04 08:28:38,206 Number of rows Selected -> 6
+2024-04-04 08:28:38,233 Multiple Insert Executed for -> VendorType
+2024-04-04 08:28:38,315 End Process update Event status for "QB_CEDW-VendorType" - <Response [200]>
+2024-04-04 08:28:38,324 ETL Execution elapsed time -> 5.7921
+2024-04-04 08:28:38,369 Start Process Insert Event for "QB_CEDW-WorkersCompCode" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:38,369 Processing Table -> WorkersCompCode
+2024-04-04 08:28:38,380 Table Truncated -> QB_STAGING.dbo.[WorkersCompCode]
+2024-04-04 08:28:44,003 End Process update Event status for "QB_CEDW-WorkersCompCode" - <Response [200]>
+2024-04-04 08:28:44,011 ETL Execution elapsed time -> 5.6876
+2024-04-04 08:28:44,054 Start Process Insert Event for "QB_CEDW-WorkersCompCodeRateHistory" - <Response [200]> - {'Response': '1 record inserted'}
+2024-04-04 08:28:44,055 Processing Table -> WorkersCompCodeRateHistory
+2024-04-04 08:28:44,066 Table Truncated -> QB_STAGING.dbo.[WorkersCompCodeRateHistory]
+2024-04-04 08:28:49,603 End Process update Event status for "QB_CEDW-WorkersCompCodeRateHistory" - <Response [200]>
+2024-04-04 08:28:49,612 ETL Execution elapsed time -> 5.6007
+2024-04-04 08:28:51,280 Executed the Stored Procedure SP_QBAppend
+2024-04-04 08:28:51,280 Number of Tables processed -> 150
+2024-04-04 08:28:51,280 Total Execution elapsed time -> 1130.7627
+2024-04-04 08:28:51,280 Execution ended. Error code is 0
+2024-04-04 08:28:51,281 Closing DB Connection "ControlConnection"
+2024-04-04 08:28:51,288 Closing DB Connection "QbSourceConnection"
+2024-04-04 08:29:06,365 Closing DB Connection "QbTargetConnection"
+2024-04-04 10:21:27,475 ********************************************************************************
+2024-04-04 10:21:27,475 Start of process
+2024-04-04 10:21:27,475 Retrieved connection data
+2024-04-04 10:21:27,476 Retrieved email notification data
+2024-04-04 10:21:27,518 Opened DB Connection "ControlConnection"
+2024-04-04 10:21:27,519 Opened QB Target DB connection
