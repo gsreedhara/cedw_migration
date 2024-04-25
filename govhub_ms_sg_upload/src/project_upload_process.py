@@ -13,7 +13,7 @@ import yaml
 def main():
     # try to access the yaml configuration file
     try:
-        with open('govhub_ms_sg_upload/testing.yml', 'r') as f:
+        with open('/home/ubuntu/airflow/dags/govhub_ms_sg_upload/testing.yml', 'r') as f:
             data = yaml.safe_load(f)
     # raise an exception if yaml configuration data cannot be read
     except Exception as err:
@@ -22,7 +22,7 @@ def main():
 
     # try to read the connection data
     try:
-        with open("govhub_ms_sg_upload/config/ConnectionData.json") as f:
+        with open("/home/ubuntu/airflow/dags/govhub_ms_sg_upload/config/ConnectionData.json") as f:
             DbConnectionData = json.load(f)
         logging.info('Retrieved connection data')
     # raise an exception if connection data cannot be read
@@ -78,9 +78,9 @@ def main():
 
         try:
             logging.info('Cleaning up Staging Tables')
-            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/cleanup_staging.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, '/home/ubuntu/airflow/dags/govhub_ms_sg_upload/sql/cleanup_staging.sql',batch_run_id=filename)
             logging.info('Cleaning up Integrated Tables')
-            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/cleanup_integrated.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, '/home/ubuntu/airflow/dags/govhub_ms_sg_upload/sql/cleanup_integrated.sql',batch_run_id=filename)
         except:
             logging.error('Unable to clean up Staging or Integrated Tables')
             continue
@@ -90,7 +90,7 @@ def main():
             #Parse the XML and turn into a tree
             root = ms.XMLtoElementTree(fullpath)
             #Load configuration file containing XML to Staging Table mapping
-            config = ms.initializeConfiguration('govhub_ms_sg_upload/config/config.json')
+            config = ms.initializeConfiguration('/home/ubuntu/airflow/dags/govhub_ms_sg_upload/config/config.json')
             #Parse the element Tree into a dictionary of dataframes
             data = ms.ElementTreetoDataFrameDictionary(root,config,filename)
         except:
@@ -112,16 +112,16 @@ def main():
 
         try:
             logging.info('Updating Unique / Foreign Keys in Staging')
-            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/update_staging.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, '/home/ubuntu/airflow/dags/govhub_ms_sg_upload/sql/update_staging.sql',batch_run_id=filename)
         except:
             logging.error('Unable to update unique and FK in Staging')
             continue
         
-        ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/stage_to_integrated.sql',batch_run_id=filename)
+        ms.execute_sqlfile(CEDW_dbConn, '/home/ubuntu/airflow/dags/govhub_ms_sg_upload/sql/stage_to_integrated.sql',batch_run_id=filename)
 
         try:
             logging.info('Moving data from Staging to Integrated')
-            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/stage_to_integrated.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, '/home/ubuntu/airflow/dags/govhub_ms_sg_upload/sql/stage_to_integrated.sql',batch_run_id=filename)
         except:
             logging.error('Unable to move data from Staging to Integrated')
             continue
@@ -129,7 +129,7 @@ def main():
         try:
             logging.info("Moving source file into archive directory")
             #This is the path for PROD, double check path for DEV as absolute path is different between the two
-            os.rename(fullpath,f'govhub_ms_sg_upload/sample_data/processed/processed_{filename_no_ext}_{process_time}')
+            os.rename(fullpath,f'/home/ubuntu/airflow/dags/govhub_ms_sg_upload/sample_data/processed/processed_{filename_no_ext}_{process_time}')
         except:
             logging.warning("Unable to move source file into archive directory")
             continue
