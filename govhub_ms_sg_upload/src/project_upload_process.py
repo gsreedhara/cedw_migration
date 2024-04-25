@@ -6,18 +6,28 @@ import pandas as pd
 import project_upload_helper as ms
 import logging
 import datetime
+import yaml
 
 
 
 def main():
+    # try to access the yaml configuration file
+    try:
+        with open('govhub_ms_sg_upload/testing.yml', 'r') as f:
+            data = yaml.safe_load(f)
+    # raise an exception if yaml configuration data cannot be read
+    except Exception as err:
+        logging.error(f'Error reading yaml configuration data - {err}')
+        raise Exception
+
     # try to read the connection data
     try:
-        with open("config/ConfigurationData.json") as f:
+        with open("govhub_ms_sg_upload/config/ConnectionData.json") as f:
             DbConnectionData = json.load(f)
         logging.info('Retrieved connection data')
     # raise an exception if connection data cannot be read
     except Exception as err:
-        logging.error(f'Error reading connection data - {err}')
+        logging.error(f'Error reading JSON configuration data - {err}')
         raise Exception
 
     # create a connection to the CEDW database
@@ -25,10 +35,10 @@ def main():
     logging.info('Opened CEDW DB connection')
 
     #This is the DEV location
-    LOGGING_PATH = os.environ['LOGGING_PATH']
+    LOGGING_PATH = data.get('LOGGING_PATH')
 
     #This is the Prod Location
-    MS_UPLOAD_LOC = os.environ['MS_UPLOAD_LOC']
+    MS_UPLOAD_LOC = data.get('MS_UPLOAD_LOC')
     files_in_import_dir = [os.path.join(MS_UPLOAD_LOC, file) for file in os.listdir(MS_UPLOAD_LOC)]
 
     
@@ -68,9 +78,9 @@ def main():
 
         try:
             logging.info('Cleaning up Staging Tables')
-            ms.execute_sqlfile(CEDW_dbConn, 'sql/cleanup_staging.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/cleanup_staging.sql',batch_run_id=filename)
             logging.info('Cleaning up Integrated Tables')
-            ms.execute_sqlfile(CEDW_dbConn, 'sql/cleanup_integrated.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/cleanup_integrated.sql',batch_run_id=filename)
         except:
             logging.error('Unable to clean up Staging or Integrated Tables')
             continue
@@ -80,24 +90,12 @@ def main():
             #Parse the XML and turn into a tree
             root = ms.XMLtoElementTree(fullpath)
             #Load configuration file containing XML to Staging Table mapping
-            config = ms.initializeConfiguration('config/config.json')
+            config = ms.initializeConfiguration('govhub_ms_sg_upload/config/config.json')
             #Parse the element Tree into a dictionary of dataframes
             data = ms.ElementTreetoDataFrameDictionary(root,config,filename)
         except:
             logging.warning(f'Unable to parse XML into dictionary')
             continue
-        
-
-        for table_name,dataframe in data.items():
-
-            column_list = [x for x in dataframe.columns]
-            num_columns = len(column_list)
-            if num_columns > 0: 
-                insertStmt = f"""INSERT INTO {CEDW_dbConn.getDbName()}.{CEDW_dbConn.getDbOwner()}.{table_name}
-                        ({','.join(column_list)}) VALUES ({','.join(["%s"]*num_columns)}) """
-                CEDW_dbConn.insertMultipleRows(insertStmt, dataframe.values.tolist())
-                logging.info(f"Inserted into {table_name}")
-
 
         for table_name,dataframe in data.items():
             try:
@@ -112,18 +110,18 @@ def main():
                 logging.error(f"Unable to insert into {table_name}")
                 continue
 
-        ms.execute_sqlfile(CEDW_dbConn, 'sql/update_staging.sql',batch_run_id=filename)
-
         try:
             logging.info('Updating Unique / Foreign Keys in Staging')
-            ms.execute_sqlfile(CEDW_dbConn, 'sql/update_staging.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/update_staging.sql',batch_run_id=filename)
         except:
             logging.error('Unable to update unique and FK in Staging')
             continue
         
+        ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/stage_to_integrated.sql',batch_run_id=filename)
+
         try:
             logging.info('Moving data from Staging to Integrated')
-            ms.execute_sqlfile(CEDW_dbConn, 'sql/stage_to_integrated.sql',batch_run_id=filename)
+            ms.execute_sqlfile(CEDW_dbConn, 'govhub_ms_sg_upload/sql/stage_to_integrated.sql',batch_run_id=filename)
         except:
             logging.error('Unable to move data from Staging to Integrated')
             continue
@@ -131,7 +129,7 @@ def main():
         try:
             logging.info("Moving source file into archive directory")
             #This is the path for PROD, double check path for DEV as absolute path is different between the two
-            os.rename(fullpath,f'extra_sample_data\processed_{filename_no_ext}_{process_time}')
+            os.rename(fullpath,f'govhub_ms_sg_upload/sample_data/processed/processed_{filename_no_ext}_{process_time}')
         except:
             logging.warning("Unable to move source file into archive directory")
             continue
