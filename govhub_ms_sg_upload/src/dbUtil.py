@@ -331,6 +331,9 @@ class dbConn:
         try:
             cur = self.dbConn.cursor()
             cur.fast_executemany = True  # This is the process for SQL Server
+            print(sql_stmt) 
+            print(row_list)
+            
             cur.executemany(sql_stmt, row_list)
             cur.execute("commit")
             return

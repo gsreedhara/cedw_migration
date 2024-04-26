@@ -33,14 +33,16 @@
 # -- * *********************************************************************************
 # LIBRARIES NEEDED
 import sys
-import pyodbc
 import json
-import pprint
 from slack_sdk import WebClient
 from datetime import datetime, timedelta
 import snowflake.connector
 import ssl
-import os
+import yaml
+
+with open('THANX_SCRIPTS/testing.yml', 'r') as f:
+    data = yaml.safe_load(f)
+
 
 # -- * *********************************************************************************
 #PARAMETERS
@@ -50,11 +52,12 @@ import os
 #SLACK_TOKEN = sys.argv[4]
 #SLACK_CHANNEL_ID = sys.argv[5]
 
-server_name = os.environ['SERVER_NAME']
-db_name = os.environ['DATABASE']
-table_name = os.environ['TABLE_NAME']
-SLACK_TOKEN = os.environ['SLACK_TOKEN']
-SLACK_CHANNEL_ID = os.environ['CHANNEL_ID']
+
+server_name = data.get('SERVER_NAME')
+db_name = data.get('DATABASE')
+table_name = data.get('TABLE_NAME')
+SLACK_TOKEN = data.get('SLACK_TOKEN')
+SLACK_CHANNEL_ID = data.get('CHANNEL_ID')
 days = int(30)
 
 #days to consider when retrieving modified messages from Slack:
@@ -64,12 +67,12 @@ days = int(30)
 # -- * *********************************************************************************
 #CONNECTION WITH SQL SERVER DATABASE AND SLACK CHANNEL
 connection = snowflake.connector.connect(
-                    user=os.environ['USER'],
-                    password=os.environ['PASSWORD'],
-                    account=os.environ['ACCOUNT'],
-                    warehouse=os.environ['WAREHOUSE'],
-                    role=os.environ['ROLE'],
-                    database=os.environ['DATABASE'])
+                    user=data.get('USER'),
+                    password=data.get('PASSWORD'),
+                    account=data.get('ACCOUNT'),
+                    warehouse=data.get('WAREHOUSE'),
+                    role=data.get('ROLE'),
+                    database=data.get('DATABASE'))
 
 cursor = connection.cursor()
 
@@ -106,7 +109,6 @@ if "members" in user_list:
 # -- * *********************************************************************************
 #Find the email corresponding to name or id
 def returnUserEmail(name = None, id = None):
-	#pprint.pprint(users_information.get("ttagliari"))
 	if name != None:
 		return users_nameEmail.get(name)
 	elif id != None:
@@ -145,7 +147,6 @@ def returnToUsers(text = None):
 	while count > 0:
 		to_user_init_index = textClean.find("<")
 		to_user_fina_index = textClean.find(">")
-		#pprint.pprint(textClean[to_user_init_index+2 :to_user_fina_index])
 		
 		to_user_ids_aux = str(textClean[to_user_init_index+2 :to_user_fina_index] or "")
 		#if validateSlackID(to_user_ids_aux):
@@ -158,10 +159,6 @@ def returnToUsers(text = None):
 
 		values = {"ids":to_user_ids[1:None],"names":to_user_names[1:None],"emails":to_user_emails[1:None],"textClean":textClean.strip()}
 	return values
-	#pprint.pprint(to_user_ids[1:None])
-	#pprint.pprint(to_user_names[1:None])
-	#pprint.pprint(to_user_emails[1:None])
-	#pprint.pprint(textClean)
 
 # -- * *********************************************************************************
 #Returning the last Slack timestamp imported
@@ -180,9 +177,6 @@ def toTimestamp(dt, epoch=datetime(1970,1,1)):
     td = dt - epoch
     return (td.microseconds + (td.seconds + td.days * 86400) * 10**6) / 10**6 
 
-#timestamp30 = datetime.now() + timedelta(-30)
-#pprint.pprint(timestamp30) 
-#pprint.pprint(toTimestamp(timestamp30))
 
 # -- * *********************************************************************************
 #Getting all messages from database from the last (parameter days) days into a dictionary for update comparision
@@ -193,10 +187,7 @@ def importPreviousMessages(days):
 	dateToCheck = datetime.now() + timedelta(-days)
 	timestampPrev = toTimestamp(dateToCheck)
 
-	cursor.execute("SELECT SRC_TS, SRC_THRD_TS, MSG_TXT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, REACTN_SCTN\
-	,TO_USR_EMAIL, TO_USRNM, TO_USR_SRC_ID, ICNS, EDITED\
-		 FROM "+table_name+" WHERE SRC_TS > "+str(timestampPrev)+" \
-		 AND INTRNL_TS IN (SELECT MAX(INTRNL_TS) AS INTRNL_TS FROM "+table_name+" GROUP BY SRC_TS)")
+	cursor.execute("SELECT SRC_TS, SRC_THRD_TS, MSG_TXT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, REACTN_SCTN, TO_USR_EMAIL, TO_USRNM, TO_USR_SRC_ID, ICNS, EDITED FROM MAIN."+table_name+" WHERE SRC_TS > "+str(timestampPrev)+" AND INTRNL_TS IN (SELECT MAX(INTRNL_TS) AS INTRNL_TS FROM MAIN."+table_name+" GROUP BY SRC_TS)")
 
 	result_set = cursor.fetchall()
 	for row in result_set:
@@ -204,7 +195,6 @@ def importPreviousMessages(days):
 			prevMessages[row[0]] = {"SRC_THRD_TS":row[1], "MSG_TXT":row[2], "RPLY_CNT":row[3], "RPLY_USRS_CNT":row[4], "LTST_RPLY_TS":row[5]\
 			, "RPLY_USRS_SCTN":row[6], "RPLIES_SCTN":row[7], "REACTN_SCTN":row[8], "TO_USR_EMAIL":row[9], "TO_USRNM":row[10], "TO_USR_SRC_ID":row[11]\
 			, "ICNS":row[12], "EDITED":row[13]}
-			#prevMessages = {"SRC_TS":row[0],"REACTN_SCTN":row[1],"EDITED":row[2],"MSG_TXT":row[3]}
 	
 	return prevMessages
 
@@ -215,7 +205,6 @@ lastTimestamp = returnLastTS()
 
 channel_history = sc.conversations_history(channel=SLACK_CHANNEL_ID)
 
-#channel_history = sc.api_call(api_method="conversations.history", channel_id=SLACK_CHANNEL_ID, count = 1000, inclusive = True, oldest = lastTimestamp)
 if "messages" in channel_history:
 	for each_msg in channel_history["messages"]:
 
@@ -266,114 +255,84 @@ if "messages" in channel_history:
 
 		if "ts" in each_msg:
 			SRC_TS = each_msg["ts"]
-			#pprint.pprint(each_msg["ts"])
 
 		if "thread_ts" in each_msg:	
 			SRC_THRD_TS = each_msg["thread_ts"]
-		#  	#pprint.pprint(each_msg["thread_ts"])
 
 		if "type" in each_msg:
 			MSG_TYP = each_msg["type"]
-		# 	#pprint.pprint(each_msg["type"])
 
 		if "subtype" in each_msg:
 			MSG_SBTYP = each_msg["subtype"]
-		#  	#pprint.pprint(each_msg["subtype"])
 
 		if "message_id" in each_msg:
 			MSG_ID = each_msg["message_id"]
-		#  	#pprint.pprint(each_msg["message_id"])
 
 		if "client_message_id" in each_msg:
 			CLNT_MSG_ID = each_msg["client_message_id"]
-		#  	#pprint.pprint(each_msg["client_message_id"])
 		
 		MSG_TXT = text_to_aux.get("textClean")
-		# #pprint.pprint(text_to_aux.get("textClean"))
 		
 		FRM_USR_SRC_ID = from_user_id
-		# #pprint.pprint(from_user_id)
 
 		if "parent_user_id" in each_msg:
 			PRNT_USR_SRC_ID = each_msg["parent_user_id"]
-		#  	#pprint.pprint(each_msg["parent_user_id"])
 		
 		if "attachments" in each_msg:
 			ATTCHMNTS_SCTN = json.dumps(each_msg["attachments"])
-		#  	#pprint.pprint(each_msg["attachments"])
 		
 		if "FLS_SCTN" in each_msg:
 			FLS_SCTN = each_msg["FLS_SCTN"]
-		# 	#pprint.pprint(each_msg["FLS_SCTN"])
 
 		if "upload" in each_msg:
 			UPLD = each_msg["upload"]
-		#  	#pprint.pprint(each_msg["upload"])
 
 		if "display_as_bot" in each_msg:
 			DSPL_AS_BOT = each_msg["display_as_bot"]
-		#  	#pprint.pprint(each_msg["display_as_bot"])
 		
 		if "reply_count" in each_msg:	
 			RPLY_CNT = each_msg["reply_count"]
-		#  	#pprint.pprint(each_msg["reply_count"])
 
 		if "reply_users_count" in each_msg:
 			RPLY_USRS_CNT = each_msg["reply_users_count"]
-		#  	#pprint.pprint(each_msg["reply_users_count"])
 
 		if "latest_reply" in each_msg:
 			LTST_RPLY_TS = each_msg["latest_reply"]
-		#  	#pprint.pprint(each_msg["latest_reply"])
 
 		if "reply_users" in each_msg:
 			RPLY_USRS_SCTN = json.dumps(each_msg["reply_users"])
-		#  	#pprint.pprint(each_msg["reply_users"])
 
 		if "replies" in each_msg:	
 			RPLY_USRS_SCTN = json.dumps(each_msg["replies"])
-		#  	#pprint.pprint(each_msg["replies"])
 
 		if "subscribed" in each_msg:
 			SBSCRBD = each_msg["subscribed"]
-		#  	#pprint.pprint(each_msg["subscribed"])
 		
 		if "reactions" in each_msg:
 			REACTN_SCTN = json.dumps(each_msg["reactions"])
-		#  	#pprint.pprint(each_msg["reactions"])
 
 		if "root" in each_msg:
 			ROOT_SCTN = each_msg["root"]
-		#  	#pprint.pprint(each_msg["root"])
 		
 		FRM_USR_EMAIL = from_user_email
-		# #pprint.pprint(from_user_email)
 
 		TO_USR_EMAIL = text_to_aux.get("emails")
-		# #pprint.pprint(text_to_aux.get("emails"))
 
 		FRM_USRNM = from_user_name
-		# #pprint.pprint(from_user_name)
 
 		TO_USRNM = text_to_aux.get("names")
-		# #pprint.pprint(text_to_aux.get("names"))
 		
 		TO_USR_SRC_ID = text_to_aux.get("ids")
-		# #pprint.pprint(text_to_aux.get("ids"))
 	 
 		if "icons" in each_msg:
 			ICNS = json.dumps(each_msg["icons"])
-		#  	#pprint.pprint(each_msg["icons"])
 
 		if "bot_id" in each_msg:
 			BOT_ID = each_msg["bot_id"]
-		#  	#pprint.pprint(each_msg["bot_id"])
 
 		if "edited" in each_msg:
 			EDITED = json.dumps(each_msg["edited"])
-		#  	#pprint.pprint(each_msg["bot_id"])
 
-		#pprint.pprint(each_msg)
 
 		SQLCommand = ("INSERT INTO MAIN."+table_name+" (SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN\
 		,FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN\
@@ -387,8 +346,6 @@ if "messages" in channel_history:
 		cursor.execute(SQLCommand,Values)        
 		connection.commit()
 
-		#pprint.pprint(each_msg)
-		#pprint.pprint("-------------------Message staged successfully--------------------")
 
 
 
@@ -403,9 +360,8 @@ tsUpdated = {}
 
 #Retrieving messages from database
 prevMessages = importPreviousMessages(days)
-#pprint.pprint(previousMessages)
 
-channel_history = sc.api_call("conversations.history", channel = SLACK_CHANNEL_ID, count = 1000, inclusive = True, oldest = timestampPrev)
+channel_history = sc.api_call(api_method="conversations.history",json={'channel': SLACK_CHANNEL_ID})
 if "messages" in channel_history:
 	for each_msg in channel_history["messages"]:
 
@@ -456,112 +412,83 @@ if "messages" in channel_history:
 
 		if "ts" in each_msg:
 			SRC_TS = each_msg["ts"]
-			#pprint.pprint(each_msg["ts"])
 
 		if "thread_ts" in each_msg:	
 			SRC_THRD_TS = each_msg["thread_ts"]
-		#  	#pprint.pprint(each_msg["thread_ts"])
 
 		if "type" in each_msg:
 			MSG_TYP = each_msg["type"]
-		# 	#pprint.pprint(each_msg["type"])
 
 		if "subtype" in each_msg:
 			MSG_SBTYP = each_msg["subtype"]
-		#  	#pprint.pprint(each_msg["subtype"])
 
 		if "message_id" in each_msg:
 			MSG_ID = each_msg["message_id"]
-		#  	#pprint.pprint(each_msg["message_id"])
 
 		if "client_message_id" in each_msg:
 			CLNT_MSG_ID = each_msg["client_message_id"]
-		#  	#pprint.pprint(each_msg["client_message_id"])
 		
 		MSG_TXT = text_to_aux.get("textClean")
-		# #pprint.pprint(text_to_aux.get("textClean"))
 		
 		FRM_USR_SRC_ID = from_user_id
-		# #pprint.pprint(from_user_id)
 
 		if "parent_user_id" in each_msg:
 			PRNT_USR_SRC_ID = each_msg["parent_user_id"]
-		#  	#pprint.pprint(each_msg["parent_user_id"])
 		
 		if "attachments" in each_msg:
 			ATTCHMNTS_SCTN = json.dumps(each_msg["attachments"])
-		#  	#pprint.pprint(each_msg["attachments"])
 		
 		if "FLS_SCTN" in each_msg:
 			FLS_SCTN = each_msg["FLS_SCTN"]
-		# 	#pprint.pprint(each_msg["FLS_SCTN"])
 
 		if "upload" in each_msg:
 			UPLD = each_msg["upload"]
-		#  	#pprint.pprint(each_msg["upload"])
 
 		if "display_as_bot" in each_msg:
 			DSPL_AS_BOT = each_msg["display_as_bot"]
-		#  	#pprint.pprint(each_msg["display_as_bot"])
 		
 		if "reply_count" in each_msg:	
 			RPLY_CNT = str(each_msg["reply_count"])
-		#  	#pprint.pprint(each_msg["reply_count"])
 
 		if "reply_users_count" in each_msg:
 			RPLY_USRS_CNT = str(each_msg["reply_users_count"])
-		#  	#pprint.pprint(each_msg["reply_users_count"])
 
 		if "latest_reply" in each_msg:
 			LTST_RPLY_TS = each_msg["latest_reply"]
-		#  	#pprint.pprint(each_msg["latest_reply"])
 
 		if "reply_users" in each_msg:
 			RPLY_USRS_SCTN = json.dumps(each_msg["reply_users"])
-		#  	#pprint.pprint(each_msg["reply_users"])
 
 		if "replies" in each_msg:	
 			RPLY_USRS_SCTN = json.dumps(each_msg["replies"])
-		#  	#pprint.pprint(each_msg["replies"])
 
 		if "subscribed" in each_msg:
 			SBSCRBD = each_msg["subscribed"]
-		#  	#pprint.pprint(each_msg["subscribed"])
 		
 		if "reactions" in each_msg:
 			REACTN_SCTN = json.dumps(each_msg["reactions"])
-		#  	#pprint.pprint(each_msg["reactions"])
 
 		if "root" in each_msg:
 			ROOT_SCTN = each_msg["root"]
-		#  	#pprint.pprint(each_msg["root"])
 		
 		FRM_USR_EMAIL = from_user_email
-		# #pprint.pprint(from_user_email)
 
 		TO_USR_EMAIL = text_to_aux.get("emails")
-		# #pprint.pprint(text_to_aux.get("emails"))
 
 		FRM_USRNM = from_user_name
-		# #pprint.pprint(from_user_name)
 
 		TO_USRNM = text_to_aux.get("names")
-		# #pprint.pprint(text_to_aux.get("names"))
 		
 		TO_USR_SRC_ID = text_to_aux.get("ids")
-		# #pprint.pprint(text_to_aux.get("ids"))
 	 
 		if "icons" in each_msg:
 			ICNS = json.dumps(each_msg["icons"])
-		#  	#pprint.pprint(each_msg["icons"])
 
 		if "bot_id" in each_msg:
 			BOT_ID = each_msg["bot_id"]
-		#  	#pprint.pprint(each_msg["bot_id"])
 
 		if "edited" in each_msg:
 			EDITED = json.dumps(each_msg["edited"])
-		#  	#pprint.pprint(each_msg["bot_id"])
 
 
 		prevMessagesSlack[SRC_TS] = {"SRC_THRD_TS":SRC_THRD_TS, "MSG_TXT":MSG_TXT, "RPLY_CNT":RPLY_CNT, "RPLY_USRS_CNT":RPLY_USRS_CNT, \
@@ -569,30 +496,19 @@ if "messages" in channel_history:
 		,"TO_USR_EMAIL":TO_USR_EMAIL, "TO_USRNM":TO_USRNM, "TO_USR_SRC_ID":TO_USR_SRC_ID, "ICNS":ICNS, "EDITED":EDITED}
 		
 
-		#pprint.pprint("---------------------------------------")
-		#pprint.pprint(each_msg)
-
 		#Insert into database the updated ones"
 		if prevMessagesSlack.get(SRC_TS) != prevMessages.get(SRC_TS):
 			
-			SQLCommand = ("INSERT INTO "+table_name+" (SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN\
-			,FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN\
-			,ROOT_SCTN, FRM_USR_EMAIL, TO_USR_EMAIL, FRM_USRNM, TO_USRNM, TO_USR_SRC_ID, ICNS, BOT_ID,EDITED) \
-			VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)")    
+			SQLCommand = ("INSERT INTO MAIN."+table_name+" (SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN, FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN, ROOT_SCTN, FRM_USR_EMAIL, TO_USR_EMAIL, FRM_USRNM, TO_USRNM, TO_USR_SRC_ID, ICNS, BOT_ID, EDITED) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")    
 
-			Values = [SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN\
-			,FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN\
-			,ROOT_SCTN, FRM_USR_EMAIL, TO_USR_EMAIL, FRM_USRNM, TO_USRNM, TO_USR_SRC_ID, ICNS, BOT_ID, EDITED] 
+			Values = [SRC_TS, SRC_THRD_TS, MSG_TYP, MSG_SBTYP, MSG_ID, CLNT_MSG_ID, MSG_TXT, FRM_USR_SRC_ID, PRNT_USR_SRC_ID, ATTCHMNTS_SCTN, FLS_SCTN, UPLD, DSPL_AS_BOT, RPLY_CNT, RPLY_USRS_CNT, LTST_RPLY_TS, RPLY_USRS_SCTN, RPLIES_SCTN, SBSCRBD, REACTN_SCTN, ROOT_SCTN, FRM_USR_EMAIL, TO_USR_EMAIL, FRM_USRNM, TO_USRNM, TO_USR_SRC_ID, ICNS, BOT_ID, EDITED] 
 
 			cursor.execute(SQLCommand,Values)        
 			connection.commit()
 
 			tsUpdated[SRC_TS] = {"SRC_THRD_TS":SRC_THRD_TS, "MSG_TXT":MSG_TXT, "RPLY_CNT":RPLY_CNT, "RPLY_USRS_CNT":RPLY_USRS_CNT, \
-		"LTST_RPLY_TS":LTST_RPLY_TS, "RPLY_USRS_SCTN":RPLY_USRS_SCTN, "RPLIES_SCTN":RPLIES_SCTN, "REACTN_SCTN":REACTN_SCTN\
-		,"TO_USR_EMAIL":TO_USR_EMAIL, "TO_USRNM":TO_USRNM, "TO_USR_SRC_ID":TO_USR_SRC_ID, "ICNS":ICNS, "EDITED":EDITED}
+			"LTST_RPLY_TS":LTST_RPLY_TS, "RPLY_USRS_SCTN":RPLY_USRS_SCTN, "RPLIES_SCTN":RPLIES_SCTN, "REACTN_SCTN":REACTN_SCTN\
+			,"TO_USR_EMAIL":TO_USR_EMAIL, "TO_USRNM":TO_USRNM, "TO_USR_SRC_ID":TO_USR_SRC_ID, "ICNS":ICNS, "EDITED":EDITED}
 			
-			#pprint.pprint("---------------------------------------")
-			#pprint.pprint(prevMessagesSlack.get(SRC_TS))
-			#pprint.pprint(prevMessages.get(SRC_TS))
 
 sys.exit()

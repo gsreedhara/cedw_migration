@@ -1,4 +1,4 @@
-INSERT INTO CEDW_HUB_DEV.MAIN.Project_Plan_Header_WTF (Project_Id
+INSERT INTO CEDW_HUB_DEV.MAIN.PROJECT_PLAN_HEADER_WTF (Project_Id
 ,Staging_Unique_Key
 ,Source_File_Nm
 ,Save_Version
@@ -129,7 +129,7 @@ ELSE cast(New_Task_Start_Dt as datetime) END
 ,Sg_File_Content_Type
 ,Sg_Project_Title
 ,Sg_Project_Subject
-FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Header_Xml 
+FROM PXLTD_STAGING_DEV.MAIN.MS_PROJECT_HEADER_XML
 where Batch_Run_Id = '{Batch_Run_Id}';
 
 INSERT INTO CEDW_HUB_DEV.MAIN.Project_Plan_Task_WTF 
@@ -630,12 +630,12 @@ JOIN CEDW_HUB_DEV.MAIN.Project_Plan_Task_WTF B
 ON A.Ms_Project_Task_Id = B.Staging_Unique_Key
 where A.Batch_Run_Id = '{Batch_Run_Id}';
 
-USE PXLTD_STAGING;
-WITH separated as 
-(SELECT *, ROW_NUMBER() OVER (PARTITION BY Ms_Project_Header_Id, Ms_Project_Calendar_Id, Batch_Run_Id, Day_Type_Num ORDER BY unique_key DESC) rn 
-FROM Ms_Project_Calendar_Weekday_Times_Xml
-where Batch_Run_Id = '{Batch_Run_Id}')
-INSERT INTO CEDW_HUB.dbo.Project_Plan_Calendar_Weekday_WTF
+CREATE OR REPLACE TEMPORARY TABLE PXLTD_STAGING_DEV.MAIN.SEPERATED AS 
+SELECT *, ROW_NUMBER() OVER (PARTITION BY MS_PROJECT_HEADER_ID, MS_PROJECT_CALENDAR_ID, BATCH_RUN_ID, DAY_TYPE_NUM ORDER BY UNIQUE_KEY DESC) rn  
+FROM PXLTD_STAGING_DEV.MAIN.MS_PROJECT_CALENDAR_WEEKDAY_TIMES_XML
+WHERE BATCH_RUN_ID = '{Batch_Run_Id}';
+
+INSERT INTO CEDW_HUB_DEV.MAIN.Project_Plan_Calendar_Weekday_WTF
 (
 Project_Plan_Calendar_Id
 ,Staging_Unique_Key
@@ -665,35 +665,32 @@ FROM
 (SELECT A.*, B.From_Working_Time, B.To_Working_Time
 FROM 
 (SELECT * 
-FROM Ms_Project_Calendar_Weekday_Xml
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Weekday_Xml
 WHERE Batch_Run_Id = '{Batch_Run_Id}') A 
 LEFT JOIN 
 (SELECT * 
-FROM separated 
+FROM PXLTD_STAGING_DEV.MAIN.SEPERATED 
 where rn = 2) B
 ON A.Ms_Project_Header_Id = B.Ms_Project_Header_Id
 AND A.Ms_Project_Calendar_Id= B.Ms_Project_Calendar_Id 
 AND A.Batch_Run_Id = B.Batch_Run_Id
 AND A.Day_Type_Num = B.Day_Type_Num) D
 LEFT JOIN (SELECT * 
-FROM separated 
+FROM PXLTD_STAGING_DEV.MAIN.SEPERATED 
 where rn = 1) C
 ON D.Ms_Project_Header_Id = C.Ms_Project_Header_Id
 AND D.Ms_Project_Calendar_Id= C.Ms_Project_Calendar_Id 
 AND D.Batch_Run_Id = C.Batch_Run_Id
 AND D.Day_Type_Num = C.Day_Type_Num) E
-JOIN CEDW_HUB.dbo.Project_Plan_Calendar_WTF F 
+JOIN CEDW_HUB_DEV.MAIN.Project_Plan_Calendar_WTF F 
 ON E.Ms_Project_Calendar_Id = F.Staging_Unique_Key;
 
--- commented out due to syntax problems
+CREATE OR REPLACE TEMPORARY TABLE PXLTD_STAGING_DEV.MAIN.SEPERATED AS 
+SELECT *, ROW_NUMBER() OVER (PARTITION BY MS_PROJECT_HEADER_ID, MS_PROJECT_CALENDAR_ID, BATCH_RUN_ID, DAY_WORKING ORDER BY UNIQUE_KEY DESC) rn  
+FROM PXLTD_STAGING_DEV.MAIN.MS_PROJECT_CALENDAR_EXCEPTION_TIMES_XML
+WHERE BATCH_RUN_ID = '{Batch_Run_Id}';
 
-/***
-USE PXLTD_STAGING;
-WITH separated as 
-(SELECT *, ROW_NUMBER() OVER (PARTITION BY Ms_Project_Header_Id, Ms_Project_Calendar_Id, Batch_Run_Id, Day_Working ORDER BY unique_key DESC) rn 
-FROM Ms_Project_Calendar_Exception_Times_Xml
-where Batch_Run_Id = '{Batch_Run_Id}')
-INSERT INTO CEDW_HUB.dbo.Project_Plan_Calendar_Exception_WTF
+INSERT INTO CEDW_HUB_DEV.MAIN.Project_Plan_Calendar_Exception_WTF
 (
 Project_Plan_Calendar_Id,
 Project_Plan_Header_Id,
@@ -727,23 +724,22 @@ FROM
 (SELECT A.*, B.From_Working_Time, B.To_Working_Time
 FROM 
 (SELECT * 
-FROM Ms_Project_Calendar_Exception_Xml
+FROM PXLTD_STAGING_DEV.MAIN.Ms_Project_Calendar_Exception_Xml
 WHERE Batch_Run_Id = '{Batch_Run_Id}') A 
 LEFT JOIN 
 (SELECT * 
-FROM separated 
+FROM PXLTD_STAGING_DEV.MAIN.SEPERATED 
 where rn = 2) B
 ON A.Ms_Project_Header_Id = B.Ms_Project_Header_Id
 AND A.Ms_Project_Calendar_Id= B.Ms_Project_Calendar_Id 
 AND A.Batch_Run_Id = B.Batch_Run_Id
 AND A.Day_Working = B.Day_Working) D
 LEFT JOIN (SELECT * 
-FROM separated 
+FROM PXLTD_STAGING_DEV.MAIN.SEPERATED 
 where rn = 1) C
 ON D.Ms_Project_Header_Id = C.Ms_Project_Header_Id
 AND D.Ms_Project_Calendar_Id= C.Ms_Project_Calendar_Id 
 AND D.Batch_Run_Id = C.Batch_Run_Id
 AND D.Day_Working = C.Day_Working) E
-JOIN CEDW_HUB.dbo.Project_Plan_Calendar_WTF F 
+JOIN CEDW_HUB_DEV.MAIN.Project_Plan_Calendar_WTF F 
 ON E.Ms_Project_Calendar_Id = F.Staging_Unique_Key;
-***/
