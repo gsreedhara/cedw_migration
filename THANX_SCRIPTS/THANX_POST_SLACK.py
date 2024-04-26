@@ -42,7 +42,8 @@ import numpy as np
 import sys
 import snowflake.connector
 import ssl
-import os
+import yaml
+
 
 # declare variables
 # commented out until the script is integrated with the command line scheduler 
@@ -54,33 +55,37 @@ import os
 #channel_name = sys.argv[5]
 """
 
+with open('THANX_SCRIPTS/testing.yml', 'r') as f:
+    data = yaml.safe_load(f)
+
 # test variables
-slack_token = os.environ['SLACK_TOKEN']
-channel_name = os.environ['CHANNEL_NAME']
+slack_token = data.get('SLACK_TOKEN')
+channel_name = data.get('CHANNEL_NAME')
 
 # ********************************************************************
-# Section 1 # Pulling Data From SQL Server
+# Section 1 # Pulling Data From THANX database
 # ********************************************************************
 
 #Create a connection with snowflake
 def create_connection():
     
     db = snowflake.connector.connect(
-                    user=os.environ['USER'],
-                    password=os.environ['PASSWORD'],
-                    account=os.environ['ACCOUNT'],
-                    warehouse=os.environ['WAREHOUSE'],
-                    role=os.environ['ROLE'],
-                    database=os.environ['DATABASE'])
+                    user=data.get('USER'),
+                    password=data.get('PASSWORD'),
+                    account=data.get('ACCOUNT'),
+                    warehouse=data.get('WAREHOUSE'),
+                    role=data.get('ROLE'),
+                    database=data.get('DATABASE'))
     return db
     
 def run_queries(connection):
     #Run SQL query to pull information from the messaging table 
-    query_from = "SELECT RCGNTN_MSG_ID,RCGNTN_FRM_USR_EMAIL,RCGNTN_MSG_TXT,RCGNTN_TAG_DESC,PRCSSD_IND FROM \
-    MAIN.RCGNTN_MSG_WRK WHERE PRCSSD_IND ='N'"
-    #Use pd.read_sql to create a pandas Dataframe from this data
+    query_from = "SELECT RCGNTN_MSG_ID,RCGNTN_FRM_USR_EMAIL,RCGNTN_MSG_TXT,RCGNTN_TAG_DESC,PRCSSD_IND FROM MAIN.RCGNTN_MSG_WRK WHERE PRCSSD_IND ='N'"
+    
+    #Use pd.read_sql to create a pandas datafram of the emails sending the recognition messages
     from_df = pd.read_sql(query_from,connection)
-
+    
+    #If the dataframe is empty, exit the script
     if len(from_df) > 0:
         pass
     else:
@@ -88,12 +93,17 @@ def run_queries(connection):
 
     #Run SQL query to pull dataframe with Receiver Email(s)
     query_to = "SELECT RCGNTN_MSG_ID,RCGNTN_TO_USR_EMAIL FROM MAIN.RCGNTN_MSG_TO_WRK"
+
+    #Use pd.read_sql to create a pandas dataframe of the emails receiving the recognition messages
     to_df = pd.read_sql(query_to,connection)
+
     #Run SQL query to pull dataframe with Company Values included in Message
-    query_values = "SELECT RCGNTN_MSG_ID,RCGNTN_VALUES_DESC FROM MAIN.RCGNTN_MSG_VALUE_WRK WHERE \
-    RCGNTN_MSG_ID IN (SELECT RCGNTN_MSG_ID FROM MAIN.RCGNTN_MSG_WRK)"
+    query_values = "SELECT RCGNTN_MSG_ID,RCGNTN_VALUES_DESC FROM MAIN.RCGNTN_MSG_VALUE_WRK WHERE RCGNTN_MSG_ID IN (SELECT RCGNTN_MSG_ID FROM MAIN.RCGNTN_MSG_WRK)"
+    
+    #Use pd.read_sql to create a pandas dataframe of the values included in the recognition messages
     value_df = pd.read_sql(query_values,connection)
 
+    #check if the from_df and to_df have the same number of unique RCGNTN_MSG_ID
     if len(from_df["RCGNTN_MSG_ID"].unique()) > len(to_df["RCGNTN_MSG_ID"].unique()):
         no_to_ids = np.setdiff1d(from_df["RCGNTN_MSG_ID"].values,to_df["RCGNTN_MSG_ID"].values)
         for diff in no_to_ids:
@@ -102,10 +112,8 @@ def run_queries(connection):
         pass
         
     #Perform a join operation on the receiver and sender tables where the key is the RCGNTN_MSG_ID Column 
-    
     final_message_df_id = from_df.merge(to_df,on = "RCGNTN_MSG_ID").merge(value_df, how = "left",on = "RCGNTN_MSG_ID")
     final_message_df_id.fillna(" ",axis=0,inplace=True)
-
 
     return final_message_df_id
 
@@ -115,6 +123,7 @@ def run_queries(connection):
 
 def create_merged_dataframe(slack_token,df_without_usernames):
     print(df_without_usernames.columns)
+    
     #List Necessary Token Variable to Pull Data from Slack 
     SLACK_TOKEN = slack_token
     ssl_context = ssl.create_default_context()
@@ -155,7 +164,7 @@ def create_merged_dataframe(slack_token,df_without_usernames):
 # *************************************************************************
 
 def post_message_and_add_reactions(connection,df_with_usernames,slack_token,channel_name):
-    #Create the pyodbc cursor that permits the executing of SQL queries
+    #Create the snowflake cursor that permits the executing of SQL queries
     global cursor   
     cursor = connection.cursor()
     print(df_with_usernames.columns)
@@ -213,7 +222,7 @@ def post_message_and_add_reactions(connection,df_with_usernames,slack_token,chan
 
         #The Reaction Method also requires the message timestamp
         #Hence the message data is pulled, and the message with the highest Unix timestamp (being the most recent) will have the appropriate reaction added to it
-        channel_history = sc.api_call(method="conversations.history",channel=str(channel_id))
+        channel_history = ssc.api_call(api_method="conversations.history",json={'channel': channel_id})
         for i,j in enumerate(channel_history["messages"]):
             if "bot_message" in list((channel_history["messages"][i].values())):
                 timestamps.append(channel_history["messages"][i]["ts"])
@@ -247,23 +256,31 @@ def post_message_and_add_reactions(connection,df_with_usernames,slack_token,chan
 def delete_day_old_rows(connection):
 
     cursor.execute("DELETE FROM MAIN.RCGNTN_MSG_WRK WHERE RCGNTN_TS < dateadd(day, -1, GETDATE()) AND PRCSSD_IND = 'Y'")
-    cursor.execute("DELETE FROM MAIN.RCGNTN_MSG_TO_WRK WHERE RCGNTN_TS < dateadd(day, -1, GETDATE()) AND RCGNTN_MSG_ID NOT IN (SELECT RCGNTN_MSG_ID \
-        FROM MAIN.RCGNTN_MSG_WRK)")
-    cursor.execute("DELETE FROM MAIN.RCGNTN_MSG_VALUE_WRK WHERE RCGNTN_TS < dateadd(day, -1, GETDATE()) AND RCGNTN_MSG_ID NOT IN (SELECT RCGNTN_MSG_ID \
-        FROM MAIN.RCGNTN_MSG_WRK)")
+    cursor.execute("DELETE FROM MAIN.RCGNTN_MSG_TO_WRK WHERE RCGNTN_TS < dateadd(day, -1, GETDATE()) AND RCGNTN_MSG_ID NOT IN (SELECT RCGNTN_MSG_ID FROM MAIN.RCGNTN_MSG_WRK)")
+    cursor.execute("DELETE FROM MAIN.RCGNTN_MSG_VALUE_WRK WHERE RCGNTN_TS < dateadd(day, -1, GETDATE()) AND RCGNTN_MSG_ID NOT IN (SELECT RCGNTN_MSG_ID FROM MAIN.RCGNTN_MSG_WRK)")
     connection.commit()
     cursor.close()
-    #close connection
 
 def main():
+    # connect to the staging database
     create_connection()
     connection = create_connection()
+
+    # grab the data and transform it into a dataframe
     run_queries(connection)
     df_without_usernames = run_queries(connection)
+
+    # map the usernames to the emails
     create_merged_dataframe(slack_token,df_without_usernames)
     df_with_usernames = create_merged_dataframe(slack_token,df_without_usernames)
+    
+    # post the messages and reactions to the slack channel
     post_message_and_add_reactions(connection,df_with_usernames ,slack_token,channel_name)
+    
+    # clean up the database
     delete_day_old_rows(connection)
+    
+    # close the connection
     sys.exit()
 
 if __name__ == '__main__':
