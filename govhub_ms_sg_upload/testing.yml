@@ -4,9 +4,9 @@ LOGGING_PATH:  govhub_ms_sg_upload/etl_logs
 MS_UPLOAD_LOC: govhub_ms_sg_upload/sample_data
 
 ### snowflake
-USER: aturnbull
-PASSWORD: projectX2024
-ACCOUNT: nlxoxef-vp32965
+USER: 
+PASSWORD: 
+ACCOUNT: 
 WAREHOUSE: COMPUTE_WH
 ROLE: dbdev
 DATABASE: CEDW_HUB_DEV
