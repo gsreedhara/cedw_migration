@@ -28,6 +28,7 @@ import snowflake.connector as sc
 import mysql.connector as mc
 import csv
 import yaml
+import os
 
 with open('creds.yml', 'r') as f:
     data = yaml.safe_load(f)
@@ -97,9 +98,10 @@ def main():
         sf_crsr.execute("use SCHEMA MAIN")
         sf_crsr.execute("use WAREHOUSE COMPUTE_WH")
         if 'task' in tablename or 'at_user' in tablename:
-             sf_crsr.execute(f"copy into PXLTD_CEDW_DEV.MAIN.ACTITIME_{tablename}_LAND from @~/staged/{tablename}.csv.gz file_format='my_csv_format'")
+             sf_crsr.execute(f"copy into PXLTD_CEDW_DEV.MAIN.ACTITIME_{tablename}_LAND from @~/staged/{tablename}.csv.gz file_format='my_csv_format' overwrite=True")
         else:
-             sf_crsr.execute(f"copy into PXLTD_CEDW_DEV.MAIN.ACTITIME_{tablename} from @~/staged/{tablename}.csv.gz file_format='my_csv_format'")
+             sf_crsr.execute(f"copy into PXLTD_CEDW_DEV.MAIN.ACTITIME_{tablename} from @~/staged/{tablename}.csv.gz file_format='my_csv_format' overwrite=True")
+        os.remove(f"{tablename}.csv")
     print("Inserting from LAND task table to main table")
     insString="INSERT INTO PXLTD_CEDW_DEV.MAIN.ACTITIME_TASK (ID,CUSTOMER_ID,PROJECT_ID,CREATE_TIMESTAMP,COMPLETION_DATE,NAME,NAME_LOWER,DESCRIPTION,DEADLINE_DATE,BILLING_TYPE_ID,BUDGET) SELECT ID,CUSTOMER_ID,PROJECT_ID,CREATE_TIMESTAMP,COMPLETION_DATE,NAME,NAME_LOWER,DESCRIPTION,DEADLINE_DATE,BILLING_TYPE_ID,BUDGET FROM PXLTD_CEDW_DEV.MAIN.ACTITIME_TASK_LAND"
     sf_conn.cursor().execute(insString)
