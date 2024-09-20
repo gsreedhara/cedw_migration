@@ -121,6 +121,11 @@ def main():
     manage_all_users_ltr,is_sick,def_sick_rules,is_activated,time_zone_group_id,receive_user_changes_notification\
     FROM PXLTD_CEDW_DEV.MAIN.ACTITIME_AT_USER_LAND"
     sf_conn.cursor().execute(insString)
+
+    sf_conn.cursor().execute("call MAIN.SP_GET_PROJ_FROM_ACTITIME()")
+    print("The SP SP_GET_PROJ_FROM_ACTITIME has been run successfully")
+    sf_conn.cursor().execute("call MAIN.SP_GET_People_On_Project_From_Actitime()")
+    print("The SP SP_GET_People_On_Project_From_Actitime has been Run successfully")
     print('Steps complete')
     sf_crsr.close()
     sf_conn.close()

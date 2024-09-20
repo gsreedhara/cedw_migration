@@ -6,4 +6,6 @@ govhub_ms_sg_upload/src/config/ConnectionData.json
 QB_SCRIPTS/ConnectionData.json
 QB_SCRIPTS/ConnectionDataTest.json
 THANX_SCRIPTS/testing.env
-THANX_SCRIPTS/testing.yml
+.env
+*.yml
+archive_CE/*

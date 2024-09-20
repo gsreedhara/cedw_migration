@@ -1,0 +1,60 @@
+----------------------------------------------------------------------------------
+  Source Folder:  TESTISSUE  - CSV File:  .DS_Store 
+
+  - Staging output    :  
+  - Destination Table :    - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  TESTISSUE  - CSV File:  WRKNG_TPS_WKLY.csv 
+
+This is the first scan ------------------------------------------------------
+
+   EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID INVCD_TS
+0   PX0002  PR000016  2016111       A  ...     240         A                 
+1   PX0002  PR000082  2016111       A  ...    1680         A                 
+2   PX0002  PR000082  2016112       A  ...    1680         A                 
+3   PX0002  PR000082  2016113       A  ...    1920         A                 
+4   PX0002  PR000401  2016112       A  ...     240         A                 
+..     ...       ...      ...     ...  ...     ...       ...     ...      ...
+83  PX0002  PR000082  2016114       R  ...       0         A                 
+84  PX0051  PR000012  2016114       R  ...       0         A                 
+85  PX0065  PR000074  2016114       R  ...       0         A                 
+86  PX0065  PR000074  2016115       R  ...       0         A                 
+87  PX0076  PR000011  2016114       R  ...       0         A                 
+
+[88 rows x 9 columns]
+  - CSV File Name     :  WRKNG_TPS_WKLY.csv  - Records:  88
+   EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID INVCD_TS
+0   PX0002  PR000016  2016111       A  ...     240         A                 
+1   PX0002  PR000082  2016111       A  ...    1680         A                 
+2   PX0002  PR000082  2016112       A  ...    1680         A                 
+3   PX0002  PR000082  2016113       A  ...    1920         A                 
+4   PX0002  PR000401  2016112       A  ...     240         A                 
+..     ...       ...      ...     ...  ...     ...       ...     ...      ...
+83  PX0002  PR000082  2016114       R  ...       0         A                 
+84  PX0051  PR000012  2016114       R  ...       0         A                 
+85  PX0065  PR000074  2016114       R  ...       0         A                 
+86  PX0065  PR000074  2016115       R  ...       0         A                 
+87  PX0076  PR000011  2016114       R  ...       0         A                 
+
+[88 rows x 9 columns]
+Source data after replacing Blank with NaN
+   EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID  INVCD_TS
+0   PX0002  PR000016  2016111       A  ...     240         A     NaN       NaN
+1   PX0002  PR000082  2016111       A  ...    1680         A     NaN       NaN
+2   PX0002  PR000082  2016112       A  ...    1680         A     NaN       NaN
+3   PX0002  PR000082  2016113       A  ...    1920         A     NaN       NaN
+4   PX0002  PR000401  2016112       A  ...     240         A     NaN       NaN
+..     ...       ...      ...     ...  ...     ...       ...     ...       ...
+83  PX0002  PR000082  2016114       R  ...       0         A     NaN       NaN
+84  PX0051  PR000012  2016114       R  ...       0         A     NaN       NaN
+85  PX0065  PR000074  2016114       R  ...       0         A     NaN       NaN
+86  PX0065  PR000074  2016115       R  ...       0         A     NaN       NaN
+87  PX0076  PR000011  2016114       R  ...       0         A     NaN       NaN
+
+[88 rows x 9 columns]
+  - Staging output    :  
+  - Destination Table :  WRKNG_TPS_WKLY  - Records:  0
+
+  - Data Load Error   : Expression type does not match column data type, expecting TIMESTAMP_NTZ(9) but got FLOAT for column INVCD_TS
+Nothing to Load

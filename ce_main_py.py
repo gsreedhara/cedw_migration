@@ -1,3 +1,24 @@
+# -- * **************************************************************************
+# -- * File Name        : ce_etl_main.py
+# -- *
+# -- * Description      : Contains the main CE ETL logic
+# -- *                    Fetches data from the XLS file that has proj estimates
+# -- *                    Truncates and loads data from Excel file to CEDW - snowflake
+# -- *
+# -- * Purpose          : Used to run the ETL logic for actitime
+# -- * Date Written     : Apr 2024
+# -- * Input Parameters : N/A
+# -- * Input Files      : N/A
+# -- * Output Parameters: N/A
+# -- * Tables Read      : N/A - The functions support access to all tables
+# -- * Tables Updated/Inserted   : N/A
+# -- * Run Frequency    : Every 15-30 mins
+# -- * Developed By     : Giridhar Sreedhara - ProjectX
+# -- * Code Location    : https://github.com/TBD
+# -- *
+# -- * **************************************************************************
+# -- * **************************************************************************
+
 import pandas as pd
 import openpyxl
 import boto3
@@ -7,10 +28,10 @@ from snowflake.connector.pandas_tools import write_pandas
 from snowflake.connector.pandas_tools import pd_writer
 import yaml as yaml
 
-
+#loads the configuration and connection variables
 with open('creds.yml', 'r') as f:
     data = yaml.safe_load(f)
-print(data.get('SF_USER'))
+
 
 
 def readExcelHiddenSheet(filename, sheetname):

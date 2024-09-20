@@ -2,3 +2,6 @@ snowflake-connector-python
 mysql-connector-python
 slack-sdk
 pandas
+"snowflake-connector-python[pandas]"
+python-dotenv
+pyyaml

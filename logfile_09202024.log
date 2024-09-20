@@ -1,0 +1,540 @@
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillPaymentCreditCardLine.csv 
+
+  - CSV File Name     :  BillPaymentCreditCardLine.csv  - Records:  19
+  - Staging output    :  [('oneysveehe/file0.txt', 'LOADED', 19, 19, 1, 0, None, None, None, None)]
+  - Destination Table :  BillPaymentCreditCardLine  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  WorkersCompCodeRateHistory.csv 
+
+  - CSV File Name     :  WorkersCompCodeRateHistory.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  WorkersCompCodeRateHistory  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  VendorCreditItemLine.csv 
+
+  - CSV File Name     :  VendorCreditItemLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  VendorCreditItemLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  VendorCreditLinkedTxn.csv 
+
+  - CSV File Name     :  VendorCreditLinkedTxn.csv  - Records:  38
+  - Staging output    :  [('gvqaufhwha/file0.txt', 'LOADED', 38, 38, 1, 0, None, None, None, None)]
+  - Destination Table :  VendorCreditLinkedTxn  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditCardCreditExpenseLine.csv 
+
+  - CSV File Name     :  CreditCardCreditExpenseLine.csv  - Records:  92
+  - Staging output    :  [('mrrledcnix/file0.txt', 'LOADED', 92, 92, 1, 0, None, None, None, None)]
+  - Destination Table :  CreditCardCreditExpenseLine  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  UnitOfMeasureSetRelatedUnit.csv 
+
+  - CSV File Name     :  UnitOfMeasureSetRelatedUnit.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  UnitOfMeasureSetRelatedUnit  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  TransferInventory.csv 
+
+  - CSV File Name     :  TransferInventory.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  TransferInventory  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditCardCreditItemLine.csv 
+
+  - CSV File Name     :  CreditCardCreditItemLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CreditCardCreditItemLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Template.csv 
+
+  - CSV File Name     :  Template.csv  - Records:  28
+  - Staging output    :  [('dbyimnakqu/file0.txt', 'LOADED', 28, 28, 1, 0, None, None, None, None)]
+  - Destination Table :  Template  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillToPay.csv 
+
+  - CSV File Name     :  BillToPay.csv  - Records:  89
+  - Staging output    :  [('vurckgtdcj/file0.txt', 'LOADED', 89, 89, 1, 0, None, None, None, None)]
+  - Destination Table :  BillToPay  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CustomerAddtionalNote.csv 
+
+  - CSV File Name     :  CustomerAddtionalNote.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CustomerAddtionalNote  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CustomField.csv 
+
+  - CSV File Name     :  CustomField.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CustomField  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ReceivePaymentToDeposit.csv 
+
+  - CSV File Name     :  ReceivePaymentToDeposit.csv  - Records:  279
+  - Staging output    :  [('smssdchvtp/file0.txt', 'LOADED', 279, 279, 1, 0, None, None, None, None)]
+  - Destination Table :  ReceivePaymentToDeposit  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BuildAssembly.csv 
+
+  - CSV File Name     :  BuildAssembly.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  BuildAssembly  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ItemGroup.csv 
+
+  - CSV File Name     :  ItemGroup.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  ItemGroup  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CheckApplyCheckToTxn.csv 
+
+  - CSV File Name     :  CheckApplyCheckToTxn.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CheckApplyCheckToTxn  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  PriceLevel.csv 
+
+  - CSV File Name     :  PriceLevel.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  PriceLevel  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CustomerContacts.csv 
+
+  - CSV File Name     :  CustomerContacts.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CustomerContacts  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ItemAssembliesCanBuild.csv 
+
+  - CSV File Name     :  ItemAssembliesCanBuild.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  ItemAssembliesCanBuild  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditMemo.csv 
+
+  - CSV File Name     :  CreditMemo.csv  - Records:  1963
+  - Staging output    :  [('hfniuekdmj/file0.txt', 'LOADED', 1963, 1963, 1, 0, None, None, None, None)]
+  - Destination Table :  CreditMemo  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  QB_ACCT_HIER_T2_delete.csv 
+
+  - CSV File Name     :  QB_ACCT_HIER_T2_delete.csv  - Records:  3
+  - Staging output    :  [('wdowskunnf/file0.txt', 'LOADED', 3, 3, 1, 0, None, None, None, None)]
+  - Destination Table :  QB_ACCT_HIER_T2_delete  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  PurchaseOrderLinkedTxn.csv 
+
+  - CSV File Name     :  PurchaseOrderLinkedTxn.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  PurchaseOrderLinkedTxn  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BuildAssemblyComponentItemLine.csv 
+
+  - CSV File Name     :  BuildAssemblyComponentItemLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  BuildAssemblyComponentItemLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ReceivePaymentLineLinkedTxn.csv 
+
+  - CSV File Name     :  ReceivePaymentLineLinkedTxn.csv  - Records:  2766
+  - Staging output    :  [('pkwsszdqxy/file0.txt', 'LOADED', 2766, 2766, 1, 0, None, None, None, None)]
+  - Destination Table :  ReceivePaymentLineLinkedTxn  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  PriceLevelPerItem.csv 
+
+  - CSV File Name     :  PriceLevelPerItem.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  PriceLevelPerItem  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CheckItemLine.csv 
+
+  - CSV File Name     :  CheckItemLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CheckItemLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BLNC_SHT_GRPNG.csv 
+
+  - CSV File Name     :  BLNC_SHT_GRPNG.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  BLNC_SHT_GRPNG  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  SalesOrderLine.csv 
+
+  - CSV File Name     :  SalesOrderLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  SalesOrderLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  SpecialItem.csv 
+
+  - CSV File Name     :  SpecialItem.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  SpecialItem  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  VendorCreditExpenseLine.csv 
+
+  - CSV File Name     :  VendorCreditExpenseLine.csv  - Records:  41
+  - Staging output    :  [('ryhchekeqe/file0.txt', 'LOADED', 41, 41, 1, 0, None, None, None, None)]
+  - Destination Table :  VendorCreditExpenseLine  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditCardCharge.csv 
+
+  - CSV File Name     :  CreditCardCharge.csv  - Records:  9737
+  - Staging output    :  [('wyekfoyjel/file0.txt', 'LOADED', 9737, 9737, 1, 0, None, None, None, None)]
+  - Destination Table :  CreditCardCharge  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  VendorContacts.csv 
+
+  - CSV File Name     :  VendorContacts.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  VendorContacts  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Vehicle.csv 
+
+  - CSV File Name     :  Vehicle.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  Vehicle  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditCardChargeItemLine.csv 
+
+  - CSV File Name     :  CreditCardChargeItemLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  CreditCardChargeItemLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Entity.csv 
+
+  - CSV File Name     :  Entity.csv  - Records:  2030
+  - Staging output    :  [('zccdoudgbu/file0.txt', 'LOADED', 2030, 2030, 1, 0, None, None, None, None)]
+  - Destination Table :  Entity  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  SalesTaxPaymentCheckLine.csv 
+
+  - CSV File Name     :  SalesTaxPaymentCheckLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  SalesTaxPaymentCheckLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Third_Party_Source_Etl_Execution.csv 
+
+  - CSV File Name     :  Third_Party_Source_Etl_Execution.csv  - Records:  151
+  - Staging output    :  [('layazndcqr/file0.txt', 'LOADED', 151, 151, 1, 0, None, None, None, None)]
+  - Destination Table :  Third_Party_Source_Etl_Execution  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BarCode.csv 
+
+  - CSV File Name     :  BarCode.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  BarCode  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  SalesTaxPaymentCheck.csv 
+
+  - CSV File Name     :  SalesTaxPaymentCheck.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  SalesTaxPaymentCheck  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Preferences.csv 
+
+  - CSV File Name     :  Preferences.csv  - Records:  1
+  - Staging output    :  [('plkfaamrvd/file0.txt', 'LOADED', 1, 1, 1, 0, None, None, None, None)]
+  - Destination Table :  Preferences  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Bill.csv 
+
+  - CSV File Name     :  Bill.csv  - Records:  3484
+  - Staging output    :  [('czxcacskyk/file0.txt', 'LOADED', 3484, 3484, 1, 0, None, None, None, None)]
+  - Destination Table :  Bill  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ModifyInwardGroupLine.csv 
+
+  - CSV File Name     :  ModifyInwardGroupLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  ModifyInwardGroupLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  PurchaseOrderLine.csv 
+
+  - CSV File Name     :  PurchaseOrderLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  PurchaseOrderLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditCardChargeExpenseLine.csv 
+
+  - CSV File Name     :  CreditCardChargeExpenseLine.csv  - Records:  9753
+  - Staging output    :  [('fejacbhwen/file0.txt', 'LOADED', 9753, 9753, 1, 0, None, None, None, None)]
+  - Destination Table :  CreditCardChargeExpenseLine  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  InventoryAdjustment.csv 
+
+  - CSV File Name     :  InventoryAdjustment.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  InventoryAdjustment  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Employee.csv 
+
+  - CSV File Name     :  Employee.csv  - Records:  221
+  - Staging output    :  [('sdiahbhfec/file0.txt', 'LOADED', 221, 221, 1, 0, None, None, None, None)]
+  - Destination Table :  Employee  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillExpenseLine.csv 
+
+  - CSV File Name     :  BillExpenseLine.csv  - Records:  4734
+  - Staging output    :  [('salbxcgvja/file0.txt', 'LOADED', 4734, 4734, 1, 0, None, None, None, None)]
+  - Destination Table :  BillExpenseLine  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Invoice.csv 
+
+  - CSV File Name     :  Invoice.csv  - Records:  2820
+  - Staging output    :  [('dviimheqwl/file0.txt', 'LOADED', 2820, 2820, 1, 0, None, None, None, None)]
+  - Destination Table :  Invoice  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Company.csv 
+
+  - CSV File Name     :  Company.csv  - Records:  1
+  - Staging output    :  [('akfrwpzxef/file0.txt', 'LOADED', 1, 1, 1, 0, None, None, None, None)]
+  - Destination Table :  Company  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillLinkedTxn.csv 
+
+  - CSV File Name     :  BillLinkedTxn.csv  - Records:  3488
+  - Staging output    :  [('wypzwlcgpo/file0.txt', 'LOADED', 3488, 3488, 1, 0, None, None, None, None)]
+  - Destination Table :  BillLinkedTxn  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  HostMetaData.csv 
+
+  - CSV File Name     :  HostMetaData.csv  - Records:  1
+  - Staging output    :  [('qcmumxyqxy/file0.txt', 'LOADED', 1, 1, 1, 0, None, None, None, None)]
+  - Destination Table :  HostMetaData  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  QB_RPRT_TYPE.csv 
+
+  - CSV File Name     :  QB_RPRT_TYPE.csv  - Records:  3
+  - Staging output    :  [('oyqyymogdt/file0.txt', 'LOADED', 3, 3, 1, 0, None, None, None, None)]
+  - Destination Table :  QB_RPRT_TYPE  - Records:  3
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  JournalEntryCreditLine.csv 
+
+  - CSV File Name     :  JournalEntryCreditLine.csv  - Records:  3334
+  - Staging output    :  [('cbtpsakgge/file0.txt', 'LOADED', 3334, 3334, 1, 0, None, None, None, None)]
+  - Destination Table :  JournalEntryCreditLine  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  CreditMemoLinkedTxn.csv 
+
+  - CSV File Name     :  CreditMemoLinkedTxn.csv  - Records:  1963
+  - Staging output    :  [('kdsuinqhnh/file0.txt', 'LOADED', 1963, 1963, 1, 0, None, None, None, None)]
+  - Destination Table :  CreditMemoLinkedTxn  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  OtherName.csv 
+
+  - CSV File Name     :  OtherName.csv  - Records:  2
+  - Staging output    :  [('oiwhamhxwd/file0.txt', 'LOADED', 2, 2, 1, 0, None, None, None, None)]
+  - Destination Table :  OtherName  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ItemSubtotal.csv 
+
+  - CSV File Name     :  ItemSubtotal.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  ItemSubtotal  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  SalesRep.csv 
+
+  - CSV File Name     :  SalesRep.csv  - Records:  9
+  - Staging output    :  [('ovknswnatt/file0.txt', 'LOADED', 9, 9, 1, 0, None, None, None, None)]
+  - Destination Table :  SalesRep  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillItemLine.csv 
+
+  - CSV File Name     :  BillItemLine.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  BillItemLine  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillPaymentCheck.csv 
+
+  - CSV File Name     :  BillPaymentCheck.csv  - Records:  3206
+  - Staging output    :  [('dypyuqyhao/file0.txt', 'LOADED', 3206, 3206, 1, 0, None, None, None, None)]
+  - Destination Table :  BillPaymentCheck  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  UnitOfMeasureSetDefaultUnit.csv 
+
+  - CSV File Name     :  UnitOfMeasureSetDefaultUnit.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  UnitOfMeasureSetDefaultUnit  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Customer.csv 
+
+  - CSV File Name     :  Customer.csv  - Records:  512
+  - Staging output    :  [('tgltkyakrh/file0.txt', 'LOADED', 512, 512, 1, 0, None, None, None, None)]
+  - Destination Table :  Customer  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillPaymentCreditCardLineLinkedTxn.csv 
+
+  - CSV File Name     :  BillPaymentCreditCardLineLinkedTxn.csv  - Records:  19
+  - Staging output    :  [('bwluxcuxtv/file0.txt', 'LOADED', 19, 19, 1, 0, None, None, None, None)]
+  - Destination Table :  BillPaymentCreditCardLineLinkedTxn  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  BillPaymentCreditCard.csv 
+
+  - CSV File Name     :  BillPaymentCreditCard.csv  - Records:  19
+  - Staging output    :  [('vivvgvutqk/file0.txt', 'LOADED', 19, 19, 1, 0, None, None, None, None)]
+  - Destination Table :  BillPaymentCreditCard  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  Item.csv 
+
+  - CSV File Name     :  Item.csv  - Records:  61
+  - Staging output    :  [('tvhzwbtpwh/file0.txt', 'LOADED', 61, 61, 1, 0, None, None, None, None)]
+  - Destination Table :  Item  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  SalesOrderLinkedTxn.csv 
+
+  - CSV File Name     :  SalesOrderLinkedTxn.csv  - Records:  0
+  - Staging output    :  
+  - Destination Table :  SalesOrderLinkedTxn  - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ItemOtherCharge.csv 
+
+  - CSV File Name     :  ItemOtherCharge.csv  - Records:  3
+  - Staging output    :  [('vbibfqaday/file0.txt', 'LOADED', 3, 3, 1, 0, None, None, None, None)]
+  - Destination Table :  ItemOtherCharge  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  VendorType.csv 
+
+  - CSV File Name     :  VendorType.csv  - Records:  6
+  - Staging output    :  [('dpppetipdk/file0.txt', 'LOADED', 6, 6, 1, 0, None, None, None, None)]
+  - Destination Table :  VendorType  - Records:  0
+
+  - Data Load Error   : 
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  QB_STAGING  - CSV File:  ModifyOutwardGroupLine.csv 
+
+  - CSV File Name     :  

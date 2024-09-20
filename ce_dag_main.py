@@ -17,7 +17,7 @@ default_args = {
 }
 
 with DAG(
-        'ACTITIME_FULL_REFRESH', # Name of the DAG / workflow
+        'CE_DAILY_RUN', # Name of the DAG / workflow
         default_args=default_args,
         catchup=False,
         schedule='@once' # Every minute (You will need to change this!)
@@ -29,12 +29,12 @@ with DAG(
     )
 
     # With the PythonOperator you can run a python function.
-    actitime_task_main = BashOperator(
-        task_id='actitime_main_task',
-        bash_command='python3 /usr/local/airflow/dags/actitime_etl_main.py'
+    ce_task_main = BashOperator(
+        task_id='CE_main_task',
+        bash_command='sh /home/ubuntu/airflow/dags/CE_PROCESS/runscript.sh '
     )
 
     # Define the order in which the tasks are supposed to run
     # You can also define paralell tasks by using an array 
     # I.e. task1 >> [task2a, task2b] >> task3
-    start_task >> actitime_task_main 
+    start_task >> ce_task_main 
