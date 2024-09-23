@@ -1,0 +1,1216 @@
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  BLNG_TERMS.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  BLNG_TERMS.csv  - Records:  4
+  BLNG_TERMS BLNG_TERMS_DSCRPTN
+0          N        Ninety Days
+1          O         On Receipt
+2          S         Sixty Days
+3          T        Thirty Days
+  BLNG_TERMS BLNG_TERMS_DSCRPTN
+0          N        Ninety Days
+1          O         On Receipt
+2          S         Sixty Days
+3          T        Thirty Days
+  - Staging output    :  [('kyhbdbddry/file0.txt', 'LOADED', 4, 4, 1, 0, None, None, None, None)]
+  - Destination Table :  BLNG_TERMS  - Records:  4
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  BLNG_TYP.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  BLNG_TYP.csv  - Records:  2
+  BLNG_TYP    BLNG_TYP_DSCRPTN
+0        F         Fixed Price
+1        T  TIme and Materials
+  BLNG_TYP    BLNG_TYP_DSCRPTN
+0        F         Fixed Price
+1        T  TIme and Materials
+  - Staging output    :  [('zqfigzcrjn/file0.txt', 'LOADED', 2, 2, 1, 0, None, None, None, None)]
+  - Destination Table :  BLNG_TYP  - Records:  2
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CLNT_ADDR.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  CLNT_ADDR.csv  - Records:  25
+   CLNT_ID  ADDR_ID  ...                     XPRY_DT ACTV_IND
+0      222      188  ...         9999-12-31 00:00:00        1
+1      224      189  ...         9999-12-31 00:00:00        1
+2      227      190  ...         9999-12-31 00:00:00        1
+3      328      191  ...         9999-12-31 00:00:00        1
+4      372      192  ...         9999-12-31 00:00:00        1
+5      374      193  ...         9999-12-31 00:00:00        1
+6      407      194  ...  2024-05-07 17:11:20.167000        0
+7      487      195  ...         9999-12-31 00:00:00        1
+8      523      196  ...         9999-12-31 00:00:00        1
+9      542      197  ...         9999-12-31 00:00:00        1
+
+[10 rows x 5 columns]
+    CLNT_ID  ADDR_ID  ...                     XPRY_DT ACTV_IND
+0       222      188  ...         9999-12-31 00:00:00        1
+1       224      189  ...         9999-12-31 00:00:00        1
+2       227      190  ...         9999-12-31 00:00:00        1
+3       328      191  ...         9999-12-31 00:00:00        1
+4       372      192  ...         9999-12-31 00:00:00        1
+5       374      193  ...         9999-12-31 00:00:00        1
+6       407      194  ...  2024-05-07 17:11:20.167000        0
+7       487      195  ...         9999-12-31 00:00:00        1
+8       523      196  ...         9999-12-31 00:00:00        1
+9       542      197  ...         9999-12-31 00:00:00        1
+10      627      198  ...         9999-12-31 00:00:00        1
+11      674      199  ...         9999-12-31 00:00:00        1
+12      721      200  ...         9999-12-31 00:00:00        1
+13      734      201  ...         9999-12-31 00:00:00        1
+14      774      202  ...         9999-12-31 00:00:00        1
+15      787      280  ...         9999-12-31 00:00:00        1
+16      946      281  ...         9999-12-31 00:00:00        1
+17      976      298  ...         9999-12-31 00:00:00        1
+18      266      232  ...  2016-12-18 14:49:25.363000        0
+19      266      233  ...         9999-12-31 00:00:00        1
+
+[20 rows x 5 columns]
+  - Staging output    :  [('qzaqgwluua/file0.txt', 'LOADED', 25, 25, 1, 0, None, None, None, None)]
+  - Destination Table :  CLNT_ADDR  - Records:  25
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  .DS_Store 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - Staging output    :  
+  - Destination Table :    - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  BLNC_SHT_GRPNG.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  BLNC_SHT_GRPNG.csv  - Records:  146
+   BLNC_SHT_GRPNG_1 BLNC_SHT_GRPNG  SRT_ORD QB_FNCL_ACCT_ID  BLNC_SHT_GRPNG_2
+0               NaN        Banking        1            1050               NaN
+1               NaN        Banking        1            1051               NaN
+2               NaN        Banking        1            1052               NaN
+3               NaN        Banking        1            1053               NaN
+4               NaN        Banking        1            1054               NaN
+5               NaN    Receivables        1           11000               NaN
+6               NaN    Receivables        1            1200               NaN
+7               NaN    Receivables        1           12000               NaN
+8               NaN    Receivables        1            1204               NaN
+9               NaN            NaN        1           12100               NaN
+    BLNC_SHT_GRPNG_1        BLNC_SHT_GRPNG  ...  QB_FNCL_ACCT_ID BLNC_SHT_GRPNG_2
+0                NaN               Banking  ...             1050              NaN
+1                NaN               Banking  ...             1051              NaN
+2                NaN               Banking  ...             1052              NaN
+3                NaN               Banking  ...             1053              NaN
+4                NaN               Banking  ...             1054              NaN
+5                NaN           Receivables  ...            11000              NaN
+6                NaN           Receivables  ...             1200              NaN
+7                NaN           Receivables  ...            12000              NaN
+8                NaN           Receivables  ...             1204              NaN
+9                NaN                   NaN  ...            12100              NaN
+10               NaN              Prepaids  ...             1300              NaN
+11               NaN                   NaN  ...            15000              NaN
+12               NaN           Receivables  ...             1510              NaN
+13               NaN  Receivable from Labs  ...             1610              NaN
+14               NaN                   NaN  ...            17000              NaN
+15               NaN             Equipment  ...             1830              NaN
+16               NaN             Equipment  ...             1835              NaN
+17               NaN             Equipment  ...             1840              NaN
+18               NaN             Equipment  ...             1845              NaN
+19               NaN             Equipment  ...             1850              NaN
+
+[20 rows x 5 columns]
+  - Staging output    :  [('iwzqtfcfer/file0.txt', 'LOADED', 146, 146, 1, 0, None, None, None, None)]
+  - Destination Table :  BLNC_SHT_GRPNG  - Records:  146
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CLNT_CNTCT.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  CLNT_CNTCT.csv  - Records:  1
+   CLNT_CNTCT_ID  CLNT_ID  ... PRD_CSTMR_IND  PROJ_X_LABS_CSTMR_IND
+0              1      111  ...           NaN                    NaN
+
+[1 rows x 20 columns]
+   CLNT_CNTCT_ID  CLNT_ID  ... PRD_CSTMR_IND  PROJ_X_LABS_CSTMR_IND
+0              1      111  ...           NaN                    NaN
+
+[1 rows x 20 columns]
+  - Staging output    :  [('kryxguaiiz/file0.txt', 'LOADED', 1, 1, 1, 0, None, None, None, None)]
+  - Destination Table :  CLNT_CNTCT  - Records:  1
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CM_TMP_ASSETASSIGNEDTO.csv 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - CSV File Name     :  CM_TMP_ASSETASSIGNEDTO.csv  - Records:  84
+   ASSETEMPLYEE  ASSETID  STARTDATE EMPLOYEEID   ENDDATE
+0             1        1   20190404     PX0001  99991231
+1             2        2   20190404     PX0002  99991231
+2             3        3   20190404     PX0003  99991231
+3             4        4   20190404     PX0019  99991231
+4             5        5   20190404     PX0019  99991231
+5             6        6   20190404     PX0030  99991231
+6             7        7   20190404     PX0031  99991231
+7             8        8   20190404     PX0034  99991231
+8             9        9   20190404     PX0057  99991231
+9            10       10   20190404        NaN  99991231
+    ASSETEMPLYEE  ASSETID  STARTDATE EMPLOYEEID   ENDDATE
+0              1        1   20190404     PX0001  99991231
+1              2        2   20190404     PX0002  99991231
+2              3        3   20190404     PX0003  99991231
+3              4        4   20190404     PX0019  99991231
+4              5        5   20190404     PX0019  99991231
+5              6        6   20190404     PX0030  99991231
+6              7        7   20190404     PX0031  99991231
+7              8        8   20190404     PX0034  99991231
+8              9        9   20190404     PX0057  99991231
+9             10       10   20190404        NaN  99991231
+10            11       11   20190404        NaN  99991231
+11            12       12   20190404     PX0044  99991231
+12            13       13   20190404     PX0064  99991231
+13            14       14   20190404     PX0083  99991231
+14            15       15   20190404     PX0075  99991231
+15            16       16   20190404     PX0069  99991231
+16            17       17   20190404        NaN  99991231
+17            18       18   20190404    PXS0057  99991231
+18            19       19   20190404     PX0093  99991231
+19            20       20   20190404        NaN  99991231
+  - Staging output    :  
+  - Destination Table :  CM_TMP_ASSETASSIGNEDTO  - Records:  0
+
+  - Data Load Error   : 000904 (42000): SQL compilation error: error line 1 at position 136
+invalid identifier 'ASSETID'
+( 84 records not loaded )
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  AV_EMPL_RT_ACTV.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  AV_EMPL_RT_ACTV.csv  - Records:  509
+  EMPL_ID STNDRD_RT  ACTV_IND  ... EMPL_VCTN_DAYS   BLNG_CST   DRCT_CST
+0  PX0001     200.0         1  ...           20.0  90.588044  75.000000
+1  PX0002     150.0         1  ...            0.0  81.648469  75.000000
+2  PX0003     110.0         1  ...           20.0  79.476933  65.000000
+3  PX0006      80.0         1  ...            3.0  46.122438  39.682540
+4  PX0007      91.0         1  ...           15.0  54.670454  45.318725
+5  PX0009      23.0         1  ...           10.0  17.431673  11.394422
+6  PX0011      75.0         1  ...            3.0  44.362325  37.350598
+7  PX0012      75.0         1  ...           15.0  46.266287  37.055336
+8  PX0013      71.0         1  ...           10.0  43.771377  35.557769
+9  PX0014      29.0         1  ...            2.0  20.676413  14.501992
+
+[10 rows x 8 columns]
+   EMPL_ID STNDRD_RT  ACTV_IND  ... EMPL_VCTN_DAYS   BLNG_CST   DRCT_CST
+0   PX0001     200.0         1  ...           20.0  90.588044  75.000000
+1   PX0002     150.0         1  ...            0.0  81.648469  75.000000
+2   PX0003     110.0         1  ...           20.0  79.476933  65.000000
+3   PX0006      80.0         1  ...            3.0  46.122438  39.682540
+4   PX0007      91.0         1  ...           15.0  54.670454  45.318725
+5   PX0009      23.0         1  ...           10.0  17.431673  11.394422
+6   PX0011      75.0         1  ...            3.0  44.362325  37.350598
+7   PX0012      75.0         1  ...           15.0  46.266287  37.055336
+8   PX0013      71.0         1  ...           10.0  43.771377  35.557769
+9   PX0014      29.0         1  ...            2.0  20.676413  14.501992
+10  PX0019     150.0         1  ...           15.0  74.706969  62.250996
+11  PX0020      93.0         1  ...           15.0  57.120389  46.065737
+12  PX0021      85.0         1  ...           10.0  51.937754  42.330677
+13  PX0023     150.0         1  ...           15.0  65.237272  53.535857
+14  PX0025     110.0         1  ...           15.0  58.727434  47.500000
+15  PX0028      85.0         1  ...           15.0  53.061948  42.330677
+16  PX0029      70.0         1  ...           15.0  43.961233  34.860558
+17  PX0030     125.0         1  ...           15.0  69.566277  57.519920
+18  PX0033      75.0         1  ...           10.0  46.444345  37.202381
+19  PX0034     125.0         1  ...           15.0  66.725367  54.905378
+
+[20 rows x 8 columns]
+  - Staging output    :  [('ctfrphsrcw/file0.txt', 'LOADED', 509, 509, 1, 0, None, None, None, None)]
+  - Destination Table :  AV_EMPL_RT_ACTV  - Records:  509
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CNTRCT_CSV_FL_LST.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  CNTRCT_CSV_FL_LST.csv  - Records:  350
+   TYPE  CLIENT  CONTRACT  START_DATE  ... CONTRACT_VALUE COMMENTS   PA CRNCY_CD
+0     0     222  222-0001  2011-06-28  ...         6250.0      USD   PA      USD
+1     0     222  222-0002  2012-06-30  ...       17373.26      USD   PA      USD
+2     0     222  222-0003  2013-04-30  ...        47912.0      USD   PA      USD
+3     0     222  222-0004  2013-04-30  ...       54416.25      USD   PA      USD
+4     0     224  224-0001  2006-04-10  ...       106288.0      NaN  NaN      NaN
+5     1     224  224-0001  2007-01-01  ...            0.0      NaN  NaN      NaN
+6     0     224  224-0002  2006-08-16  ...        29680.0      NaN  NaN      NaN
+7     1     224  224-0002  2006-11-01  ...        15680.0      NaN  NaN      NaN
+8     2     224  224-0002  2006-11-01  ...        15584.0      NaN  NaN      NaN
+9     3     224  224-0002  2006-12-11  ...        12736.0      NaN  NaN      NaN
+
+[10 rows x 9 columns]
+    TYPE  CLIENT  CONTRACT  START_DATE  ... CONTRACT_VALUE COMMENTS   PA CRNCY_CD
+0      0     222  222-0001  2011-06-28  ...         6250.0      USD   PA      USD
+1      0     222  222-0002  2012-06-30  ...       17373.26      USD   PA      USD
+2      0     222  222-0003  2013-04-30  ...        47912.0      USD   PA      USD
+3      0     222  222-0004  2013-04-30  ...       54416.25      USD   PA      USD
+4      0     224  224-0001  2006-04-10  ...       106288.0      NaN  NaN      NaN
+5      1     224  224-0001  2007-01-01  ...            0.0      NaN  NaN      NaN
+6      0     224  224-0002  2006-08-16  ...        29680.0      NaN  NaN      NaN
+7      1     224  224-0002  2006-11-01  ...        15680.0      NaN  NaN      NaN
+8      2     224  224-0002  2006-11-01  ...        15584.0      NaN  NaN      NaN
+9      3     224  224-0002  2006-12-11  ...        12736.0      NaN  NaN      NaN
+10     0     224  224-0003  2006-09-04  ...       112500.0      NaN  NaN      NaN
+11     0     224  224-0004  2006-09-19  ...       358758.4      NaN  NaN      NaN
+12     1     224  224-0004  2006-12-23  ...        69542.0      NaN  NaN      NaN
+13     2     224  224-0004  2007-01-20  ...       165540.0      NaN  NaN      NaN
+14     3     224  224-0004  2007-01-20  ...         1600.0      NaN  NaN      NaN
+15     0     224  224-0005  2006-09-28  ...        25200.0      NaN  NaN      NaN
+16     1     224  224-0005  2006-11-13  ...         3360.0      NaN  NaN      NaN
+17     0     224  224-0006  2006-10-23  ...        35200.0      NaN  NaN      NaN
+18     1     224  224-0006  2006-12-16  ...        14960.0      NaN  NaN      NaN
+19     0     224  224-0007  2006-11-27  ...        25752.0      NaN  NaN      NaN
+
+[20 rows x 9 columns]
+  - Staging output    :  [('mmgwzdoarv/file0.txt', 'LOADED', 350, 350, 1, 0, None, None, None, None)]
+  - Destination Table :  CNTRCT_CSV_FL_LST  - Records:  350
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  BNFT_TYP.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  BNFT_TYP.csv  - Records:  2
+      BNFTS  ANL_BNFT_CST
+0    Family       3027.48
+1  Personal       1209.36
+      BNFTS  ANL_BNFT_CST
+0    Family       3027.48
+1  Personal       1209.36
+  - Staging output    :  [('mjpltxazxn/file0.txt', 'LOADED', 2, 2, 1, 0, None, None, None, None)]
+  - Destination Table :  BNFT_TYP  - Records:  2
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CAL.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  CAL.csv  - Records:  10342
+       CAL_DT  DAY   WOM_ID  ...    YR       LY_DT               LD_UPDT_TS
+0  2005-01-01    1  2005011  ...  2005  2004-01-01  2016-11-14 14:12:59.400
+1  2005-01-02    2  2005012  ...  2005  2004-01-02  2016-11-14 14:12:59.400
+2  2005-01-03    3  2005012  ...  2005  2004-01-03  2016-11-14 14:12:59.400
+3  2005-01-04    4  2005012  ...  2005  2004-01-04  2016-11-14 14:12:59.400
+4  2005-01-05    5  2005012  ...  2005  2004-01-05  2016-11-14 14:12:59.400
+5  2005-01-06    6  2005012  ...  2005  2004-01-06  2016-11-14 14:12:59.400
+6  2005-01-07    7  2005012  ...  2005  2004-01-07  2016-11-14 14:12:59.400
+7  2005-01-08    8  2005012  ...  2005  2004-01-08  2016-11-14 14:12:59.400
+8  2005-01-09    9  2005013  ...  2005  2004-01-09  2016-11-14 14:12:59.400
+9  2005-01-10   10  2005013  ...  2005  2004-01-10  2016-11-14 14:12:59.400
+
+[10 rows x 24 columns]
+        CAL_DT  DAY   WOM_ID  ...    YR       LY_DT               LD_UPDT_TS
+0   2005-01-01    1  2005011  ...  2005  2004-01-01  2016-11-14 14:12:59.400
+1   2005-01-02    2  2005012  ...  2005  2004-01-02  2016-11-14 14:12:59.400
+2   2005-01-03    3  2005012  ...  2005  2004-01-03  2016-11-14 14:12:59.400
+3   2005-01-04    4  2005012  ...  2005  2004-01-04  2016-11-14 14:12:59.400
+4   2005-01-05    5  2005012  ...  2005  2004-01-05  2016-11-14 14:12:59.400
+5   2005-01-06    6  2005012  ...  2005  2004-01-06  2016-11-14 14:12:59.400
+6   2005-01-07    7  2005012  ...  2005  2004-01-07  2016-11-14 14:12:59.400
+7   2005-01-08    8  2005012  ...  2005  2004-01-08  2016-11-14 14:12:59.400
+8   2005-01-09    9  2005013  ...  2005  2004-01-09  2016-11-14 14:12:59.400
+9   2005-01-10   10  2005013  ...  2005  2004-01-10  2016-11-14 14:12:59.400
+10  2005-01-11   11  2005013  ...  2005  2004-01-11  2016-11-14 14:12:59.400
+11  2005-01-12   12  2005013  ...  2005  2004-01-12  2016-11-14 14:12:59.400
+12  2005-01-13   13  2005013  ...  2005  2004-01-13  2016-11-14 14:12:59.400
+13  2005-01-14   14  2005013  ...  2005  2004-01-14  2016-11-14 14:12:59.400
+14  2005-01-15   15  2005013  ...  2005  2004-01-15  2016-11-14 14:12:59.400
+15  2005-01-16   16  2005014  ...  2005  2004-01-16  2016-11-14 14:12:59.400
+16  2005-01-17   17  2005014  ...  2005  2004-01-17  2016-11-14 14:12:59.400
+17  2005-01-18   18  2005014  ...  2005  2004-01-18  2016-11-14 14:12:59.400
+18  2005-01-19   19  2005014  ...  2005  2004-01-19  2016-11-14 14:12:59.400
+19  2005-01-20   20  2005014  ...  2005  2004-01-20  2016-11-14 14:12:59.400
+
+[20 rows x 24 columns]
+  - Staging output    :  [('chmhzdwbby/file0.txt', 'LOADED', 10342, 10342, 1, 0, None, None, None, None)]
+  - Destination Table :  CAL  - Records:  10342
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  BDGT_MTHLY.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  BDGT_MTHLY.csv  - Records:  3379
+  QB_FNCL_ACCT_ID  MTH_ID  QB_BDGT_AMT
+0            4000  201601   267228.235
+1            4000  201602   295223.529
+2            4000  201603   466156.784
+3            4000  201604   425621.411
+4            4000  201605   437005.882
+5            4000  201606   457815.686
+6            4000  201607   416196.078
+7            4000  201608   457815.686
+8            4000  201609   437005.882
+9            4000  201610   416196.078
+   QB_FNCL_ACCT_ID  MTH_ID  QB_BDGT_AMT
+0             4000  201601   267228.235
+1             4000  201602   295223.529
+2             4000  201603   466156.784
+3             4000  201604   425621.411
+4             4000  201605   437005.882
+5             4000  201606   457815.686
+6             4000  201607   416196.078
+7             4000  201608   457815.686
+8             4000  201609   437005.882
+9             4000  201610   416196.078
+10            4000  201611   457815.686
+11            4000  201612   416196.078
+12            4000  201701   342472.941
+13            4000  201702   319512.941
+14            4000  201703   413494.901
+15            4000  201704   415109.019
+16            4000  201705   538378.823
+17            4000  201706   567970.980
+18            4000  201707   539203.921
+19            4000  201708   593124.313
+  - Staging output    :  [('vcjtpwxezn/file0.txt', 'LOADED', 3379, 3379, 1, 0, None, None, None, None)]
+  - Destination Table :  BDGT_MTHLY  - Records:  3379
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CM_TMP_ASSET.csv 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - CSV File Name     :  CM_TMP_ASSET.csv  - Records:  78
+   ASSET ID  ... WARRANTY END DATE
+0         1  ...               NaN
+1         2  ...               NaN
+2         3  ...               NaN
+3         4  ...               NaN
+4         5  ...               NaN
+5         6  ...               NaN
+6         7  ...               NaN
+7         8  ...               NaN
+8         9  ...               NaN
+9        10  ...               NaN
+
+[10 rows x 35 columns]
+    ASSET ID  ... WARRANTY END DATE
+0          1  ...               NaN
+1          2  ...               NaN
+2          3  ...               NaN
+3          4  ...               NaN
+4          5  ...               NaN
+5          6  ...               NaN
+6          7  ...               NaN
+7          8  ...               NaN
+8          9  ...               NaN
+9         10  ...               NaN
+10        11  ...               NaN
+11        12  ...               NaN
+12        13  ...               NaN
+13        14  ...               NaN
+14        15  ...               NaN
+15        16  ...               NaN
+16        17  ...               NaN
+17        18  ...               NaN
+18        19  ...               NaN
+19        20  ...               NaN
+
+[20 rows x 35 columns]
+  - Staging output    :  
+  - Destination Table :  CM_TMP_ASSET  - Records:  0
+
+  - Data Load Error   : 000904 (42000): SQL compilation error: error line 1 at position 111
+invalid identifier '"ASSET ID"'
+( 78 records not loaded )
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CLNT.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  CLNT.csv  - Records:  100
+   CLNT_ID  ...       QB_CSTMR_LSTID
+0      257  ...                  NaN
+1      221  ...                  NaN
+2      222  ...  8000001E-1452276894
+3       -1  ...                  NaN
+4      374  ...  80000004-1452276893
+5      384  ...                  NaN
+6      463  ...                  NaN
+7      522  ...                  NaN
+8      561  ...                  NaN
+9      568  ...                  NaN
+
+[10 rows x 19 columns]
+    CLNT_ID  ...       QB_CSTMR_LSTID
+0       257  ...                  NaN
+1       221  ...                  NaN
+2       222  ...  8000001E-1452276894
+3        -1  ...                  NaN
+4       374  ...  80000004-1452276893
+5       384  ...                  NaN
+6       463  ...                  NaN
+7       522  ...                  NaN
+8       561  ...                  NaN
+9       568  ...                  NaN
+10      662  ...                  NaN
+11      674  ...  80000014-1452276893
+12      668  ...                  NaN
+13      745  ...                  NaN
+14      736  ...  8000039C-1494622889
+15      872  ...                  NaN
+16      862  ...                  NaN
+17      224  ...  800001CF-1452277322
+18      772  ...                  NaN
+19      357  ...                  NaN
+
+[20 rows x 19 columns]
+  - Staging output    :  [('oycembvqxj/file0.txt', 'LOADED', 100, 100, 1, 0, None, None, None, None)]
+  - Destination Table :  CLNT  - Records:  100
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  CFG_NOTIFICATION.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  CFG_NOTIFICATION.csv  - Records:  7
+   EMPL_ID  ABSENCES
+0  PXS0060         0
+1  PXS0066         0
+2  PXS0067         0
+3  PXS0068         0
+4  PXS0069         0
+5  PXS0070         0
+6  PXS0073         0
+   EMPL_ID  ABSENCES
+0  PXS0060         0
+1  PXS0066         0
+2  PXS0067         0
+3  PXS0068         0
+4  PXS0069         0
+5  PXS0070         0
+6  PXS0073         0
+  - Staging output    :  [('blgvktdzuj/file0.txt', 'LOADED', 7, 7, 1, 0, None, None, None, None)]
+  - Destination Table :  CFG_NOTIFICATION  - Records:  7
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  ORG_MTRX.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  ORG_MTRX.csv  - Records:  253
+  PRNT_EMPL_ID  PRNT_RL_ID CHLD_EMPL_ID  ...  ACTV_IND DEPT_ID EMPL_DEPT_ID
+0       PX0001         100       PX0001  ...         1    MGMT          NaN
+1       PX0001         100       PX0002  ...         0   DLVRY          NaN
+2       PX0001         100       PX0002  ...         1    MGMT          NaN
+3       PX0001         100       PX0003  ...         1    MGMT          NaN
+4       PX0001         100       PX0019  ...         0   DLVRY          NaN
+5       PX0001         100       PX0019  ...         0   DLVRY          NaN
+6       PX0001         100       PX0019  ...         1    MGMT          NaN
+7       PX0001         100       PX0030  ...         0   DLVRY          NaN
+8       PX0001         100       PX0030  ...         1    MGMT          NaN
+9       PX0001         100       PX0031  ...         0     SLS          NaN
+
+[10 rows x 9 columns]
+   PRNT_EMPL_ID  PRNT_RL_ID CHLD_EMPL_ID  ...  ACTV_IND DEPT_ID EMPL_DEPT_ID
+0        PX0001         100       PX0001  ...         1    MGMT          NaN
+1        PX0001         100       PX0002  ...         0   DLVRY          NaN
+2        PX0001         100       PX0002  ...         1    MGMT          NaN
+3        PX0001         100       PX0003  ...         1    MGMT          NaN
+4        PX0001         100       PX0019  ...         0   DLVRY          NaN
+5        PX0001         100       PX0019  ...         0   DLVRY          NaN
+6        PX0001         100       PX0019  ...         1    MGMT          NaN
+7        PX0001         100       PX0030  ...         0   DLVRY          NaN
+8        PX0001         100       PX0030  ...         1    MGMT          NaN
+9        PX0001         100       PX0031  ...         0     SLS          NaN
+10       PX0001         100       PX0034  ...         0    TECH          NaN
+11       PX0001         100       PX0034  ...         1    TECH          NaN
+12       PX0001         100       PX0043  ...         1   DLVRY          NaN
+13       PX0001         100       PX0047  ...         1    TECH          NaN
+14       PX0001         100       PX0057  ...         0    MGMT          NaN
+15       PX0001         100       PX0057  ...         1     FNA          NaN
+16       PX0001         100       PX0063  ...         0     SLS          NaN
+17       PX0001         100       PX0064  ...         0    TECH          NaN
+18       PX0001         100       PX0075  ...         0    TECH          NaN
+19       PX0001         100       PX0078  ...         0   DLVRY          NaN
+
+[20 rows x 9 columns]
+  - Staging output    :  [('msbvtisbkx/file0.txt', 'LOADED', 253, 253, 1, 0, None, None, None, None)]
+  - Destination Table :  ORG_MTRX  - Records:  253
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  .DS_Store 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - Staging output    :  
+  - Destination Table :    - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  TPS_DLY_INIT_RGRSN_TST.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  TPS_DLY_INIT_RGRSN_TST.csv  - Records:  43728
+  EMPL_ID   PROJ_ID     RCRD_DT  ...  INVC_SBMTD_TO_CLNT_DT TPS_TYP    AS_OF_TS
+0  PX0001  PR000001  2008-11-10  ...             2999-12-31       A  2017-01-15
+1  PX0001  PR000001  2008-12-01  ...             2999-12-31       A  2017-01-15
+2  PX0001  PR000001  2008-12-02  ...             2999-12-31       A  2017-01-15
+3  PX0001  PR000001  2008-12-03  ...             2999-12-31       A  2017-01-15
+4  PX0001  PR000001  2008-12-04  ...             2999-12-31       A  2017-01-15
+5  PX0001  PR000001  2008-12-05  ...             2999-12-31       A  2017-01-15
+6  PX0001  PR000001  2008-12-08  ...             2999-12-31       A  2017-01-15
+7  PX0001  PR000001  2008-12-09  ...             2999-12-31       A  2017-01-15
+8  PX0001  PR000001  2008-12-10  ...             2999-12-31       A  2017-01-15
+9  PX0001  PR000001  2008-12-11  ...             2999-12-31       A  2017-01-15
+
+[10 rows x 14 columns]
+   EMPL_ID   PROJ_ID     RCRD_DT  ...  INVC_SBMTD_TO_CLNT_DT TPS_TYP    AS_OF_TS
+0   PX0001  PR000001  2008-11-10  ...             2999-12-31       A  2017-01-15
+1   PX0001  PR000001  2008-12-01  ...             2999-12-31       A  2017-01-15
+2   PX0001  PR000001  2008-12-02  ...             2999-12-31       A  2017-01-15
+3   PX0001  PR000001  2008-12-03  ...             2999-12-31       A  2017-01-15
+4   PX0001  PR000001  2008-12-04  ...             2999-12-31       A  2017-01-15
+5   PX0001  PR000001  2008-12-05  ...             2999-12-31       A  2017-01-15
+6   PX0001  PR000001  2008-12-08  ...             2999-12-31       A  2017-01-15
+7   PX0001  PR000001  2008-12-09  ...             2999-12-31       A  2017-01-15
+8   PX0001  PR000001  2008-12-10  ...             2999-12-31       A  2017-01-15
+9   PX0001  PR000001  2008-12-11  ...             2999-12-31       A  2017-01-15
+10  PX0001  PR000001  2008-12-12  ...             2999-12-31       A  2017-01-15
+11  PX0001  PR000001  2008-12-15  ...             2999-12-31       A  2017-01-15
+12  PX0001  PR000001  2008-12-16  ...             2999-12-31       A  2017-01-15
+13  PX0001  PR000001  2008-12-17  ...             2999-12-31       A  2017-01-15
+14  PX0001  PR000001  2008-12-18  ...             2999-12-31       A  2017-01-15
+15  PX0001  PR000001  2008-12-19  ...             2999-12-31       A  2017-01-15
+16  PX0001  PR000001  2008-12-22  ...             2999-12-31       A  2017-01-15
+17  PX0001  PR000001  2008-12-23  ...             2999-12-31       A  2017-01-15
+18  PX0001  PR000001  2008-12-24  ...             2999-12-31       A  2017-01-15
+19  PX0001  PR000001  2008-12-29  ...             2999-12-31       A  2017-01-15
+
+[20 rows x 14 columns]
+  - Staging output    :  [('iguauhsztp/file0.txt', 'LOADED', 43728, 43728, 1, 0, None, None, None, None)]
+  - Destination Table :  TPS_DLY_INIT_RGRSN_TST  - Records:  43728
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  TPS_DLY_PRBL_LDGR.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  TPS_DLY_PRBL_LDGR.csv  - Records:  40
+   EMPL_ID   PROJ_ID  INVC_ID  ...       AMT   WOM_ID  INVC_SBMTD_TO_CLNT_DT
+0   PX0030  PR000446       99  ...  -16800.0  2017012             2017-01-11
+1  PXS0040  PR000423      101  ...  -15120.0  2017012             2017-01-11
+2   PX0044  PR000458      108  ...   -7920.0  2017012             2017-01-11
+3   PX0003  PR000436      110  ...  -12320.0  2017012             2017-01-11
+4   PX0025  PR000290      110  ...   -9680.0  2017012             2017-01-11
+5   PX0025  PR000427      110  ...    -880.0  2017012             2017-01-11
+6  PXS0065  PR000414      115  ...  -18480.0  2017012             2017-01-11
+7   PX0030  PR000446      130  ...  -15200.0  2017024             2017-03-21
+8   PX0055  PR000434      134  ...   -5780.0  2017024             2017-03-21
+9   PX0055  PR000457      134  ...   -5820.0  2017024             2017-03-21
+
+[10 rows x 7 columns]
+    EMPL_ID   PROJ_ID  INVC_ID  ...       AMT   WOM_ID  INVC_SBMTD_TO_CLNT_DT
+0    PX0030  PR000446       99  ...  -16800.0  2017012             2017-01-11
+1   PXS0040  PR000423      101  ...  -15120.0  2017012             2017-01-11
+2    PX0044  PR000458      108  ...   -7920.0  2017012             2017-01-11
+3    PX0003  PR000436      110  ...  -12320.0  2017012             2017-01-11
+4    PX0025  PR000290      110  ...   -9680.0  2017012             2017-01-11
+5    PX0025  PR000427      110  ...    -880.0  2017012             2017-01-11
+6   PXS0065  PR000414      115  ...  -18480.0  2017012             2017-01-11
+7    PX0030  PR000446      130  ...  -15200.0  2017024             2017-03-21
+8    PX0055  PR000434      134  ...   -5780.0  2017024             2017-03-21
+9    PX0055  PR000457      134  ...   -5820.0  2017024             2017-03-21
+10  PXS0049  PR000453      139  ...   -9240.0  2017024             2017-03-21
+11   PX0078  PR000440      150  ...  -16750.0  2017024             2017-03-21
+12   PX0019  PR000465      152  ...   10000.0  2017024             2017-03-21
+13   PX0034  PR000443      154  ...  -12000.0  2017024             2017-03-21
+14   PX0075  PR000443      154  ...  -11520.0  2017024             2017-03-21
+15  PXS0049  PR000453      159  ...   -6720.0  2017035             2017-03-27
+16   PX0030  PR000446      165  ...  -16000.0  2017034             2017-03-27
+17   PX0035  PR000450      166  ...   -7820.0  2017034             2017-03-27
+18   PX0044  PR000426      171  ...   -6120.0  2017034             2017-03-27
+19   PX0044  PR000458      171  ...   -6120.0  2017034             2017-03-27
+
+[20 rows x 7 columns]
+  - Staging output    :  [('vidapfxwso/file0.txt', 'LOADED', 40, 40, 1, 0, None, None, None, None)]
+  - Destination Table :  TPS_DLY_PRBL_LDGR  - Records:  40
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  JOB_CD.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  JOB_CD.csv  - Records:  111
+  JOB_CD_ID EMPL_DIVSN_ID  ... INTRNL_JOB_TITLE MNGMNT_IND
+0     CEX01            C1  ...              NaN          Y
+1     CEX02            C1  ...              NaN          Y
+2     CVP01            C2  ...              NaN          Y
+3     CVP02            C2  ...              NaN          Y
+4     CVP03            C2  ...              NaN          Y
+5     CVP04            C2  ...              NaN          Y
+6     CVP05            C2  ...              NaN          Y
+7     DAN01            D1  ...              NaN        NaN
+8     DAN02            D1  ...              NaN        NaN
+9     DAN03            D1  ...              NaN        NaN
+
+[10 rows x 6 columns]
+   JOB_CD_ID EMPL_DIVSN_ID  ... INTRNL_JOB_TITLE MNGMNT_IND
+0      CEX01            C1  ...              NaN          Y
+1      CEX02            C1  ...              NaN          Y
+2      CVP01            C2  ...              NaN          Y
+3      CVP02            C2  ...              NaN          Y
+4      CVP03            C2  ...              NaN          Y
+5      CVP04            C2  ...              NaN          Y
+6      CVP05            C2  ...              NaN          Y
+7      DAN01            D1  ...              NaN        NaN
+8      DAN02            D1  ...              NaN        NaN
+9      DAN03            D1  ...              NaN        NaN
+10     DAN04            D1  ...              NaN        NaN
+11     DAN05            D1  ...              NaN        NaN
+12     DAN06            D1  ...              NaN        NaN
+13     DAN07            D1  ...              NaN          Y
+14     DAN08            D1  ...              NaN          Y
+15     DAN09            D1  ...              NaN          Y
+16     DBA01            D3  ...              NaN        NaN
+17     DBA02            D3  ...              NaN        NaN
+18     DBA03            D3  ...              NaN        NaN
+19     DBA04            D3  ...              NaN        NaN
+
+[20 rows x 6 columns]
+  - Staging output    :  [('ghyznyghru/file0.txt', 'LOADED', 111, 111, 1, 0, None, None, None, None)]
+  - Destination Table :  JOB_CD  - Records:  111
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  OFFBRDNG_RSN_TYP.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  OFFBRDNG_RSN_TYP.csv  - Records:  13
+   OFFBRDNG_RSN_TYP_ID  ...               CREATED_TS
+0                    0  ...  2021-10-19 10:26:25.340
+1                    1  ...  2021-10-19 10:26:25.343
+2                    2  ...  2021-10-19 10:26:25.350
+3                    3  ...  2021-10-19 10:26:25.353
+4                    4  ...  2021-10-19 10:26:25.353
+5                    5  ...  2021-10-19 10:26:25.343
+6                    6  ...  2021-10-19 10:26:25.343
+7                    7  ...  2021-10-19 10:26:25.343
+8                    8  ...  2021-10-19 10:26:25.357
+9                    9  ...  2021-10-19 10:26:25.357
+
+[10 rows x 5 columns]
+    OFFBRDNG_RSN_TYP_ID  ...               CREATED_TS
+0                     0  ...  2021-10-19 10:26:25.340
+1                     1  ...  2021-10-19 10:26:25.343
+2                     2  ...  2021-10-19 10:26:25.350
+3                     3  ...  2021-10-19 10:26:25.353
+4                     4  ...  2021-10-19 10:26:25.353
+5                     5  ...  2021-10-19 10:26:25.343
+6                     6  ...  2021-10-19 10:26:25.343
+7                     7  ...  2021-10-19 10:26:25.343
+8                     8  ...  2021-10-19 10:26:25.357
+9                     9  ...  2021-10-19 10:26:25.357
+10                   10  ...  2021-10-19 10:26:25.360
+11                   11  ...  2021-10-19 10:26:25.360
+12                   12  ...  2021-10-19 10:26:25.360
+
+[13 rows x 5 columns]
+  - Staging output    :  [('snwetmvuyd/file0.txt', 'LOADED', 13, 13, 1, 0, None, None, None, None)]
+  - Destination Table :  OFFBRDNG_RSN_TYP  - Records:  13
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  TT_RECORDS_PROCESSED.csv 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - CSV File Name     :  TT_RECORDS_PROCESSED.csv  - Records:  6
+     STRT_TME   WOM_ID
+0  2013-01-17  2013011
+1  2013-02-18  2017011
+2  2013-03-19  2017011
+3  2013-04-22  2017011
+4  2013-05-20  2017011
+5  2013-06-17  2017011
+     STRT_TME   WOM_ID
+0  2013-01-17  2013011
+1  2013-02-18  2017011
+2  2013-03-19  2017011
+3  2013-04-22  2017011
+4  2013-05-20  2017011
+5  2013-06-17  2017011
+  - Staging output    :  
+  - Destination Table :  TT_RECORDS_PROCESSED  - Records:  0
+
+  - Data Load Error   : 000904 (42000): SQL compilation error: error line 1 at position 130
+invalid identifier 'WOM_ID'
+( 6 records not loaded )
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  MANUFACTURER.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  MANUFACTURER.csv  - Records:  14
+   MNFCTR_ID MNFCTR_NM  ...   CREATE_DT              MODIFIED_DT
+0         -1   Unknown  ...  2019-06-20  2019-06-20 00:00:00.000
+1          1     Apple  ...  2019-06-18  2019-06-18 00:00:00.000
+2          2      Asus  ...  2019-06-18  2019-06-18 00:00:00.000
+3          3     Sonos  ...  2019-06-18  2019-06-18 00:00:00.000
+4          4   Netgear  ...  2019-06-18  2019-06-18 00:00:00.000
+5          5     Lacie  ...  2019-06-18  2019-06-18 00:00:00.000
+6          6   Sceptre  ...  2019-06-18  2019-06-18 00:00:00.000
+7          7        LG  ...  2019-06-18  2019-06-18 00:00:00.000
+8          8   TP-Link  ...  2019-06-18  2019-06-18 00:00:00.000
+9          9     Cisco  ...  2019-06-18  2019-06-18 00:00:00.000
+
+[10 rows x 6 columns]
+    MNFCTR_ID MNFCTR_NM  ...   CREATE_DT              MODIFIED_DT
+0          -1   Unknown  ...  2019-06-20  2019-06-20 00:00:00.000
+1           1     Apple  ...  2019-06-18  2019-06-18 00:00:00.000
+2           2      Asus  ...  2019-06-18  2019-06-18 00:00:00.000
+3           3     Sonos  ...  2019-06-18  2019-06-18 00:00:00.000
+4           4   Netgear  ...  2019-06-18  2019-06-18 00:00:00.000
+5           5     Lacie  ...  2019-06-18  2019-06-18 00:00:00.000
+6           6   Sceptre  ...  2019-06-18  2019-06-18 00:00:00.000
+7           7        LG  ...  2019-06-18  2019-06-18 00:00:00.000
+8           8   TP-Link  ...  2019-06-18  2019-06-18 00:00:00.000
+9           9     Cisco  ...  2019-06-18  2019-06-18 00:00:00.000
+10         10        HP  ...  2019-06-18  2019-06-18 00:00:00.000
+11         11   Netgate  ...  2019-06-18  2019-06-18 00:00:00.000
+12         12   Polycom  ...  2999-12-31  2020-04-16 09:32:09.087
+13         13       NaN  ...  2999-12-31  2024-04-18 11:21:06.563
+
+[14 rows x 6 columns]
+  - Staging output    :  [('dcpmyaelws/file0.txt', 'LOADED', 14, 14, 1, 0, None, None, None, None)]
+  - Destination Table :  MANUFACTURER  - Records:  14
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  MTH.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  MTH.csv  - Records:  339
+   MTH_ID   MTH_DESC  QTR_ID  PRV_MTH_ID
+0  200502   February   20051      200501
+1  200503      March   20051      200502
+2  200504      April   20052      200503
+3  200505        May   20052      200504
+4  200506       June   20052      200505
+5  200507       July   20053      200506
+6  200508     August   20053      200507
+7  200509  September   20053      200508
+8  200510    October   20054      200509
+9  200511   November   20054      200510
+    MTH_ID   MTH_DESC  QTR_ID  PRV_MTH_ID
+0   200502   February   20051      200501
+1   200503      March   20051      200502
+2   200504      April   20052      200503
+3   200505        May   20052      200504
+4   200506       June   20052      200505
+5   200507       July   20053      200506
+6   200508     August   20053      200507
+7   200509  September   20053      200508
+8   200510    October   20054      200509
+9   200511   November   20054      200510
+10  200512   December   20054      200511
+11  200601    January   20061      200512
+12  200602   February   20061      200601
+13  200603      March   20061      200602
+14  200604      April   20062      200603
+15  200605        May   20062      200604
+16  200606       June   20062      200605
+17  200607       July   20063      200606
+18  200608     August   20063      200607
+19  200609  September   20063      200608
+  - Staging output    :  [('cutfngrfju/file0.txt', 'LOADED', 339, 339, 1, 0, None, None, None, None)]
+  - Destination Table :  MTH  - Records:  339
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  VENDOR.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  VENDOR.csv  - Records:  16
+   VENDOR_ID        VENDOR_NM  ...   CREATE_DT              MODIFIED_DT
+0         -1          Unknown  ...  2019-06-20  2024-04-18 11:21:29.460
+1          1            Apple  ...  2019-06-18  2019-06-18 00:00:00.000
+2          2           Amazon  ...  2019-06-18  2019-06-18 00:00:00.000
+3          3          BestBuy  ...  2019-06-18  2019-06-18 00:00:00.000
+4          4          Efinity  ...  2019-06-18  2019-06-18 00:00:00.000
+5          5  CanadaComputers  ...  2019-06-18  2019-06-18 00:00:00.000
+6          6          Netgate  ...  2019-06-18  2019-06-18 00:00:00.000
+7          7              CDW  ...  2999-12-31  2020-04-16 09:25:56.933
+8          8      RingCentral  ...  2999-12-31  2020-04-16 09:30:48.997
+9          9    Vmware Fusion  ...  2999-12-31  2020-08-21 10:14:01.873
+
+[10 rows x 7 columns]
+    VENDOR_ID        VENDOR_NM  ...   CREATE_DT              MODIFIED_DT
+0          -1          Unknown  ...  2019-06-20  2024-04-18 11:21:29.460
+1           1            Apple  ...  2019-06-18  2019-06-18 00:00:00.000
+2           2           Amazon  ...  2019-06-18  2019-06-18 00:00:00.000
+3           3          BestBuy  ...  2019-06-18  2019-06-18 00:00:00.000
+4           4          Efinity  ...  2019-06-18  2019-06-18 00:00:00.000
+5           5  CanadaComputers  ...  2019-06-18  2019-06-18 00:00:00.000
+6           6          Netgate  ...  2019-06-18  2019-06-18 00:00:00.000
+7           7              CDW  ...  2999-12-31  2020-04-16 09:25:56.933
+8           8      RingCentral  ...  2999-12-31  2020-04-16 09:30:48.997
+9           9    Vmware Fusion  ...  2999-12-31  2020-08-21 10:14:01.873
+10         10    MicroStrategy  ...  2999-12-31  2020-08-21 10:14:47.790
+11         11            QODBC  ...  2999-12-31  2020-08-21 10:15:14.513
+12         12       MS Project  ...  2999-12-31  2020-08-21 10:15:41.017
+13         13         MS Visio  ...  2999-12-31  2020-08-21 10:16:02.577
+14         14         Camtasia  ...  2999-12-31  2020-08-21 10:16:41.723
+15         15            Axure  ...  2999-12-31  2020-08-21 10:17:14.573
+
+[16 rows x 7 columns]
+  - Staging output    :  [('ozmopjemre/file0.txt', 'LOADED', 16, 16, 1, 0, None, None, None, None)]
+  - Destination Table :  VENDOR  - Records:  16
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  VCTN_DAY_LDGR.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  VCTN_DAY_LDGR.csv  - Records:  6231
+  EMPL_ID  YEAR VACATION_TYPE  NUM_OF_DAYS COMMENTS UPDATE_DATE UPDATE_BY_USER
+0  PX0001  2019             B           25      NaN  2999-12-31            NaN
+1  PX0103  2017             B           10      NaN  2999-12-31            NaN
+2  PX0003  2019             B           20      NaN  2999-12-31            NaN
+3  PX0004  2019             B           15      NaN  2999-12-31            NaN
+4  PX0014  2019             B            2      NaN  2999-12-31            NaN
+5  PX0015  2019             B            2      NaN  2999-12-31            NaN
+6  PX0007  2019             B           15      NaN  2999-12-31            NaN
+7  PX0008  2019             B           10      NaN  2999-12-31            NaN
+8  PX0009  2019             B           10      NaN  2999-12-31            NaN
+9  PX0010  2019             B           15      NaN  2999-12-31            NaN
+   EMPL_ID  YEAR VACATION_TYPE  NUM_OF_DAYS COMMENTS UPDATE_DATE UPDATE_BY_USER
+0   PX0001  2019             B           25      NaN  2999-12-31            NaN
+1   PX0103  2017             B           10      NaN  2999-12-31            NaN
+2   PX0003  2019             B           20      NaN  2999-12-31            NaN
+3   PX0004  2019             B           15      NaN  2999-12-31            NaN
+4   PX0014  2019             B            2      NaN  2999-12-31            NaN
+5   PX0015  2019             B            2      NaN  2999-12-31            NaN
+6   PX0007  2019             B           15      NaN  2999-12-31            NaN
+7   PX0008  2019             B           10      NaN  2999-12-31            NaN
+8   PX0009  2019             B           10      NaN  2999-12-31            NaN
+9   PX0010  2019             B           15      NaN  2999-12-31            NaN
+10  PX0011  2019             B            3      NaN  2999-12-31            NaN
+11  PX0012  2019             B           15      NaN  2999-12-31            NaN
+12  PX0013  2019             B           10      NaN  2999-12-31            NaN
+13  PX0032  2019             B           10      NaN  2999-12-31            NaN
+14  PX0036  2019             B            2      NaN  2999-12-31            NaN
+15  PX0020  2019             B           15      NaN  2999-12-31            NaN
+16  PX0021  2019             B           10      NaN  2999-12-31            NaN
+17  PX0022  2019             B           15      NaN  2999-12-31            NaN
+18  PX0023  2019             B           15      NaN  2999-12-31            NaN
+19  PX0026  2019             B           15      NaN  2999-12-31            NaN
+  - Staging output    :  [('hsakixrvgq/file0.txt', 'LOADED', 6231, 6231, 1, 0, None, None, None, None)]
+  - Destination Table :  VCTN_DAY_LDGR  - Records:  6231
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  TPS_DLY_NT.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  TPS_DLY_NT.csv  - Records:  8
+                     NT_TS  ... TPS_TYP
+0  2017-09-08 14:12:18.113  ...       Z
+1  2017-09-08 14:08:43.100  ...       P
+2  2017-09-08 14:10:40.390  ...       D
+3  2017-09-15 16:30:11.083  ...       Z
+4  2017-09-08 10:16:16.730  ...       P
+5  2017-09-08 10:28:14.230  ...       Z
+6  2017-09-08 10:17:12.667  ...       D
+7  2017-09-15 10:47:03.053  ...       Z
+
+[8 rows x 7 columns]
+                     NT_TS  ... TPS_TYP
+0  2017-09-08 14:12:18.113  ...       Z
+1  2017-09-08 14:08:43.100  ...       P
+2  2017-09-08 14:10:40.390  ...       D
+3  2017-09-15 16:30:11.083  ...       Z
+4  2017-09-08 10:16:16.730  ...       P
+5  2017-09-08 10:28:14.230  ...       Z
+6  2017-09-08 10:17:12.667  ...       D
+7  2017-09-15 10:47:03.053  ...       Z
+
+[8 rows x 7 columns]
+  - Staging output    :  [('hxsbiwiifq/file0.txt', 'LOADED', 8, 8, 1, 0, None, None, None, None)]
+  - Destination Table :  TPS_DLY_NT  - Records:  8
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  WRKNG_TPS_DLY.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  WRKNG_TPS_DLY.csv  - Records:  2963
+  EMPL_ID   PROJ_ID TPS_TYP  ...   WOM_ID  DLY_BLNG_AMT ACTV_IND
+0  PX0002  PR000016       A  ...  2013012           NaN        Y
+1  PX0002  PR000016       A  ...  2013012           NaN        Y
+2  PX0002  PR000030       A  ...  2013012           NaN        Y
+3  PX0002  PR000063       A  ...  2013011           NaN        Y
+4  PX0002  PR000083       A  ...  2013011           NaN        Y
+5  PX0002  PR000083       A  ...  2013011           NaN        Y
+6  PX0002  PR000083       A  ...  2013011           NaN        Y
+7  PX0002  PR000083       A  ...  2013012           NaN        Y
+8  PX0002  PR000083       A  ...  2013012           NaN        Y
+9  PX0002  PR000083       A  ...  2013012           NaN        Y
+
+[10 rows x 10 columns]
+   EMPL_ID   PROJ_ID TPS_TYP  ...   WOM_ID  DLY_BLNG_AMT ACTV_IND
+0   PX0002  PR000016       A  ...  2013012           NaN        Y
+1   PX0002  PR000016       A  ...  2013012           NaN        Y
+2   PX0002  PR000030       A  ...  2013012           NaN        Y
+3   PX0002  PR000063       A  ...  2013011           NaN        Y
+4   PX0002  PR000083       A  ...  2013011           NaN        Y
+5   PX0002  PR000083       A  ...  2013011           NaN        Y
+6   PX0002  PR000083       A  ...  2013011           NaN        Y
+7   PX0002  PR000083       A  ...  2013012           NaN        Y
+8   PX0002  PR000083       A  ...  2013012           NaN        Y
+9   PX0002  PR000083       A  ...  2013012           NaN        Y
+10  PX0002  PR000083       A  ...  2013013           NaN        Y
+11  PX0002  PR000083       A  ...  2013013           NaN        Y
+12  PX0002  PR000083       A  ...  2013013           NaN        Y
+13  PX0003  PR000021       A  ...  2013011           NaN        Y
+14  PX0003  PR000021       A  ...  2013011           NaN        Y
+15  PX0003  PR000021       A  ...  2013011           NaN        Y
+16  PX0003  PR000021       A  ...  2013012           NaN        Y
+17  PX0003  PR000021       A  ...  2013012           NaN        Y
+18  PX0003  PR000021       A  ...  2013012           NaN        Y
+19  PX0003  PR000021       A  ...  2013012           NaN        Y
+
+[20 rows x 10 columns]
+  - Staging output    :  [('duchszicjw/file0.txt', 'LOADED', 2963, 2963, 1, 0, None, None, None, None)]
+  - Destination Table :  WRKNG_TPS_DLY  - Records:  2963
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  WOM.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  WOM.csv  - Records:  1770
+    WOM_ID   WK_END_DT  WK_STRT_DT  WOY_ID
+0  2005011  2005-01-01  2005-01-01  200501
+1  2005012  2005-01-08  2005-01-02  200502
+2  2005013  2005-01-15  2005-01-09  200503
+3  2005014  2005-01-22  2005-01-16  200504
+4  2005015  2005-01-29  2005-01-23  200505
+5  2005016  2005-01-31  2005-01-30  200506
+6  2005021  2005-02-05  2005-02-01  200506
+7  2005022  2005-02-12  2005-02-06  200507
+8  2005023  2005-02-19  2005-02-13  200508
+9  2005024  2005-02-26  2005-02-20  200509
+     WOM_ID   WK_END_DT  WK_STRT_DT  WOY_ID
+0   2005011  2005-01-01  2005-01-01  200501
+1   2005012  2005-01-08  2005-01-02  200502
+2   2005013  2005-01-15  2005-01-09  200503
+3   2005014  2005-01-22  2005-01-16  200504
+4   2005015  2005-01-29  2005-01-23  200505
+5   2005016  2005-01-31  2005-01-30  200506
+6   2005021  2005-02-05  2005-02-01  200506
+7   2005022  2005-02-12  2005-02-06  200507
+8   2005023  2005-02-19  2005-02-13  200508
+9   2005024  2005-02-26  2005-02-20  200509
+10  2005025  2005-02-28  2005-02-27  200510
+11  2005031  2005-03-05  2005-03-01  200510
+12  2005032  2005-03-12  2005-03-06  200511
+13  2005033  2005-03-19  2005-03-13  200512
+14  2005034  2005-03-26  2005-03-20  200513
+15  2005035  2005-03-31  2005-03-27  200514
+16  2005041  2005-04-02  2005-04-01  200514
+17  2005042  2005-04-09  2005-04-03  200515
+18  2005043  2005-04-16  2005-04-10  200516
+19  2005044  2005-04-23  2005-04-17  200517
+  - Staging output    :  [('etvwfkdigx/file0.txt', 'LOADED', 1770, 1770, 1, 0, None, None, None, None)]
+  - Destination Table :  WOM  - Records:  1770
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  WRKNG_TPS_WKLY.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  WRKNG_TPS_WKLY.csv  - Records:  88
+  EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID    INVCD_TS
+0  PX0002  PR000016  2016111       A  ...     240         A     NaN  2999-12-31
+1  PX0002  PR000082  2016111       A  ...    1680         A     NaN  2999-12-31
+2  PX0002  PR000082  2016112       A  ...    1680         A     NaN  2999-12-31
+3  PX0002  PR000082  2016113       A  ...    1920         A     NaN  2999-12-31
+4  PX0002  PR000401  2016112       A  ...     240         A     NaN  2999-12-31
+5  PX0025  PR000012  2016111       A  ...    1440         A     NaN  2999-12-31
+6  PX0030  PR000012  2016111       A  ...    1440         A     NaN  2999-12-31
+7  PX0030  PR000012  2016112       A  ...    2400         A     NaN  2999-12-31
+8  PX0045  PR000012  2016111       A  ...     480         A     NaN  2999-12-31
+9  PX0051  PR000012  2016111       A  ...    1440         A     NaN  2999-12-31
+
+[10 rows x 9 columns]
+    EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID    INVCD_TS
+0    PX0002  PR000016  2016111       A  ...     240         A     NaN  2999-12-31
+1    PX0002  PR000082  2016111       A  ...    1680         A     NaN  2999-12-31
+2    PX0002  PR000082  2016112       A  ...    1680         A     NaN  2999-12-31
+3    PX0002  PR000082  2016113       A  ...    1920         A     NaN  2999-12-31
+4    PX0002  PR000401  2016112       A  ...     240         A     NaN  2999-12-31
+5    PX0025  PR000012  2016111       A  ...    1440         A     NaN  2999-12-31
+6    PX0030  PR000012  2016111       A  ...    1440         A     NaN  2999-12-31
+7    PX0030  PR000012  2016112       A  ...    2400         A     NaN  2999-12-31
+8    PX0045  PR000012  2016111       A  ...     480         A     NaN  2999-12-31
+9    PX0051  PR000012  2016111       A  ...    1440         A     NaN  2999-12-31
+10   PX0067  PR000011  2016113       A  ...     480         A     NaN  2999-12-31
+11   PX0075  PR000011  2016112       A  ...    1440         A     NaN  2999-12-31
+12   PX0075  PR000012  2016112       A  ...     960         A     NaN  2999-12-31
+13   PX0075  PR000012  2016113       A  ...    2400         A     NaN  2999-12-31
+14  PXS0040  PR000012  2016113       A  ...     960         A     NaN  2999-12-31
+15   PX0002  PR000082  2016114       F  ...    2040         A     NaN  2999-12-31
+16   PX0051  PR000012  2016114       F  ...    1920         A     NaN  2999-12-31
+17   PX0065  PR000074  2016114       F  ...    2160         A     NaN  2999-12-31
+18   PX0065  PR000074  2016115       F  ...    1440         A     NaN  2999-12-31
+19   PX0076  PR000011  2016114       F  ...     480         A     NaN  2999-12-31
+
+[20 rows x 9 columns]
+  - Staging output    :  [('wtclhhbykj/file0.txt', 'LOADED', 88, 88, 1, 0, None, None, None, None)]
+  - Destination Table :  WRKNG_TPS_WKLY  - Records:  88
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  TPS_DLY.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  TPS_DLY.csv  - Records:  162010
+  EMPL_ID   PROJ_ID  ... TPS_TYP                 AS_OF_TS
+0  PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+1  PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+2  PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+3  PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+4  PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+5  PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+6  PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+7  PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+8  PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+9  PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+
+[10 rows x 14 columns]
+   EMPL_ID   PROJ_ID  ... TPS_TYP                 AS_OF_TS
+0   PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+1   PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+2   PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+3   PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+4   PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+5   PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+6   PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+7   PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+8   PX0030  PR000696  ...       A  2018-04-13 20:30:08.740
+9   PX0030  PR000696  ...       A  2018-04-26 15:00:04.737
+10  PX0102  PR000820  ...       A  2018-09-13 18:30:07.053
+11  PX0102  PR000820  ...       A  2018-09-13 18:30:07.053
+12  PX0102  PR000820  ...       A  2018-09-13 18:30:07.053
+13  PX0102  PR000820  ...       A  2018-09-13 18:30:07.053
+14  PX0102  PR000820  ...       A  2018-09-13 18:30:07.053
+15  PX0100  PR000063  ...       A  2018-04-17 17:30:08.427
+16  PX0100  PR000063  ...       A  2018-04-17 17:30:08.427
+17  PX0100  PR000794  ...       A  2018-04-17 17:30:08.427
+18  PX0100  PR000063  ...       A  2018-04-17 17:30:08.427
+19  PX0100  PR000063  ...       A  2018-04-17 17:30:08.427
+
+[20 rows x 14 columns]
+  - Staging output    :  
+  - Destination Table :  TPS_DLY  - Records:  0
+
+  - Data Load Error   : ("Expected bytes, got a 'float' object", 'Conversion failed for column MFD_AMT with type object')
+( 162010 records not loaded )
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  INVC_TM.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  INVC_TM.csv  - Records:  43534
+   INVC_ID EMPL_ID  ...                 AS_OF_TS ACTL_INVCD_HRLY_RT
+0        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+1        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+2        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+3        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+4        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+5        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+6        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+7        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+8        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+9        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+
+[10 rows x 8 columns]
+    INVC_ID EMPL_ID  ...                 AS_OF_TS ACTL_INVCD_HRLY_RT
+0         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+1         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+2         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+3         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+4         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+5         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+6         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+7         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+8         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+9         1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+10        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+11        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+12        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+13        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+14        1  PX0070  ...  2017-09-08 11:48:18.393                0.0
+15        1  PX0070  ...  2017-10-19 20:39:41.760                0.0
+16        1  PX0070  ...  2017-10-19 20:39:41.760                0.0
+17        1  PX0070  ...  2017-10-19 20:39:41.760                0.0
+18        1  PX0070  ...  2017-10-19 20:39:41.760                0.0
+19        1  PX0070  ...  2017-10-19 20:39:41.760                0.0
+
+[20 rows x 8 columns]
+  - Staging output    :  [('uajoxobcif/file0.txt', 'LOADED', 43534, 43534, 1, 0, None, None, None, None)]
+  - Destination Table :  INVC_TM  - Records:  43534
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  TPS_WKLY.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  TPS_WKLY.csv  - Records:  240043
+  EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID    INVCD_TS
+0  PX0021  PR000433  2017015       C  ...     960         N     NaN  2999-12-31
+1  PX0021  PR000433  2017021       C  ...    1440         N     NaN  2999-12-31
+2  PX0021  PR000433  2017022       C  ...    2400         N     NaN  2999-12-31
+3  PX0021  PR000433  2017023       C  ...    2400         N     NaN  2999-12-31
+4  PX0021  PR000433  2017024       C  ...    1920         N     NaN  2999-12-31
+5  PX0021  PR000433  2017025       C  ...     960         N     NaN  2999-12-31
+6  PX0021  PR000433  2017031       C  ...    1440         N     NaN  2999-12-31
+7  PX0021  PR000433  2017032       C  ...    2400         N     NaN  2999-12-31
+8  PX0021  PR000433  2017033       C  ...    2400         N     NaN  2999-12-31
+9  PX0021  PR000433  2017034       C  ...    2400         N     NaN  2999-12-31
+
+[10 rows x 9 columns]
+   EMPL_ID   PROJ_ID   WOM_ID TPS_TYP  ... MFW_AMT  ACTV_IND INVC_ID    INVCD_TS
+0   PX0021  PR000433  2017015       C  ...     960         N     NaN  2999-12-31
+1   PX0021  PR000433  2017021       C  ...    1440         N     NaN  2999-12-31
+2   PX0021  PR000433  2017022       C  ...    2400         N     NaN  2999-12-31
+3   PX0021  PR000433  2017023       C  ...    2400         N     NaN  2999-12-31
+4   PX0021  PR000433  2017024       C  ...    1920         N     NaN  2999-12-31
+5   PX0021  PR000433  2017025       C  ...     960         N     NaN  2999-12-31
+6   PX0021  PR000433  2017031       C  ...    1440         N     NaN  2999-12-31
+7   PX0021  PR000433  2017032       C  ...    2400         N     NaN  2999-12-31
+8   PX0021  PR000433  2017033       C  ...    2400         N     NaN  2999-12-31
+9   PX0021  PR000433  2017034       C  ...    2400         N     NaN  2999-12-31
+10  PX0021  PR000433  2017035       C  ...    2400         N     NaN  2999-12-31
+11  PX0021  PR000433  2017042       C  ...    2400         N     NaN  2999-12-31
+12  PX0021  PR000433  2017043       C  ...    1920         N     NaN  2999-12-31
+13  PX0021  PR000433  2017044       C  ...    2400         N     NaN  2999-12-31
+14  PX0021  PR000433  2017045       C  ...    2400         N     NaN  2999-12-31
+15  PX0021  PR000433  2017051       C  ...    2400         N     NaN  2999-12-31
+16  PX0021  PR000433  2017052       C  ...    2400         N     NaN  2999-12-31
+17  PX0021  PR000433  2017053       C  ...    2400         N     NaN  2999-12-31
+18  PX0021  PR000433  2017054       C  ...    1920         N     NaN  2999-12-31
+19  PX0021  PR000433  2017055       C  ...    1440         N     NaN  2999-12-31
+
+[20 rows x 9 columns]
+  - Staging output    :  [('mcjyclrgiu/file0.txt', 'LOADED', 240043, 240043, 1, 0, None, None, None, None)]
+  - Destination Table :  TPS_WKLY  - Records:  240043
+
+  -** % Records Loaded:  100.0 % 

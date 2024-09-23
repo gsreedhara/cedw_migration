@@ -1,0 +1,54 @@
+2024-09-22 23:01:19,428 | INFO | Snowflake Connector for Python Version: 3.11.0, Python Version: 3.11.8, Platform: macOS-14.2.1-x86_64-i386-64bit
+2024-09-22 23:01:19,429 | INFO | This connection is in OCSP Fail Open Mode. TLS Certificates would be checked for validity and revocation status. Any other Certificate Revocation related exceptions or OCSP Responder failures would be disregarded in favor of connectivity.
+2024-09-22 23:01:19,961 | INFO | ----------------------------------------------------------------------------------
+2024-09-22 23:01:20,153 | INFO | Number of results in first chunk: 15
+2024-09-22 23:01:20,417 | INFO | Number of results in first chunk: 0
+2024-09-22 23:01:20,424 | INFO | List is empty. Creating a dummy list
+2024-09-22 23:01:20,458 | INFO |    ID  USERNAME USERNAME_LOWER                      MD5_PASSWORD     FIRST_NAME MIDDLE_NAME LAST_NAME  ... MANAGE_ALL_USERS_TT  MANAGE_ALL_USERS_LTR  IS_SICK  DEF_SICK_RULES  IS_ACTIVATED TIME_ZONE_GROUP_ID RECEIVE_USER_CHANGES_NOTIFICATION
+0   1     admin          admin  f363493b7dde4d63e3ba9ac0d2badb08  Administrator         NaN    System  ...                   1                     0        0               1             1                 -1                                 1
+1   2  shayward       shayward  d69403e2673e611d4cbd3fad6fd1788e        Stephen         NaN   Hayward  ...                   1                     0        0               1             1                 -1                                 1
+2   3  rturezki       rturezki  b179a9ec0777eae19382c14319872e1b          Roman         NaN   Turezki  ...                   0                     0        0               1             1                 -1                                 1
+3   4   gboundy        gboundy  5445a98bd2009af9a8facb9cb35f7e41         Graham           G    Boundy  ...                   1                     0        0               1             1                 -1                                 1
+4   5    lzhang         lzhang  d70c1e5d44de8a9150eb91ecff563578             Li         NaN     Zhang  ...                   0                     0        0               1             1                 -1                                 1
+5   6     mrisi          mrisi  de239033eaac1ffb65f83ab6e4dd0981       Marcello         NaN      Risi  ...                   0                     0        0               1             1                 -1                                 1
+6   7     hshah          hshah  f04e1fd4cbfeecfdce8aa2ad6e9cf4ac         Hassan         NaN      Shah  ...                   0                     0        0               1             1                 -1                                 1
+7   8    tjones         tjones  96ceb06df5195854bf7ce6b55affd0fd          Tracy         NaN     Jones  ...                   0                     0        0               1             1                 -1                                 1
+8   9  iishaque       iishaque  e18fdc9fa7cc2b5f4e497d21a48ea3b7          Imran         NaN   Ishaque  ...                   0                     0        0               1             1                 -1                                 1
+9  10   oriboux        oriboux  d3ca5dde60f88db606021eeba2499c02        Olivier         NaN    Riboux  ...                   1                     0        0               1             1                 -1                                 1
+
+[10 rows x 35 columns]
+2024-09-22 23:01:20,512 | INFO |     ID     USERNAME USERNAME_LOWER                      MD5_PASSWORD         FIRST_NAME MIDDLE_NAME        LAST_NAME  ... MANAGE_ALL_USERS_TT  MANAGE_ALL_USERS_LTR  IS_SICK  DEF_SICK_RULES  IS_ACTIVATED TIME_ZONE_GROUP_ID RECEIVE_USER_CHANGES_NOTIFICATION
+0    1        admin          admin  f363493b7dde4d63e3ba9ac0d2badb08      Administrator         NaN           System  ...                   1                     0        0               1             1                 -1                                 1
+1    2     shayward       shayward  d69403e2673e611d4cbd3fad6fd1788e            Stephen         NaN          Hayward  ...                   1                     0        0               1             1                 -1                                 1
+2    3     rturezki       rturezki  b179a9ec0777eae19382c14319872e1b              Roman         NaN          Turezki  ...                   0                     0        0               1             1                 -1                                 1
+3    4      gboundy        gboundy  5445a98bd2009af9a8facb9cb35f7e41             Graham           G           Boundy  ...                   1                     0        0               1             1                 -1                                 1
+4    5       lzhang         lzhang  d70c1e5d44de8a9150eb91ecff563578                 Li         NaN            Zhang  ...                   0                     0        0               1             1                 -1                                 1
+5    6        mrisi          mrisi  de239033eaac1ffb65f83ab6e4dd0981           Marcello         NaN             Risi  ...                   0                     0        0               1             1                 -1                                 1
+6    7        hshah          hshah  f04e1fd4cbfeecfdce8aa2ad6e9cf4ac             Hassan         NaN             Shah  ...                   0                     0        0               1             1                 -1                                 1
+7    8       tjones         tjones  96ceb06df5195854bf7ce6b55affd0fd              Tracy         NaN            Jones  ...                   0                     0        0               1             1                 -1                                 1
+8    9     iishaque       iishaque  e18fdc9fa7cc2b5f4e497d21a48ea3b7              Imran         NaN          Ishaque  ...                   0                     0        0               1             1                 -1                                 1
+9   10      oriboux        oriboux  d3ca5dde60f88db606021eeba2499c02            Olivier         NaN           Riboux  ...                   1                     0        0               1             1                 -1                                 1
+10  11     cwebster       cwebster  4954448309d94b5baefc4ecb6e38e8d5              Corey         NaN          Webster  ...                   0                     0        0               1             1                 -1                                 1
+11  12     lgendron       lgendron  2e6fdbc573b2975790d504991183519e                Luc         NaN          Gendron  ...                   0                     0        0               1             1                 -1                                 1
+12  13     jhayward       jhayward  4f27d1cb6ec8baf420d72f0e56516271                Jim         NaN          Hayward  ...                   0                     0        0               1             1                 -1                                 1
+13  14     rcanaran       rcanaran  63dd3e154ca6d948fc380fa576343ba6               Ravi         NaN          Canaran  ...                   0                     0        0               1             1                 -1                                 1
+14  15       pstudt         pstudt  81c5fddc355eea7d8c6b2a3499e703a2               Paul           A            Studt  ...                   0                     0        0               1             1                 -1                                 1
+15  16         slee           slee  642e7d173ddd95f5b4243cf2ad33397e                Sun         NaN              Lee  ...                   0                     0        0               1             1                 -1                                 1
+16  17       mianni         mianni  75ac6ec1ac2d53cff05b05e8a7469b99            Michael         NaN  Ianni-Palarchio  ...                   0                     0        0               1             1                 -1                                 1
+17  18  sdesrosiers    sdesrosiers  f7885ad36a637f4a1212716eb9cdcff2           Stephane         NaN      Des Rosiers  ...                   0                     0        0               1             1                 -1                                 1
+18  19    mlanglois      mlanglois  6c4f158d214fab78e77b36922dad2ba3            Monique         NaN         Langlois  ...                   0                     0        0               1             1                 -1                                 1
+19  20        rfeng          rfeng  60b75521919636c7ac4efc3bf304e68b  Richard (Zhigang)         NaN             Feng  ...                   0                     0        0               1             1                 -1                                 1
+
+[20 rows x 35 columns]
+2024-09-22 23:01:20,728 | INFO | Number of results in first chunk: 1
+2024-09-22 23:01:21,583 | INFO | Number of results in first chunk: 1
+2024-09-22 23:01:21,848 | INFO | Number of results in first chunk: 35
+2024-09-22 23:01:21,951 | INFO | Number of results in first chunk: 1
+2024-09-22 23:01:22,125 | INFO | Number of results in first chunk: 1
+2024-09-22 23:01:23,053 | INFO | Number of results in first chunk: 1
+2024-09-22 23:01:25,105 | ERROR | 
+  - Data Load Error   : 100038 (22018): 01b736d5-3202-928f-0005-3fee007d4312: Numeric value '2999-12-31' is not recognized
+2024-09-22 23:01:25,105 | ERROR | ( 333 records not loaded )
+2024-09-22 23:01:25,105 | ERROR | Nothing to Load
+2024-09-22 23:01:25,105 | INFO | closed
+2024-09-22 23:01:25,142 | INFO | No async queries seem to be running, deleting session

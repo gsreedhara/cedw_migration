@@ -1,0 +1,706 @@
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  RCGNTN_MSG.csv 
+
+  - CSV File Name     :  RCGNTN_MSG.csv  - Records:  247
+   RCGNTN_MSG_ID  SRC_MSG_ID  ...                INTRNL_TS        SRC_TS
+0              1         NaN  ...  2019-01-25 13:19:01.507  1.548440e+09
+1              2         NaN  ...  2019-01-25 13:28:01.250  1.548441e+09
+2              3         NaN  ...  2019-01-25 13:34:01.723  1.548441e+09
+3              4         NaN  ...  2019-01-25 17:13:01.173  1.548454e+09
+4              5         NaN  ...  2019-01-26 11:28:01.627  1.548520e+09
+5              6         NaN  ...  2019-01-29 10:40:01.560  1.548776e+09
+6              7         NaN  ...  2019-01-29 11:19:01.243  1.548779e+09
+7              8         NaN  ...  2019-01-29 12:49:01.337  1.548784e+09
+8              9         NaN  ...  2019-01-29 12:52:01.210  1.548784e+09
+9             10         NaN  ...  2019-01-29 12:58:01.317  1.548784e+09
+
+[10 rows x 9 columns]
+    RCGNTN_MSG_ID  SRC_MSG_ID  ...                INTRNL_TS        SRC_TS
+0               1         NaN  ...  2019-01-25 13:19:01.507  1.548440e+09
+1               2         NaN  ...  2019-01-25 13:28:01.250  1.548441e+09
+2               3         NaN  ...  2019-01-25 13:34:01.723  1.548441e+09
+3               4         NaN  ...  2019-01-25 17:13:01.173  1.548454e+09
+4               5         NaN  ...  2019-01-26 11:28:01.627  1.548520e+09
+5               6         NaN  ...  2019-01-29 10:40:01.560  1.548776e+09
+6               7         NaN  ...  2019-01-29 11:19:01.243  1.548779e+09
+7               8         NaN  ...  2019-01-29 12:49:01.337  1.548784e+09
+8               9         NaN  ...  2019-01-29 12:52:01.210  1.548784e+09
+9              10         NaN  ...  2019-01-29 12:58:01.317  1.548784e+09
+10             11         NaN  ...  2019-01-30 09:28:01.210  1.548858e+09
+11             12         NaN  ...  2019-01-30 11:49:01.340  1.548867e+09
+12             13         NaN  ...  2019-01-30 11:58:01.273  1.548867e+09
+13             14         NaN  ...  2019-01-30 12:01:01.520  1.548868e+09
+14             15         NaN  ...  2019-01-31 11:04:01.253  1.548951e+09
+15             16         NaN  ...  2019-01-31 17:46:01.210  1.548975e+09
+16             17         NaN  ...  2019-01-31 20:28:01.320  1.548984e+09
+17             18         NaN  ...  2019-01-31 20:31:01.410  1.548984e+09
+18             19         NaN  ...  2019-01-31 20:34:01.323  1.548985e+09
+19             20         NaN  ...  2019-02-01 09:55:01.347  1.549033e+09
+
+[20 rows x 9 columns]
+  - Staging output    :  [('zetkeahesc/file0.txt', 'LOADED', 247, 247, 1, 0, None, None, None, None)]
+  - Destination Table :  RCGNTN_MSG  - Records:  247
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  SP_DEBUG_LOG.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  SP_DEBUG_LOG.csv  - Records:  23046
+   SP_KEY                             STORED_PROC  ... PROJECT_ID EMPLOYEE_ID
+0  316575               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+1  317289               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+2  318722               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+3  318723  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+4  318724                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+5  318967  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+6  318968                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+7  318972               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+8  318973  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+9  318974                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+
+[10 rows x 9 columns]
+    SP_KEY                             STORED_PROC  ... PROJECT_ID EMPLOYEE_ID
+0   316575               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+1   317289               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+2   318722               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+3   318723  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+4   318724                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+5   318967  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+6   318968                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+7   318972               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+8   318973  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+9   318974                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+10  318980                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+11  319051  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+12  319128               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+13  319129  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+14  319692               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+15  319693  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+16  319694                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+17  319701               SP_GET_PROJ_FROM_ACTITIME  ...        NaN         NaN
+18  319702  SP_GET_People_On_Project_From_Actitime  ...        NaN         NaN
+19  319703                      SP_GET_AF_RCRD_DLY  ...        NaN         NaN
+
+[20 rows x 9 columns]
+  - Staging output    :  
+  - Destination Table :  SP_DEBUG_LOG  - Records:  0
+
+  - Data Load Error   : Expression type does not match column data type, expecting DATE but got FLOAT for column NOW
+( 23046 records not loaded )
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  RCGNTN_MSG_VALUES.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  RCGNTN_MSG_VALUES.csv  - Records:  393
+   RCGNTN_MSG_ID  RCGNTN_VALUE_ID              CREATION_TS
+0              1                3  2019-01-25 13:20:00.350
+1              1                2  2019-01-25 13:20:00.353
+2              1                1  2019-01-25 13:20:00.353
+3              2                5  2019-01-25 13:30:00.953
+4              2                3  2019-01-25 13:30:00.953
+5              2                1  2019-01-25 13:30:00.953
+6              3                3  2019-01-25 13:35:00.227
+7              3                2  2019-01-25 13:35:00.227
+8              4                3  2019-01-25 17:15:00.310
+9              4                2  2019-01-25 17:15:00.313
+    RCGNTN_MSG_ID  RCGNTN_VALUE_ID              CREATION_TS
+0               1                3  2019-01-25 13:20:00.350
+1               1                2  2019-01-25 13:20:00.353
+2               1                1  2019-01-25 13:20:00.353
+3               2                5  2019-01-25 13:30:00.953
+4               2                3  2019-01-25 13:30:00.953
+5               2                1  2019-01-25 13:30:00.953
+6               3                3  2019-01-25 13:35:00.227
+7               3                2  2019-01-25 13:35:00.227
+8               4                3  2019-01-25 17:15:00.310
+9               4                2  2019-01-25 17:15:00.313
+10              7                2  2019-01-29 11:20:00.620
+11              7                1  2019-01-29 11:20:00.620
+12              9                6  2019-01-29 12:55:00.220
+13              9                5  2019-01-29 12:55:00.230
+14              9                2  2019-01-29 12:55:00.243
+15              9                1  2019-01-29 12:55:00.257
+16             10                6  2019-01-29 13:00:00.497
+17             11                6  2019-01-30 09:30:00.910
+18             12                6  2019-01-30 11:50:00.227
+19             12                2  2019-01-30 11:50:00.227
+  - Staging output    :  [('rgqgjfhyor/file0.txt', 'LOADED', 393, 393, 1, 0, None, None, None, None)]
+  - Destination Table :  RCGNTN_MSG_VALUES  - Records:  393
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  .DS_Store 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - Staging output    :  
+  - Destination Table :    - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  ST_PROV.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  ST_PROV.csv  - Records:  372
+   ST_PROV_ID   ST_PROV_NM  CNTRY_ID ST_PROV_CD
+0           1      Alabama       840         AL
+1           2       Alaska       840         AK
+2           3      Arizona       840         AZ
+3           4     Arkansas       840         AR
+4           5   California       840         CA
+5           6     Colorado       840         CO
+6           7  Connecticut       840         CT
+7           8     Delaware       840         DE
+8           9      Florida       840         FL
+9          10      Georgia       840         GA
+    ST_PROV_ID   ST_PROV_NM  CNTRY_ID ST_PROV_CD
+0            1      Alabama       840         AL
+1            2       Alaska       840         AK
+2            3      Arizona       840         AZ
+3            4     Arkansas       840         AR
+4            5   California       840         CA
+5            6     Colorado       840         CO
+6            7  Connecticut       840         CT
+7            8     Delaware       840         DE
+8            9      Florida       840         FL
+9           10      Georgia       840         GA
+10          11       Hawaii       840         HI
+11          12        Idaho       840         ID
+12          13     Illinois       840         IL
+13          14      Indiana       840         IN
+14          15         Iowa       840         IA
+15          16       Kansas       840         KS
+16          17     Kentucky       840         KY
+17          18    Louisiana       840         LA
+18          19        Maine       840         ME
+19          20     Maryland       840         MD
+  - Staging output    :  [('qxokqpvhgs/file0.txt', 'LOADED', 372, 372, 1, 0, None, None, None, None)]
+  - Destination Table :  ST_PROV  - Records:  372
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  PSTL_ZIP.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  PSTL_ZIP.csv  - Records:  476
+   PSTL_ID PSTL_ZIP_CD  PSTL_PART_1  PSTL_PART_2
+0        1       02210          NaN          NaN
+1        2       22182          NaN          NaN
+2        3  30384-9671          NaN          NaN
+3        4       55415          NaN          NaN
+4        5       85018          NaN          NaN
+5        6       94040          NaN          NaN
+6        7       94139          NaN          NaN
+7        8       94538          NaN          NaN
+8        9     H3C 4W8          NaN          NaN
+9       10     H3C 6E8          NaN          NaN
+    PSTL_ID PSTL_ZIP_CD  PSTL_PART_1  PSTL_PART_2
+0         1       02210          NaN          NaN
+1         2       22182          NaN          NaN
+2         3  30384-9671          NaN          NaN
+3         4       55415          NaN          NaN
+4         5       85018          NaN          NaN
+5         6       94040          NaN          NaN
+6         7       94139          NaN          NaN
+7         8       94538          NaN          NaN
+8         9     H3C 4W8          NaN          NaN
+9        10     H3C 6E8          NaN          NaN
+10       11     K0K 1HO          NaN          NaN
+11       12     K1C 2X5          NaN          NaN
+12       13     K1G 6A9          NaN          NaN
+13       14     K1P 1A4          NaN          NaN
+14       15     K7L 3N6          NaN          NaN
+15       16     L1H 1H6          NaN          NaN
+16       17     L1Z 1L9          NaN          NaN
+17       18     L1Z 1Y1          NaN          NaN
+18       19     L3P 2K8          NaN          NaN
+19       20     L3P 8C3          NaN          NaN
+  - Staging output    :  [('ayiuiwhwmh/file0.txt', 'LOADED', 476, 476, 1, 0, None, None, None, None)]
+  - Destination Table :  PSTL_ZIP  - Records:  476
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  RL.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  RL.csv  - Records:  132
+   RL_ID            RL_DSCRPTN EMPL_DIVSN_ID
+0      1              Employee            -1
+1      2        Sub-Contractor            -1
+2      3  Future or Ficticious            -1
+3      4               General            -1
+4      5                 Other            -1
+5    100               Manager            -1
+6    200                 Coach            C1
+7    400        Administration            F2
+8    410        Office Manager            F2
+9    420          Senior Admin            F2
+    RL_ID                    RL_DSCRPTN EMPL_DIVSN_ID
+0       1                      Employee            -1
+1       2                Sub-Contractor            -1
+2       3          Future or Ficticious            -1
+3       4                       General            -1
+4       5                         Other            -1
+5     100                       Manager            -1
+6     200                         Coach            C1
+7     400                Administration            F2
+8     410                Office Manager            F2
+9     420                  Senior Admin            F2
+10    430             Senior Admin Spec            F2
+11    500              Business Analyst            D3
+12    600               Project Manager            D6
+13    700                    Consultant            -1
+14    800     Solution Architect, Cloud            D2
+15    900      Business Systems Analyst            D3
+16   1000                Data Architect            D4
+17   1100  Database Administrator (DBA)            D4
+18   1200       MicroStrategy Architect            D1
+19   1201             Tableau Architect            D1
+  - Staging output    :  [('pboxzffjyj/file0.txt', 'LOADED', 132, 132, 1, 0, None, None, None, None)]
+  - Destination Table :  RL  - Records:  132
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  QB_FNCL_ACCTS.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  QB_FNCL_ACCTS.csv  - Records:  91
+  QB_FNCL_ACCT_ID                      QB_FNCL_ACCT_NM  QB_FNCL_ACCT_DSCRPTN
+0            4000     4000 - Consulting Income - Other                   NaN
+1            4001            4001 - Development INcome                   NaN
+2            4002                      4002 - Big Data                   NaN
+3            4003                4003 - Support Income                   NaN
+4            4004           4004 - Business Consulting                   NaN
+5            4005  4005 - Prebilled Revenue Adjustment                   NaN
+6           4006a          4006a - Reimbursed Expenses                   NaN
+7            4020  4020 - Other Regular Income - Other                   NaN
+8            4021       4021 - Software from Labs (GD)                   NaN
+9            4022            4022 - Software from Labs                   NaN
+   QB_FNCL_ACCT_ID                      QB_FNCL_ACCT_NM  QB_FNCL_ACCT_DSCRPTN
+0             4000     4000 - Consulting Income - Other                   NaN
+1             4001            4001 - Development INcome                   NaN
+2             4002                      4002 - Big Data                   NaN
+3             4003                4003 - Support Income                   NaN
+4             4004           4004 - Business Consulting                   NaN
+5             4005  4005 - Prebilled Revenue Adjustment                   NaN
+6            4006a          4006a - Reimbursed Expenses                   NaN
+7             4020  4020 - Other Regular Income - Other                   NaN
+8             4021       4021 - Software from Labs (GD)                   NaN
+9             4022            4022 - Software from Labs                   NaN
+10            4023                      4023 - Software                   NaN
+11            4030   4030 - General Software for Resale                   NaN
+12            4999          4999 - Uncategorized Income                   NaN
+13           50000   50000 - Cost of Goods Sold - Other                   NaN
+14            5021       5021 - Software from Labs (GD)                   NaN
+15            5022            5022 - Software from Labs                   NaN
+16            5023   5023 - General Software for Resale                   NaN
+17            5645  5645 - Reconciliation Discrepancies                   NaN
+18            5650           5650 - Software for Resale                   NaN
+19            5670                      5670 - Benefits                   NaN
+  - Staging output    :  [('pswndtowuk/file0.txt', 'LOADED', 91, 91, 1, 0, None, None, None, None)]
+  - Destination Table :  QB_FNCL_ACCTS  - Records:  91
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  RCGNTN_MSG_TO_USR.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  RCGNTN_MSG_TO_USR.csv  - Records:  280
+   RCGNTN_MSG_ID TO_USR_SLACK_ID TO_EMPL_ID              CREATION_TS
+0              1       U6MP624K0    PXS0057  2019-01-25 13:20:00.343
+1              1       UCY46MB54     PX0057  2019-01-25 13:20:00.343
+2              2       U6Q7C0B8U     PX0105  2019-01-25 13:30:00.950
+3              2       U6MP624K0     PX0057  2019-01-25 13:30:00.950
+4              2       U8M4AQRN0     PX0093  2019-01-25 13:30:00.950
+5              3       UBW8ZA5M5     PX0122  2019-01-25 13:35:00.227
+6              4       U6Q7C0B8U     PX0132  2019-01-25 17:15:00.310
+7              4       UEHPQTZSQ     PX0093  2019-01-25 17:15:00.310
+8              7       U4J90JH3P    PXS0057  2019-01-29 11:20:00.610
+9              7       U6MP624K0     PX0057  2019-01-29 11:20:00.610
+    RCGNTN_MSG_ID TO_USR_SLACK_ID TO_EMPL_ID              CREATION_TS
+0               1       U6MP624K0    PXS0057  2019-01-25 13:20:00.343
+1               1       UCY46MB54     PX0057  2019-01-25 13:20:00.343
+2               2       U6Q7C0B8U     PX0105  2019-01-25 13:30:00.950
+3               2       U6MP624K0     PX0057  2019-01-25 13:30:00.950
+4               2       U8M4AQRN0     PX0093  2019-01-25 13:30:00.950
+5               3       UBW8ZA5M5     PX0122  2019-01-25 13:35:00.227
+6               4       U6Q7C0B8U     PX0132  2019-01-25 17:15:00.310
+7               4       UEHPQTZSQ     PX0093  2019-01-25 17:15:00.310
+8               7       U4J90JH3P    PXS0057  2019-01-29 11:20:00.610
+9               7       U6MP624K0     PX0057  2019-01-29 11:20:00.610
+10              7       UCY46MB54     PX0002  2019-01-29 11:20:00.610
+11              9       U6LTL3H7C     PX0124  2019-01-29 12:55:00.170
+12              9       U5Y1T992M     PX0121  2019-01-29 12:55:00.170
+13              9       U4GQE9R32     PX0019  2019-01-29 12:55:00.183
+14              9       UBWH9TVML     PX0092  2019-01-29 12:55:00.193
+15              9       UC6R792MN     PX0097  2019-01-29 12:55:00.207
+16             10       U6X2R0NRM     PX0003  2019-01-29 13:00:00.493
+17             10       U6LEMQMHQ     PX0001  2019-01-29 13:00:00.497
+18             11       U6KS9932R     PX0099  2019-01-30 09:30:00.900
+19             12       U5ZFPCYTC     PX0083  2019-01-30 11:50:00.227
+  - Staging output    :  [('vxdsbhzpgb/file0.txt', 'LOADED', 280, 280, 1, 0, None, None, None, None)]
+  - Destination Table :  RCGNTN_MSG_TO_USR  - Records:  280
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  INVC.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  INVC.csv  - Records:  1386
+   INVC_ID CNTRCT_ID  ... INVC_CLNT_RVW_DT  QB_INVC_DT
+0     1360  328-0005  ...       2017-06-01  2017-06-01
+1     1361  328-0005  ...       2017-07-01  2017-07-01
+2     1362  328-0005  ...       2017-08-01  2017-08-01
+3     1382  674-0008  ...       2999-12-31  2017-09-13
+4     1364  407-0004  ...       2017-05-01  2017-05-01
+5     1365  407-0004  ...       2017-06-01  2017-06-01
+6     1366  407-0004  ...       2017-07-01  2017-07-01
+7     1367  407-0004  ...       2017-08-01  2017-08-01
+8     1385  224-0121  ...       2999-12-31  2017-08-19
+9     1370  674-0008  ...       2017-06-01  2017-06-01
+
+[10 rows x 24 columns]
+    INVC_ID CNTRCT_ID  ... INVC_CLNT_RVW_DT  QB_INVC_DT
+0      1360  328-0005  ...       2017-06-01  2017-06-01
+1      1361  328-0005  ...       2017-07-01  2017-07-01
+2      1362  328-0005  ...       2017-08-01  2017-08-01
+3      1382  674-0008  ...       2999-12-31  2017-09-13
+4      1364  407-0004  ...       2017-05-01  2017-05-01
+5      1365  407-0004  ...       2017-06-01  2017-06-01
+6      1366  407-0004  ...       2017-07-01  2017-07-01
+7      1367  407-0004  ...       2017-08-01  2017-08-01
+8      1385  224-0121  ...       2999-12-31  2017-08-19
+9      1370  674-0008  ...       2017-06-01  2017-06-01
+10     1371  674-0008  ...       2017-07-01  2017-07-01
+11     1372  674-0008  ...       2017-08-01  2017-08-01
+12     1374  873-0001  ...       2017-05-01  2017-05-01
+13     1375  873-0001  ...       2017-06-01  2017-06-01
+14     1411  224-0131  ...       2999-12-31  2999-12-31
+15     1412  224-0133  ...       2999-12-31  2999-12-31
+16     1413  224-0135  ...       2999-12-31  2999-12-31
+17     1414  224-0139  ...       2999-12-31  2999-12-31
+18     1415  224-0140  ...       2999-12-31  2999-12-31
+19     1416  224-0141  ...       2999-12-31  2999-12-31
+
+[20 rows x 24 columns]
+  - Staging output    :  [('hovijxbgea/file0.txt', 'LOADED', 1386, 1386, 1, 0, None, None, None, None)]
+  - Destination Table :  INVC  - Records:  1386
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  ST.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  ST.csv  - Records:  16
+  ST  ... USE_FOR_PROJ_ST_IND
+0  A  ...                   1
+1  B  ...                   1
+2  C  ...                   1
+3  D  ...                   0
+4  E  ...                   1
+5  F  ...                   0
+6  H  ...                   1
+7  I  ...                   1
+8  L  ...                   1
+9  R  ...                   0
+
+[10 rows x 4 columns]
+   ST  ... USE_FOR_PROJ_ST_IND
+0   A  ...                   1
+1   B  ...                   1
+2   C  ...                   1
+3   D  ...                   0
+4   E  ...                   1
+5   F  ...                   0
+6   H  ...                   1
+7   I  ...                   1
+8   L  ...                   1
+9   R  ...                   0
+10  S  ...                   0
+11  T  ...                   0
+12  W  ...                   0
+13  X  ...                   0
+14  Y  ...                   1
+15  Z  ...                   1
+
+[16 rows x 4 columns]
+  - Staging output    :  [('aigxktopuy/file0.txt', 'LOADED', 16, 16, 1, 0, None, None, None, None)]
+  - Destination Table :  ST  - Records:  16
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  PROJECTIONS.csv 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - CSV File Name     :  PROJECTIONS.csv  - Records:  1015
+   TXNTYPE  TXNID  ...  FQPRIMARYKEY ACTIVE_INDICATOR
+0  Invoice    102  ...           NaN                N
+1  Invoice    103  ...           NaN                N
+2  Invoice    104  ...           NaN                N
+3  Invoice    105  ...           NaN                N
+4  Invoice    106  ...           NaN                N
+5  Invoice    107  ...           NaN                N
+6  Invoice    108  ...           NaN                N
+7  Invoice    109  ...           NaN                N
+8  Invoice    110  ...           NaN                N
+9  Invoice    111  ...           NaN                N
+
+[10 rows x 26 columns]
+    TXNTYPE  TXNID  ...  FQPRIMARYKEY ACTIVE_INDICATOR
+0   Invoice    102  ...           NaN                N
+1   Invoice    103  ...           NaN                N
+2   Invoice    104  ...           NaN                N
+3   Invoice    105  ...           NaN                N
+4   Invoice    106  ...           NaN                N
+5   Invoice    107  ...           NaN                N
+6   Invoice    108  ...           NaN                N
+7   Invoice    109  ...           NaN                N
+8   Invoice    110  ...           NaN                N
+9   Invoice    111  ...           NaN                N
+10  Invoice    112  ...           NaN                N
+11  Invoice    113  ...           NaN                N
+12  Invoice    114  ...           NaN                N
+13  Invoice    115  ...           NaN                N
+14  Invoice    116  ...           NaN                N
+15  Invoice    117  ...           NaN                N
+16  Invoice    118  ...           NaN                N
+17  Invoice    119  ...           NaN                N
+18  Invoice    120  ...           NaN                N
+19  Invoice    121  ...           NaN                N
+
+[20 rows x 26 columns]
+  - Staging output    :  [('zsktxriszn/file0.txt', 'LOADED', 1015, 1015, 1, 0, None, None, None, None)]
+  - Destination Table :  PROJECTIONS  - Records:  1015
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  STFNG_SRC.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  STFNG_SRC.csv  - Records:  4
+   STFNG_SRC_ID    STFNG_SRC_DSCRPTN
+0            -1                Other
+1             1         TalentMinded
+2             2  Copperstone Connect
+3             3    Internal Referral
+   STFNG_SRC_ID    STFNG_SRC_DSCRPTN
+0            -1                Other
+1             1         TalentMinded
+2             2  Copperstone Connect
+3             3    Internal Referral
+  - Staging output    :  [('urbcyzzcts/file0.txt', 'LOADED', 4, 4, 1, 0, None, None, None, None)]
+  - Destination Table :  STFNG_SRC  - Records:  4
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  SM_BDGT_MTHLY.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  SM_BDGT_MTHLY.csv  - Records:  1544
+  QB_FNCL_ACCT_ID  MTH_ID  QB_BDGT_AMT
+0            4000  201701    400002.00
+1            4000  201702    728954.90
+2            4000  201703    695820.59
+3            4000  201704    654403.92
+4            4000  201705    719844.31
+5            4000  201706    654403.92
+6            4000  201707    694690.98
+7            4000  201708    665098.82
+8            4000  201709    524549.02
+9            4000  201710    545974.90
+   QB_FNCL_ACCT_ID  MTH_ID  QB_BDGT_AMT
+0             4000  201701    400002.00
+1             4000  201702    728954.90
+2             4000  201703    695820.59
+3             4000  201704    654403.92
+4             4000  201705    719844.31
+5             4000  201706    654403.92
+6             4000  201707    694690.98
+7             4000  201708    665098.82
+8             4000  201709    524549.02
+9             4000  201710    545974.90
+10            4000  201711    428952.94
+11            4000  201712    477663.53
+12            4000  201801    534720.00
+13            4000  201802    530670.00
+14            4000  201803    586530.00
+15            4000  201804    600810.00
+16            4000  201805    657536.00
+17            4000  201806    676158.00
+18            4000  201807    703458.00
+19            4000  201808    747516.00
+  - Staging output    :  [('jgsqfpfucz/file0.txt', 'LOADED', 1544, 1544, 1, 0, None, None, None, None)]
+  - Destination Table :  SM_BDGT_MTHLY  - Records:  1544
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  QUESTION_DIM.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  QUESTION_DIM.csv  - Records:  5
+   QUESTION_ID  ...          VD
+0            1  ...  2019-08-09
+1            2  ...  2019-08-09
+2            3  ...  2019-08-09
+3            4  ...  2019-08-09
+4            5  ...  2020-08-03
+
+[5 rows x 4 columns]
+   QUESTION_ID  ...          VD
+0            1  ...  2019-08-09
+1            2  ...  2019-08-09
+2            3  ...  2019-08-09
+3            4  ...  2019-08-09
+4            5  ...  2020-08-03
+
+[5 rows x 4 columns]
+  - Staging output    :  [('nwqjgawsnv/file0.txt', 'LOADED', 5, 5, 1, 0, None, None, None, None)]
+  - Destination Table :  QUESTION_DIM  - Records:  5
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  RCGNTN_VALUES_TYP.csv 
+
+  - CSV File Name     :  RCGNTN_VALUES_TYP.csv  - Records:  7
+   RCGNTN_VALUE_ID  ...       VALUE_DESC
+0                1  ...  Love Our Client
+1                2  ...   Take Ownership
+2                3  ...      Build Trust
+3                4  ...   Amplify Talent
+4                5  ...   Embrace Change
+5                6  ...      Help Others
+6                7  ...       Create Fun
+
+[7 rows x 4 columns]
+   RCGNTN_VALUE_ID  ...       VALUE_DESC
+0                1  ...  Love Our Client
+1                2  ...   Take Ownership
+2                3  ...      Build Trust
+3                4  ...   Amplify Talent
+4                5  ...   Embrace Change
+5                6  ...      Help Others
+6                7  ...       Create Fun
+
+[7 rows x 4 columns]
+  - Staging output    :  [('tjxjpywnvr/file0.txt', 'LOADED', 7, 7, 1, 0, None, None, None, None)]
+  - Destination Table :  RCGNTN_VALUES_TYP  - Records:  7
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  INVC_CLIENT_DUE_DT.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  INVC_CLIENT_DUE_DT.csv  - Records:  18028
+      QB_INVC_ID CLIENT_DUE_DT  ... BANK_TXN_CD ACNTNG_INVC_NR
+0  29-1452373450    2016-02-04  ...         NaN            NaN
+1  C3-1452377296    2016-01-03  ...         NaN            NaN
+2  39-1452373602    2016-02-04  ...         NaN            NaN
+3   1-1452373079    2016-01-10  ...         NaN            NaN
+4  2D-1452373478    2016-02-04  ...         NaN            NaN
+5  D4-1452377472    2015-12-21  ...         NaN            NaN
+6  D9-1452377518    2015-12-21  ...         NaN            NaN
+7  BB-1452375822    2016-02-18  ...         NaN            NaN
+8  49-1452373726    2016-02-18  ...         NaN            NaN
+9  59-1452373853    2016-02-18  ...         NaN            NaN
+
+[10 rows x 8 columns]
+        QB_INVC_ID CLIENT_DUE_DT  ... BANK_TXN_CD ACNTNG_INVC_NR
+0    29-1452373450    2016-02-04  ...         NaN            NaN
+1    C3-1452377296    2016-01-03  ...         NaN            NaN
+2    39-1452373602    2016-02-04  ...         NaN            NaN
+3     1-1452373079    2016-01-10  ...         NaN            NaN
+4    2D-1452373478    2016-02-04  ...         NaN            NaN
+5    D4-1452377472    2015-12-21  ...         NaN            NaN
+6    D9-1452377518    2015-12-21  ...         NaN            NaN
+7    BB-1452375822    2016-02-18  ...         NaN            NaN
+8    49-1452373726    2016-02-18  ...         NaN            NaN
+9    59-1452373853    2016-02-18  ...         NaN            NaN
+10   98-1452374806    2015-12-28  ...         NaN            NaN
+11   C7-1452377336    2016-01-17  ...         NaN            NaN
+12   BF-1452375848    2016-03-03  ...         NaN            NaN
+13   11-1452373241    2016-03-03  ...         NaN            NaN
+14   15-1452373270    2016-03-03  ...         NaN            NaN
+15   19-1452373308    2016-03-03  ...         NaN            NaN
+16    5-1452373127    2016-02-04  ...         NaN            NaN
+17   31-1452373505    2016-03-03  ...         NaN            NaN
+18   3D-1452373625    2016-03-03  ...         NaN            NaN
+19  595-1452870408    2016-02-12  ...         NaN            NaN
+
+[20 rows x 8 columns]
+  - Staging output    :  [('rcfvijwrjo/file0.txt', 'LOADED', 18028, 18028, 1, 0, None, None, None, None)]
+  - Destination Table :  INVC_CLIENT_DUE_DT  - Records:  18028
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  STS.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  STS.csv  - Records:  4
+  STS STS_DSCRPTN
+0   B         N/A
+1   G       Green
+2   R         Red
+3   Y      Yellow
+  STS STS_DSCRPTN
+0   B         N/A
+1   G       Green
+2   R         Red
+3   Y      Yellow
+  - Staging output    :  [('gksrchzqse/file0.txt', 'LOADED', 4, 4, 1, 0, None, None, None, None)]
+  - Destination Table :  STS  - Records:  4
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  STG.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  STG.csv  - Records:  11
+  STG                                        STG_DSCRPTN
+0   A                          Analysis & Discovery (DA)
+1   B                                                N/A
+2   C            Completely Deployed Or Now Ended (DONE)
+3   D                     Development and Unit Test (DT)
+4   I                              Integration Test (IT)
+5   M                            Modelling & Design (MD)
+6   N  Normalization, Post Implementation Support (NPIS)
+7   O                           Operational Support (OS)
+8   P                             Proof of Concept (POC)
+9   S  Skunk Works - not funded late night OMG Shit (SW)
+   STG                                        STG_DSCRPTN
+0    A                          Analysis & Discovery (DA)
+1    B                                                N/A
+2    C            Completely Deployed Or Now Ended (DONE)
+3    D                     Development and Unit Test (DT)
+4    I                              Integration Test (IT)
+5    M                            Modelling & Design (MD)
+6    N  Normalization, Post Implementation Support (NPIS)
+7    O                           Operational Support (OS)
+8    P                             Proof of Concept (POC)
+9    S  Skunk Works - not funded late night OMG Shit (SW)
+10   U                         User Acceptance Test (UAT)
+  - Staging output    :  [('buquvkedlr/file0.txt', 'LOADED', 11, 11, 1, 0, None, None, None, None)]
+  - Destination Table :  STG  - Records:  11
+
+  -** % Records Loaded:  100.0 % 
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_CEDW  - CSV File:  RCGNTN_TAGS_TYP.csv 
+
+  - CSV File Name     :  RCGNTN_TAGS_TYP.csv  - Records:  3
+   RCGNTN_TAG_ID  ...          TAG_DESC
+0              1  ...            High 5
+1              2  ...    Above & Beyond
+2              3  ...  Client Shout Out
+
+[3 rows x 4 columns]
+   RCGNTN_TAG_ID  ...          TAG_DESC
+0              1  ...            High 5
+1              2  ...    Above & Beyond
+2              3  ...  Client Shout Out
+
+[3 rows x 4 columns]
+  - Staging output    :  [('zdroqzgrwp/file0.txt', 'LOADED', 3, 3, 1, 0, None, None, None, None)]
+  - Destination Table :  RCGNTN_TAGS_TYP  - Records:  3
+
+  -** % Records Loaded:  100.0 % 
