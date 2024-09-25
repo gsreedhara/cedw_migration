@@ -25,13 +25,19 @@ def String2Binary(string_value):
     return(result)
 
 def ReadNullable_list(cur, tableName, db_d):
+    print(f"passed variable to Read Nullable list : tableName: {tableName}, db_d: {db_d}")
+    tableName = tableName.upper()
     cur.execute(f"SELECT COLUMN_NAME from {db_d}.TEST.NULLABLE_AND_IDENTITY  where table_name='{tableName}' and NULLABLE=0 and IDENTITY_COL=0")
     df = cur.fetch_pandas_all()
+    print(df.head(10))
     return df
 
 def ReadIdentity_list(cur, tableName, db_d):
+    print(f"passed variable to Read Nullable list : tableName: {tableName}, db_d: {db_d}")
+    tableName = tableName.upper()
     cur.execute(f"SELECT COLUMN_NAME from {db_d}.TEST.NULLABLE_AND_IDENTITY  where table_name='{tableName}' and IDENTITY_COL=1")
     df = cur.fetch_pandas_all()
+    print(df.head(10))
     return df
 
 
@@ -83,7 +89,7 @@ def CSV_2_Snowflake_Table(csv_s, folder_s, tbl_d, db_d):
         # This means replace NaN values with '' for String columns - Fixing snow flake load issue "NULL result in a non-nullable column"
         str_columns_TS = [col for col in SourceData.columns if col.endswith(('_DT', '_TS', '_DATE')) and SourceData[col].dtype == 'object']
         SourceData[str_columns_TS] = SourceData[str_columns_TS].fillna('2999-12-31')
-
+        #print(str_columns_TS)
         SourceData = SourceData.replace(r'^\s*$', np.nan, regex=True)
         #print(SourceData.head(10))
         #print(SourceData.columns.tolist())
@@ -105,9 +111,12 @@ def CSV_2_Snowflake_Table(csv_s, folder_s, tbl_d, db_d):
         str_columns = [col for col in SourceData.columns if not col.endswith(('_DT', '_TS', '_DATE')) and SourceData[col].dtype == 'object']     
         #SourceData[str_columns] = SourceData[str_columns].fillna('')        
         #check if the columns fall under identity columns and drop column in dataframe
+        #print(str_columns)
         for col in str_columns:
             if col in identity_list:
+                #print(f"Identity col is {col}")
                 SourceData = SourceData.drop(col, axis=1)
+        SourceData = SourceData.drop(identity_list[0], axis=1)
         #check if columns are in the non-nullable column list
         for col in str_columns:
             if col in nullable_list:
@@ -123,7 +132,7 @@ def CSV_2_Snowflake_Table(csv_s, folder_s, tbl_d, db_d):
         encrypted_columns = [col for col in SourceData.columns if col.endswith(('_ENCRPTD')) and SourceData[col].dtype == 'object']
         for column in encrypted_columns:
             SourceData[column] = SourceData[column].apply(String2Binary)
-        print(SourceData.head(20))
+        #print(SourceData.head(10))
         # Write the table data from the DataFrame to Snowflake table (with overwrite or append mode)
         success, nchunks, nrows, output= write_pandas(con_destination, SourceData, tbl_d, database=db_d, schema='TEST', auto_create_table=False, overwrite=True)
         for col in str_columns_TS:
@@ -151,9 +160,9 @@ def CSV_2_Snowflake_Table(csv_s, folder_s, tbl_d, db_d):
 
         con_destination.close()
 #-----------------------------------------
-path = "/Users/giridharsreedhara/Desktop/PXLTD_CEDW"
+path = "/Users/giridharsreedhara/Desktop/PXLTD_STAGING"
 files = os.listdir(path)
 for file in files:
     #print(file)
     tablenm = file.split('.')[0]
-    CSV_2_Snowflake_Table(f'{file}', 'PXLTD_CEDW', f'{tablenm}', 'PXLTD_CEDW_DEV')
+    CSV_2_Snowflake_Table(f'{file}', 'PXLTD_STAGING', f'{tablenm}', 'PXLTD_STAGING_DEV')
