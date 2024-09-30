@@ -1,0 +1,102 @@
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_STAGING  - CSV File:  Ms_Project_Task_Xml.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  Ms_Project_Task_Xml.csv  - Records:  4862
+   UNIQUE_KEY  MS_PROJECT_HEADER_ID  ...  BATCH_RUN_ID              CREATION_TS
+0         478                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+1         479                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+2         480                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+3         481                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+4         482                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+5         483                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+6         484                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+7         485                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+8         486                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+9         487                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+
+[10 rows x 91 columns]
+    UNIQUE_KEY  MS_PROJECT_HEADER_ID  ...  BATCH_RUN_ID              CREATION_TS
+0          478                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+1          479                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+2          480                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+3          481                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+4          482                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+5          483                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+6          484                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+7          485                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+8          486                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+9          487                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+10         488                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+11         489                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+12         490                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+13         491                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+14         492                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+15         493                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+16         494                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+17         495                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+18         496                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+19         497                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+
+[20 rows x 91 columns]
+  - Staging output    :  [('cpmwjljlbj/file0.txt', 'LOADED', 4862, 4862, 1, 0, None, None, None, None)]
+  - Destination Table :  Ms_Project_Task_Xml  - Records:  0
+
+  - Data Load Error   : 
+( 4862 records not loaded )
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_STAGING  - CSV File:  .DS_Store 
+
+List is empty. Creating a dummy list
+List is empty. Creating a dummy list
+  - Staging output    :  
+  - Destination Table :    - Records:  0
+Nothing to Load
+----------------------------------------------------------------------------------
+  Source Folder:  PXLTD_STAGING  - CSV File:  Ms_Project_Task_Xml.csv 
+
+List is empty. Creating a dummy list
+  - CSV File Name     :  Ms_Project_Task_Xml.csv  - Records:  4862
+   UNIQUE_KEY  MS_PROJECT_HEADER_ID  ...  BATCH_RUN_ID              CREATION_TS
+0         478                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+1         479                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+2         480                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+3         481                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+4         482                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+5         483                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+6         484                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+7         485                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+8         486                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+9         487                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+
+[10 rows x 91 columns]
+    UNIQUE_KEY  MS_PROJECT_HEADER_ID  ...  BATCH_RUN_ID              CREATION_TS
+0          478                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+1          479                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+2          480                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+3          481                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+4          482                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+5          483                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+6          484                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+7          485                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+8          486                    12  ...        O4nH6a  2019-06-06 15:24:35.237
+9          487                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+10         488                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+11         489                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+12         490                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+13         491                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+14         492                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+15         493                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+16         494                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+17         495                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+18         496                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+19         497                    12  ...        O4nH6a  2019-06-06 15:24:35.253
+
+[20 rows x 91 columns]
+  - Staging output    :  [('hhpsaejmzk/file0.txt', 'LOADED', 4862, 4862, 1, 0, None, None, None, None)]
+  - Destination Table :  Ms_Project_Task_Xml  - Records:  0
+
+  - Data Load Error   : 
+( 4862 records not loaded )
+Nothing to Load
